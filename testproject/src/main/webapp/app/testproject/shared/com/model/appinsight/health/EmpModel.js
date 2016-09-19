@@ -1,0 +1,34 @@
+Ext.define('Testproject.testproject.shared.com.model.appinsight.health.EmpModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "empNo",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "empId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "empNm",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "EmpDEpt",
+          "reference": "EmpDEptModel"
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
