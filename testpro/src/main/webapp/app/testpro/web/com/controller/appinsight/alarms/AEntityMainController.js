@@ -105,6 +105,9 @@ Ext.define('Testpro.testpro.web.com.controller.appinsight.alarms.AEntityMainCont
           var tree = this.view.down('#AEntityTree');
           tree.setSelection();
           grid.setSelection();
+          var gridTestA = but.up('form').down('#TestAGrid');
+          gridTestA.getStore().removeAll();
+          gridTestA.reconfigure();
      },
      hideDataBrowser: function() {
           var form = this.view.down('#AEntity');
@@ -278,6 +281,9 @@ Ext.define('Testpro.testpro.web.com.controller.appinsight.alarms.AEntityMainCont
           var data = this.findRecordById(this.view.restURL, jsonData);
           this.modifyComponents(data, formPanel);
           this.updateFormUI(formPanel, 'Update', true);
+          var TestAGrid = formPanel.down('#TestAGrid');
+          TestAGrid.store.loadData(data.testA);
+          TestAGrid.setSelection(0);
           this.showFirstCard(formPanel);
           tabPanel = formPanel.up('tabpanel');
           tabPanel.setActiveTab(0);
@@ -346,6 +352,9 @@ Ext.define('Testpro.testpro.web.com.controller.appinsight.alarms.AEntityMainCont
           formPanel.down('#saveFormButton').setText('Update');
           this.modifyComponents(data, formPanel);
           this.updateFormUI(formPanel, 'Update', true);
+          var TestAGrid = formPanel.down('#TestAGrid');
+          TestAGrid.store.loadData(data.testA);
+          TestAGrid.setSelection(0);
           this.showFirstCard(formPanel);
           tabPanel = formPanel.up('tabpanel');
           tabPanel.setActiveTab(0);
@@ -404,6 +413,31 @@ Ext.define('Testpro.testpro.web.com.controller.appinsight.alarms.AEntityMainCont
           }
           return obj['objArr'] = arr;
      },
+     addTestA: function(but) {
+          var formTestA = but.up().down('form');
+          var gridTestA = but.up().up().down('#TestAGrid');
+          if (formTestA.isValid()) {
+               var values = this.getData(formTestA);
+               values = values[gridTestA.bindable];
+               if (gridTestA.selection) {
+                    gridTestA.selection.data = values;
+               } else {
+                    gridTestA.getStore().add(values);
+               }
+               gridTestA.reconfigure();
+               gridTestA.setSelection();
+               formTestA.reset();
+          }
+     },
+     onTestAGridItemClick: function(cellModel, record, rowIndex, columnIndex, eOpts, comp) {
+          var form;
+          if (comp != null) {
+               form = comp.up();
+          } else {
+               form = this.view.down('#TestAForm');
+          }
+          form.loadRecord(record)
+     },
      renderFormValue: function(value, metaData, record, row, col, store, gridView) {
           try {
                var comboStore = this.getView().down('#' + metaData.column.dataIndex).getStore();
@@ -422,6 +456,13 @@ Ext.define('Testpro.testpro.web.com.controller.appinsight.alarms.AEntityMainCont
                     return;
                }
           }
+          var TestAForm = form.down('#TestAForm');
+          var TestA = form.down('#TestAGrid');
+          if (!(TestAForm.isValid() || TestA.store.getCount() != 0)) {
+               this.showCard(form, TestAForm);
+               return;
+          }
+          this.addTestA(TestAForm.down('button'));
           var jsonData = this.getData(form);
           var method;
           if (but.text == 'Save') {

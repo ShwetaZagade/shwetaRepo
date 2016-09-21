@@ -7,7 +7,7 @@ import com.app.shared.appinsight.alarms.AEntity;
 import java.util.List;
 import com.athena.server.pluggable.utils.bean.FindByBean;
 
-@SourceCodeAuthorClass(createdBy = "deepali.arvind@algorhythm.co.in", updatedBy = "deepali.arvind@algorhythm.co.in", versionNumber = "4", comments = "Service for AEntity Transaction table", complexity = Complexity.MEDIUM)
+@SourceCodeAuthorClass(createdBy = "deepali.arvind@algorhythm.co.in", updatedBy = "aparna.sawant@algorhythm.co.in", versionNumber = "7", comments = "Service for AEntity Transaction table", complexity = Complexity.MEDIUM)
 public abstract class AEntityService {
 
     abstract HttpEntity<ResponseBean> findAll() throws Exception;

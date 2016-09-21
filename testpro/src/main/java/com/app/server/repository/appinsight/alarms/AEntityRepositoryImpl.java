@@ -17,10 +17,11 @@ import java.util.List;
 import javax.persistence.Query;
 import org.springframework.transaction.annotation.Transactional;
 import java.lang.Override;
+import com.app.shared.appinsight.health.TestA;
 
 @Repository
 @Scope(value = "request", proxyMode = ScopedProxyMode.TARGET_CLASS)
-@SourceCodeAuthorClass(createdBy = "deepali.arvind@algorhythm.co.in", updatedBy = "deepali.arvind@algorhythm.co.in", versionNumber = "4", comments = "Repository for AEntity Transaction table", complexity = Complexity.MEDIUM)
+@SourceCodeAuthorClass(createdBy = "deepali.arvind@algorhythm.co.in", updatedBy = "aparna.sawant@algorhythm.co.in", versionNumber = "7", comments = "Repository for AEntity Transaction table", complexity = Complexity.MEDIUM)
 public class AEntityRepositoryImpl extends SearchInterfaceImpl implements AEntityRepository<AEntity> {
 
     @Autowired
@@ -53,6 +54,17 @@ public class AEntityRepositoryImpl extends SearchInterfaceImpl implements AEntit
     @Override
     public AEntity save(AEntity entity) throws Exception {
         EntityManager emanager = emfResource.getResource(runtimeLogInfoHelper.getMultitenantFields());
+        java.util.List<com.app.shared.appinsight.health.TestA> testa = new java.util.ArrayList<com.app.shared.appinsight.health.TestA>();
+        for (java.util.Iterator iterator = entity.getTestA().iterator(); iterator.hasNext(); ) {
+            com.app.shared.appinsight.health.TestA childEntity = (com.app.shared.appinsight.health.TestA) iterator.next();
+            if (childEntity.getPrimaryKey() != null) {
+                com.app.shared.appinsight.health.TestA ans = emanager.find(TestA.class, childEntity.getPrimaryKey());
+                testa.add(ans);
+            } else {
+                testa.add(childEntity);
+            }
+        }
+        entity.setTestA(testa);
         emanager.persist(entity);
         Log.out.println("AISAL322100200", runtimeLogInfoHelper.getRequestHeaderBean(), "AEntityRepositoryImpl", "save", entity);
         return entity;
@@ -88,6 +100,16 @@ public class AEntityRepositoryImpl extends SearchInterfaceImpl implements AEntit
         AEntity object = emanager.find(com.app.shared.appinsight.alarms.AEntity.class, id);
         emanager.remove(object);
         Log.out.println("AISAL328100200", runtimeLogInfoHelper.getRequestHeaderBean(), "AEntityRepositoryImpl", "delete", "Record Deleted");
+    }
+
+    @Override
+    @Transactional
+    public void deleteTestA(List<TestA> testa) {
+        javax.persistence.EntityManager emanager = emfResource.getResource();
+        for (com.app.shared.appinsight.health.TestA _testa : testa) {
+            com.app.shared.appinsight.health.TestA s = emanager.find(com.app.shared.appinsight.health.TestA.class, _testa.getTid());
+            emanager.remove(s);
+        }
     }
 
     /**

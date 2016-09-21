@@ -8,7 +8,7 @@ Ext.define('Testpro.testpro.web.com.view.appinsight.alarms.AEntityMain', {
      "defaults": {
           "split": true
      },
-     "requires": ["Testpro.testpro.shared.com.model.appinsight.alarms.AEntityModel", "Testpro.testpro.web.com.controller.appinsight.alarms.AEntityMainController", "Testpro.view.fw.component.DateTimeField", "Testpro.view.fw.component.DateTimePicker", "Testpro.testpro.shared.com.viewmodel.appinsight.alarms.AEntityViewModel"],
+     "requires": ["Testpro.testpro.shared.com.model.appinsight.alarms.AEntityModel", "Testpro.testpro.web.com.controller.appinsight.alarms.AEntityMainController", "Testpro.view.fw.component.DateTimeField", "Testpro.view.fw.component.DateTimePicker", "Testpro.view.fw.component.Grids", "Testpro.testpro.shared.com.viewmodel.appinsight.alarms.AEntityViewModel"],
      "communicationLog": [],
      "tabPosition": "bottom",
      "items": [{
@@ -154,6 +154,217 @@ Ext.define('Testpro.testpro.web.com.view.appinsight.alarms.AEntityMain', {
                                    "hidden": true
                               }]
                          }]
+                    }, {
+                         "xtype": "form",
+                         "displayName": "TestA",
+                         "title": "TestA",
+                         "name": "TestA",
+                         "itemId": "TestAForm",
+                         "bodyPadding": 10,
+                         "items": [{
+                              "xtype": "form",
+                              "itemId": "form1",
+                              "customWidgetType": "vdAnchorLayout",
+                              "header": {
+                                   "hidden": true
+                              },
+                              "items": [{
+                                   "layout": "column",
+                                   "customWidgetType": "vdColumnLayout",
+                                   "header": {
+                                        "hidden": true
+                                   },
+                                   "xtype": "panel",
+                                   "items": [{
+                                        "name": "tid",
+                                        "itemId": "tid",
+                                        "xtype": "textfield",
+                                        "customWidgetType": "vdTextfield",
+                                        "displayName": "tid",
+                                        "margin": "5 5 5 5",
+                                        "fieldLabel": "tid<font color='red'> *<\/font>",
+                                        "fieldId": "74AA8CE9-5D5B-4080-AA75-51070A72468B",
+                                        "minLength": "1",
+                                        "maxLength": "256",
+                                        "hidden": true,
+                                        "value": "",
+                                        "bindable": "testA.tid"
+                                   }, {
+                                        "name": "tnm",
+                                        "itemId": "tnm",
+                                        "xtype": "textfield",
+                                        "customWidgetType": "vdTextfield",
+                                        "displayName": "tnm",
+                                        "margin": "5 5 5 5",
+                                        "fieldLabel": "tnm<font color='red'> *<\/font>",
+                                        "allowBlank": false,
+                                        "fieldId": "D76A27B6-9D47-4F8C-9625-752CE88EEF59",
+                                        "minLength": "1",
+                                        "maxLength": "256",
+                                        "regex": /^[a-zA-Z ]+$/,
+                                        "bindable": "testA.tnm",
+                                        "columnWidth": 0.5
+                                   }, {
+                                        "name": "tDate",
+                                        "itemId": "tDate",
+                                        "xtype": "datefield",
+                                        "customWidgetType": "vdDatefield",
+                                        "displayName": "tDate",
+                                        "margin": "5 5 5 5",
+                                        "format": "d-m-Y",
+                                        "submitFormat": "d-m-Y",
+                                        "fieldLabel": "tDate<font color='red'> *<\/font>",
+                                        "allowBlank": false,
+                                        "fieldId": "E979E976-B560-4E5E-BA94-9945CF5795EA",
+                                        "bindable": "testA.tDate",
+                                        "columnWidth": 0.5
+                                   }, {
+                                        "name": "tDateTime",
+                                        "itemId": "tDateTime",
+                                        "xtype": "customdatetimefield",
+                                        "customWidgetType": "customdatetimefield",
+                                        "displayName": "tDateTime",
+                                        "margin": "5 5 5 5",
+                                        "submitFormat": "d-m-Y H:i:s",
+                                        "format": "d-m-Y H:i:s",
+                                        "fieldLabel": "tDateTime<font color='red'> *<\/font>",
+                                        "allowBlank": false,
+                                        "fieldId": "A4F5706C-58EC-4852-B06F-2E6C8089EF27",
+                                        "bindable": "testA.tDateTime",
+                                        "columnWidth": 0.5
+                                   }, {
+                                        "name": "versionId",
+                                        "itemId": "versionId",
+                                        "xtype": "numberfield",
+                                        "customWidgetType": "vdNumberfield",
+                                        "displayName": "versionId",
+                                        "margin": "5 5 5 5",
+                                        "value": "-1",
+                                        "fieldLabel": "versionId",
+                                        "fieldId": "03FBD601-1432-4F06-B399-17B86A8A8038",
+                                        "bindable": "testA.versionId",
+                                        "hidden": true
+                                   }]
+                              }]
+                         }, {
+                              "columnWidth": 1,
+                              "xtype": "button",
+                              "margin": 5,
+                              "customWidgetType": "vdButton",
+                              "maxWidth": 110,
+                              "text": "Add TestA",
+                              "handler": "addTestA"
+                         }, {
+                              "xtype": "grids",
+                              "customWidgetType": "vdGrid",
+                              "title": "TestA",
+                              "columnWidth": 1,
+                              "itemId": "TestAGrid",
+                              "fieldLabel": "List",
+                              "bindLevel": "testA",
+                              "bindable": "testA",
+                              "listeners": {
+                                   "select": "onTestAGridItemClick"
+                              },
+                              "store": {
+                                   "fields": [],
+                                   "data": []
+                              },
+                              "columns": [{
+                                   "header": "tid",
+                                   "text": "tid",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "tid",
+                                   "hidden": true,
+                                   "flex": 1
+                              }, {
+                                   "header": "tnm",
+                                   "text": "tnm",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "tnm",
+                                   "flex": 1
+                              }, {
+                                   "header": "tDate",
+                                   "text": "tDate",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "tDate",
+                                   "flex": 1
+                              }, {
+                                   "header": "tDateTime",
+                                   "text": "tDateTime",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "tDateTime",
+                                   "flex": 1
+                              }, {
+                                   "header": "createdBy",
+                                   "text": "createdBy",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "createdBy",
+                                   "hidden": true,
+                                   "flex": 1
+                              }, {
+                                   "header": "createdDate",
+                                   "text": "createdDate",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "createdDate",
+                                   "hidden": true,
+                                   "flex": 1
+                              }, {
+                                   "header": "updatedBy",
+                                   "text": "updatedBy",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "updatedBy",
+                                   "hidden": true,
+                                   "flex": 1
+                              }, {
+                                   "header": "updatedDate",
+                                   "text": "updatedDate",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "updatedDate",
+                                   "hidden": true,
+                                   "flex": 1
+                              }, {
+                                   "header": "versionId",
+                                   "text": "versionId",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "versionId",
+                                   "hidden": true,
+                                   "flex": 1
+                              }, {
+                                   "header": "activeStatus",
+                                   "text": "activeStatus",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "activeStatus",
+                                   "hidden": true,
+                                   "flex": 1
+                              }, {
+                                   "header": "txnAccessCode",
+                                   "text": "txnAccessCode",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "txnAccessCode",
+                                   "hidden": true,
+                                   "flex": 1
+                              }, {
+                                   "header": "multiTenantId",
+                                   "text": "multiTenantId",
+                                   "customWidgetType": "vdGridColumn",
+                                   "dataIndex": "multiTenantId",
+                                   "hidden": true,
+                                   "flex": 1
+                              }, {
+                                   "xtype": "actioncolumn",
+                                   "customWidgetType": "vdActionColumn",
+                                   "width": 30,
+                                   "sortable": false,
+                                   "menuDisable": true,
+                                   "items": [{
+                                        "icon": "images/delete.gif",
+                                        "tooltip": "Delete Record",
+                                        "handler": "onDeleteActionColumnClick"
+                                   }]
+                              }]
+                         }],
+                         "customWidgetType": "vdCard"
                     }],
                     "tools": [{
                          "type": "help",
@@ -204,6 +415,29 @@ Ext.define('Testpro.testpro.web.com.view.appinsight.alarms.AEntityMain', {
                               "listeners": {
                                    "click": "resetForm"
                               }
+                         }]
+                    }, {
+                         "xtype": "toolbar",
+                         "customWidgetType": "vdTBar",
+                         "isDockedItem": true,
+                         "items": [{
+                              "xtype": "tbfill",
+                              "customWidgetType": "vdTbFill"
+                         }, {
+                              "xtype": "button",
+                              "customWidgetType": "vdButton",
+                              "itemId": "cardPrev",
+                              "text": "&laquo; Previous",
+                              "handler": "showPreviousCard",
+                              "disabled": true,
+                              "margin": "0 5 0 5"
+                         }, {
+                              "xtype": "button",
+                              "customWidgetType": "vdButton",
+                              "itemId": "cardNext",
+                              "text": "Next &raquo;",
+                              "handler": "showNextCard",
+                              "margin": "0 5 0 5"
                          }]
                     }],
                     "extend": "Ext.form.Panel",
@@ -385,6 +619,217 @@ Ext.define('Testpro.testpro.web.com.view.appinsight.alarms.AEntityMain', {
                               "hidden": true
                          }]
                     }]
+               }, {
+                    "xtype": "form",
+                    "displayName": "TestA",
+                    "title": "TestA",
+                    "name": "TestA",
+                    "itemId": "TestAForm",
+                    "bodyPadding": 10,
+                    "items": [{
+                         "xtype": "form",
+                         "itemId": "form1",
+                         "customWidgetType": "vdAnchorLayout",
+                         "header": {
+                              "hidden": true
+                         },
+                         "items": [{
+                              "layout": "column",
+                              "customWidgetType": "vdColumnLayout",
+                              "header": {
+                                   "hidden": true
+                              },
+                              "xtype": "panel",
+                              "items": [{
+                                   "name": "tid",
+                                   "itemId": "tid",
+                                   "xtype": "textfield",
+                                   "customWidgetType": "vdTextfield",
+                                   "displayName": "tid",
+                                   "margin": "5 5 5 5",
+                                   "fieldLabel": "tid<font color='red'> *<\/font>",
+                                   "fieldId": "74AA8CE9-5D5B-4080-AA75-51070A72468B",
+                                   "minLength": "1",
+                                   "maxLength": "256",
+                                   "hidden": true,
+                                   "value": "",
+                                   "bindable": "testA.tid"
+                              }, {
+                                   "name": "tnm",
+                                   "itemId": "tnm",
+                                   "xtype": "textfield",
+                                   "customWidgetType": "vdTextfield",
+                                   "displayName": "tnm",
+                                   "margin": "5 5 5 5",
+                                   "fieldLabel": "tnm<font color='red'> *<\/font>",
+                                   "allowBlank": false,
+                                   "fieldId": "D76A27B6-9D47-4F8C-9625-752CE88EEF59",
+                                   "minLength": "1",
+                                   "maxLength": "256",
+                                   "regex": /^[a-zA-Z ]+$/,
+                                   "bindable": "testA.tnm",
+                                   "columnWidth": 0.5
+                              }, {
+                                   "name": "tDate",
+                                   "itemId": "tDate",
+                                   "xtype": "datefield",
+                                   "customWidgetType": "vdDatefield",
+                                   "displayName": "tDate",
+                                   "margin": "5 5 5 5",
+                                   "format": "d-m-Y",
+                                   "submitFormat": "d-m-Y",
+                                   "fieldLabel": "tDate<font color='red'> *<\/font>",
+                                   "allowBlank": false,
+                                   "fieldId": "E979E976-B560-4E5E-BA94-9945CF5795EA",
+                                   "bindable": "testA.tDate",
+                                   "columnWidth": 0.5
+                              }, {
+                                   "name": "tDateTime",
+                                   "itemId": "tDateTime",
+                                   "xtype": "customdatetimefield",
+                                   "customWidgetType": "customdatetimefield",
+                                   "displayName": "tDateTime",
+                                   "margin": "5 5 5 5",
+                                   "submitFormat": "d-m-Y H:i:s",
+                                   "format": "d-m-Y H:i:s",
+                                   "fieldLabel": "tDateTime<font color='red'> *<\/font>",
+                                   "allowBlank": false,
+                                   "fieldId": "A4F5706C-58EC-4852-B06F-2E6C8089EF27",
+                                   "bindable": "testA.tDateTime",
+                                   "columnWidth": 0.5
+                              }, {
+                                   "name": "versionId",
+                                   "itemId": "versionId",
+                                   "xtype": "numberfield",
+                                   "customWidgetType": "vdNumberfield",
+                                   "displayName": "versionId",
+                                   "margin": "5 5 5 5",
+                                   "value": "-1",
+                                   "fieldLabel": "versionId",
+                                   "fieldId": "03FBD601-1432-4F06-B399-17B86A8A8038",
+                                   "bindable": "testA.versionId",
+                                   "hidden": true
+                              }]
+                         }]
+                    }, {
+                         "columnWidth": 1,
+                         "xtype": "button",
+                         "margin": 5,
+                         "customWidgetType": "vdButton",
+                         "maxWidth": 110,
+                         "text": "Add TestA",
+                         "handler": "addTestA"
+                    }, {
+                         "xtype": "grids",
+                         "customWidgetType": "vdGrid",
+                         "title": "TestA",
+                         "columnWidth": 1,
+                         "itemId": "TestAGrid",
+                         "fieldLabel": "List",
+                         "bindLevel": "testA",
+                         "bindable": "testA",
+                         "listeners": {
+                              "select": "onTestAGridItemClick"
+                         },
+                         "store": {
+                              "fields": [],
+                              "data": []
+                         },
+                         "columns": [{
+                              "header": "tid",
+                              "text": "tid",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "tid",
+                              "hidden": true,
+                              "flex": 1
+                         }, {
+                              "header": "tnm",
+                              "text": "tnm",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "tnm",
+                              "flex": 1
+                         }, {
+                              "header": "tDate",
+                              "text": "tDate",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "tDate",
+                              "flex": 1
+                         }, {
+                              "header": "tDateTime",
+                              "text": "tDateTime",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "tDateTime",
+                              "flex": 1
+                         }, {
+                              "header": "createdBy",
+                              "text": "createdBy",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "createdBy",
+                              "hidden": true,
+                              "flex": 1
+                         }, {
+                              "header": "createdDate",
+                              "text": "createdDate",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "createdDate",
+                              "hidden": true,
+                              "flex": 1
+                         }, {
+                              "header": "updatedBy",
+                              "text": "updatedBy",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "updatedBy",
+                              "hidden": true,
+                              "flex": 1
+                         }, {
+                              "header": "updatedDate",
+                              "text": "updatedDate",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "updatedDate",
+                              "hidden": true,
+                              "flex": 1
+                         }, {
+                              "header": "versionId",
+                              "text": "versionId",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "versionId",
+                              "hidden": true,
+                              "flex": 1
+                         }, {
+                              "header": "activeStatus",
+                              "text": "activeStatus",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "activeStatus",
+                              "hidden": true,
+                              "flex": 1
+                         }, {
+                              "header": "txnAccessCode",
+                              "text": "txnAccessCode",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "txnAccessCode",
+                              "hidden": true,
+                              "flex": 1
+                         }, {
+                              "header": "multiTenantId",
+                              "text": "multiTenantId",
+                              "customWidgetType": "vdGridColumn",
+                              "dataIndex": "multiTenantId",
+                              "hidden": true,
+                              "flex": 1
+                         }, {
+                              "xtype": "actioncolumn",
+                              "customWidgetType": "vdActionColumn",
+                              "width": 30,
+                              "sortable": false,
+                              "menuDisable": true,
+                              "items": [{
+                                   "icon": "images/delete.gif",
+                                   "tooltip": "Delete Record",
+                                   "handler": "onDeleteActionColumnClick"
+                              }]
+                         }]
+                    }],
+                    "customWidgetType": "vdCard"
                }],
                "tools": [{
                     "type": "help",
@@ -435,6 +880,29 @@ Ext.define('Testpro.testpro.web.com.view.appinsight.alarms.AEntityMain', {
                          "listeners": {
                               "click": "resetForm"
                          }
+                    }]
+               }, {
+                    "xtype": "toolbar",
+                    "customWidgetType": "vdTBar",
+                    "isDockedItem": true,
+                    "items": [{
+                         "xtype": "tbfill",
+                         "customWidgetType": "vdTbFill"
+                    }, {
+                         "xtype": "button",
+                         "customWidgetType": "vdButton",
+                         "itemId": "cardPrev",
+                         "text": "&laquo; Previous",
+                         "handler": "showPreviousCard",
+                         "disabled": true,
+                         "margin": "0 5 0 5"
+                    }, {
+                         "xtype": "button",
+                         "customWidgetType": "vdButton",
+                         "itemId": "cardNext",
+                         "text": "Next &raquo;",
+                         "handler": "showNextCard",
+                         "margin": "0 5 0 5"
                     }]
                }],
                "extend": "Ext.form.Panel",

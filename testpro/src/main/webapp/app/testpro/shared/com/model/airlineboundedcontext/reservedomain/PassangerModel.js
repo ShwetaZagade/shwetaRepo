@@ -1,0 +1,39 @@
+Ext.define('Testpro.testpro.shared.com.model.airlineboundedcontext.reservedomain.PassangerModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "passangerId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "passangerName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "passangeraddr",
+          "reference": "AddressExtended",
+          "defaultValue": ""
+     }, {
+          "name": "passportNo",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "dob",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

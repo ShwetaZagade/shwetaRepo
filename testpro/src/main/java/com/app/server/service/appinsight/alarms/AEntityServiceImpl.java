@@ -4,6 +4,8 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import com.app.config.annotation.Complexity;
 import com.app.config.annotation.SourceCodeAuthorClass;
+import com.app.server.businessservice.appinsight.alarms.AEntityBusinessService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import com.spartan.pluggable.logger.alarms.AppAlarm;
 import com.spartan.pluggable.logger.api.LogManagerFactory;
@@ -12,7 +14,6 @@ import com.spartan.pluggable.logger.api.LogManager;
 import com.app.server.repository.appinsight.alarms.AEntityRepository;
 import com.app.shared.appinsight.alarms.AEntity;
 import com.athena.server.pluggable.utils.helper.RuntimeLogInfoHelper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import com.athena.server.pluggable.utils.bean.ResponseBean;
@@ -27,9 +28,12 @@ import com.athena.server.pluggable.utils.bean.FindByBean;
 
 @RestController
 @Scope(value = "request", proxyMode = ScopedProxyMode.TARGET_CLASS)
-@SourceCodeAuthorClass(createdBy = "deepali.arvind@algorhythm.co.in", updatedBy = "deepali.arvind@algorhythm.co.in", versionNumber = "4", comments = "Service for AEntity Transaction table", complexity = Complexity.MEDIUM)
+@SourceCodeAuthorClass(createdBy = "deepali.arvind@algorhythm.co.in", updatedBy = "aparna.sawant@algorhythm.co.in", versionNumber = "7", comments = "Service for AEntity Transaction table", complexity = Complexity.MEDIUM)
 @RequestMapping("/AEntity")
 public class AEntityServiceImpl extends AEntityService {
+
+    @Autowired
+    private AEntityBusinessService aentitybz;
 
     private LogManager Log = LogManagerFactory.getInstance(AppLoggerConstant.LOGGER_ID);
 
@@ -118,7 +122,7 @@ public class AEntityServiceImpl extends AEntityService {
     @RequestMapping(consumes = "application/json", method = RequestMethod.PUT)
     @Override
     public HttpEntity<ResponseBean> update(@RequestBody AEntity entity) throws Exception {
-        aEntityrepo.update(entity);
+        aentitybz.update(entity);
         AppAlarm appAlarm = Log.getAlarm("AISAL123100200");
         ResponseBean responseBean = new ResponseBean(appAlarm);
         responseBean.add("message", String.format(appAlarm.getMessage(), "AEntity"));
@@ -137,7 +141,7 @@ public class AEntityServiceImpl extends AEntityService {
     @RequestMapping(consumes = "application/json", headers = { "isArray" }, method = RequestMethod.PUT)
     @Override
     public HttpEntity<ResponseBean> update(@RequestBody List<AEntity> entity, @RequestHeader("isArray") boolean request) throws Exception {
-        aEntityrepo.update(entity);
+        aentitybz.update(entity);
         AppAlarm appAlarm = Log.getAlarm("AISAL123100200");
         ResponseBean responseBean = new ResponseBean(appAlarm);
         responseBean.add("message", String.format(appAlarm.getMessage(), "AEntity"));

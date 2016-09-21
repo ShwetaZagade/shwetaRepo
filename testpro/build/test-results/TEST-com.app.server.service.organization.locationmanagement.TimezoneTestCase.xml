@@ -1,133 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.app.server.service.organization.locationmanagement.TimezoneTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-09-21T06:35:41" hostname="ab5a12c16337" time="0.4">
+<testsuite name="com.app.server.service.organization.locationmanagement.TimezoneTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-09-21T09:18:19" hostname="c76164883ac0" time="0.331">
   <properties/>
-  <testcase name="test1Save" classname="com.app.server.service.organization.locationmanagement.TimezoneTestCase" time="0.112"/>
-  <testcase name="test2Update" classname="com.app.server.service.organization.locationmanagement.TimezoneTestCase" time="0.106"/>
-  <testcase name="test3FindById" classname="com.app.server.service.organization.locationmanagement.TimezoneTestCase" time="0.033"/>
-  <testcase name="test5NegativeTesting" classname="com.app.server.service.organization.locationmanagement.TimezoneTestCase" time="0.052"/>
-  <testcase name="test6Delete" classname="com.app.server.service.organization.locationmanagement.TimezoneTestCase" time="0.095"/>
-  <system-out><![CDATA[Wed Sep 21 06:35:41 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed Sep 21 06:35:41 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
-Wed Sep 21 06:35:41 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
-Wed Sep 21 06:35:41 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed Sep 21 06:35:41 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed Sep 21 06:35:41 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed Sep 21 06:35:41 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:41 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed Sep 21 06:35:41 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed Sep 21 06:35:41 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:41 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
-Wed Sep 21 06:35:41 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed Sep 21 06:35:41 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:41 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed Sep 21 06:35:41 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed Sep 21 06:35:41 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed Sep 21 06:35:41 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed Sep 21 06:35:41 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed Sep 21 06:35:41 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed Sep 21 06:35:41 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed Sep 21 06:35:41 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed Sep 21 06:35:41 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed Sep 21 06:35:41 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed Sep 21 06:35:41 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@29f4cc0d] ....
-Wed Sep 21 06:35:41 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed Sep 21 06:35:41 UTC 2016|Scheduler|Adding [LMID=[b53b3b4c-eae5-4dab-b5a8-91035a9d6d6b]] Delay=5 Time Unit=MINUTES
-Wed Sep 21 06:35:41 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed Sep 21 06:35:41 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed Sep 21 06:35:41 UTC 2016|Scheduler|Startup Completed..
-Wed Sep 21 06:35:41 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed Sep 21 06:35:41 UTC 2016|Log Manager Factory|Log Manager READY! ID = b53b3b4c-eae5-4dab-b5a8-91035a9d6d6b
-[EL Finer]: connection: 2016-09-21 06:35:41.237--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 244161552
-[EL Finer]: transaction: 2016-09-21 06:35:41.238--ClientSession(244161552)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1929438694
-[EL Finest]: connection: 2016-09-21 06:35:41.238--ServerSession(993367760)--Connection(1073060358)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:41.238--ClientSession(244161552)--Connection(1073060358)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:41.238--ClientSession(244161552)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-Wed Sep 21 06:35:41 UTC 2016|Unknown Alarm = ORGLM312100100 Alarm Split = ORG-LM-3-1-2-100-100
-[EL Finest]: transaction: 2016-09-21 06:35:41.239--UnitOfWork(1929438694)--Thread(Thread[Test worker,5,main])--persist() operation called on: 4,nJryqFRwsARv4vxN0HhyWau7UeUwWewioDXy5gAvFnpVmsSLn5.
-[EL Finest]: sequencing: 2016-09-21 06:35:41.239--UnitOfWork(1929438694)--Thread(Thread[Test worker,5,main])--assign sequence to the object (676F3C2D-C1EC-4E11-9980-8A38D4DF2D17 -> 4,nJryqFRwsARv4vxN0HhyWau7UeUwWewioDXy5gAvFnpVmsSLn5)
-[EL Finer]: transaction: 2016-09-21 06:35:41.24--UnitOfWork(1929438694)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:41.24--UnitOfWork(1929438694)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(4,nJryqFRwsARv4vxN0HhyWau7UeUwWewioDXy5gAvFnpVmsSLn5)
-[EL Fine]: sql: 2016-09-21 06:35:41.24--ClientSession(244161552)--Connection(1865324342)--Thread(Thread[Test worker,5,main])--INSERT INTO Timezone (timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [676F3C2D-C1EC-4E11-9980-8A38D4DF2D17, siMOUIs82luGlQYYBIGpdpBlu8mxcaxJnm3s9QGtZIFJ2lqrt1, gwYDH2VI76hWg9yidTu69lwjUVBHp31lw1bvIADa4wMad7nHDl, ZfxUnVS8tp0BFWyIxPmPCJFytXw8G6K5e6U0HQcKYnIFTfmLXZ, nJryqFRwsARv4vxN0HhyWau7UeUwWewioDXy5gAvFnpVmsSLn5, 4, 1, AAAAA, 2016-09-21 06:35:41.207, AAAAA, 2016-09-21 06:35:41.207, 1, 51000]
-[EL Finer]: transaction: 2016-09-21 06:35:41.243--ClientSession(244161552)--Connection(1865324342)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:41.29--ServerSession(993367760)--Connection(1073060358)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:41.29--UnitOfWork(1929438694)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:41.29--UnitOfWork(1929438694)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:41.29--UnitOfWork(1929438694)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:41.29--ClientSession(244161552)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:41.333--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 728955055
-[EL Finer]: transaction: 2016-09-21 06:35:41.333--ClientSession(728955055)--Thread(Thread[Test worker,5,main])--acquire unit of work: 153403250
-[EL Finest]: connection: 2016-09-21 06:35:41.333--ServerSession(993367760)--Connection(1268046350)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:41.333--ClientSession(728955055)--Connection(1268046350)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:41.333--ClientSession(728955055)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:41.335--UnitOfWork(153403250)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:41.335--UnitOfWork(153403250)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:41.335--UnitOfWork(153403250)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="Timezone.findById" referenceClass=Timezone sql="SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE ((activeStatus = ?) AND (timeZoneId = ?))")
-[EL Fine]: sql: 2016-09-21 06:35:41.335--ClientSession(728955055)--Connection(1569835752)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE ((activeStatus = ?) AND (timeZoneId = ?))
-	bind => [1, 676F3C2D-C1EC-4E11-9980-8A38D4DF2D17]
-[EL Finer]: transaction: 2016-09-21 06:35:41.337--UnitOfWork(153403250)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:41.337--ClientSession(728955055)--Connection(1569835752)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:41.338--ServerSession(993367760)--Connection(1268046350)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:41.338--UnitOfWork(153403250)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:41.338--UnitOfWork(153403250)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:41.338--UnitOfWork(153403250)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:41.338--ClientSession(728955055)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:41.339--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 404428893
-[EL Finer]: transaction: 2016-09-21 06:35:41.339--ClientSession(404428893)--Thread(Thread[Test worker,5,main])--acquire unit of work: 450661896
-[EL Finest]: connection: 2016-09-21 06:35:41.339--ServerSession(993367760)--Connection(99663103)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:41.339--ClientSession(404428893)--Connection(99663103)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:41.339--ClientSession(404428893)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: transaction: 2016-09-21 06:35:41.342--UnitOfWork(450661896)--Thread(Thread[Test worker,5,main])--Merge clone with references 9,40ckODHtfbqUlNsBioQntQhaaht1zqXv55pKNlGiZPqdMNz1CL
-[EL Finest]: query: 2016-09-21 06:35:41.342--UnitOfWork(450661896)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=Timezone )
-[EL Fine]: sql: 2016-09-21 06:35:41.342--ClientSession(404428893)--Connection(776356109)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE (timeZoneId = ?)
-	bind => [676F3C2D-C1EC-4E11-9980-8A38D4DF2D17]
-[EL Finer]: transaction: 2016-09-21 06:35:41.343--UnitOfWork(450661896)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:41.344--UnitOfWork(450661896)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(9,40ckODHtfbqUlNsBioQntQhaaht1zqXv55pKNlGiZPqdMNz1CL)
-[EL Fine]: sql: 2016-09-21 06:35:41.344--ClientSession(404428893)--Connection(776356109)--Thread(Thread[Test worker,5,main])--UPDATE Timezone SET cities = ?, country = ?, gmtLabel = ?, timeZoneLabel = ?, utcdifference = ?, versionId = ? WHERE ((timeZoneId = ?) AND (versionId = ?))
-	bind => [I50199dwXL43vzVuJASqCEFWX68EG4M4Mec2LMcmECRdUnt1sY, MexBii8j5bvISzeZPreZqLMWvVyUjdopZJNCboQaYUATGsmx8j, iR4j7ejJJWb4AvpAH2vy6Rq1ongcooy33rQtuiCSRelqVxGqbi, 40ckODHtfbqUlNsBioQntQhaaht1zqXv55pKNlGiZPqdMNz1CL, 9, 2, 676F3C2D-C1EC-4E11-9980-8A38D4DF2D17, 1]
-[EL Finer]: transaction: 2016-09-21 06:35:41.345--ClientSession(404428893)--Connection(776356109)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:41.396--ServerSession(993367760)--Connection(99663103)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:41.396--UnitOfWork(450661896)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:41.396--UnitOfWork(450661896)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:41.396--UnitOfWork(450661896)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:41.396--ClientSession(404428893)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:41.426--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1918226610
-[EL Finer]: transaction: 2016-09-21 06:35:41.426--ClientSession(1918226610)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1610125506
-[EL Finest]: connection: 2016-09-21 06:35:41.426--ServerSession(993367760)--Connection(937943495)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:41.426--ClientSession(1918226610)--Connection(937943495)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:41.426--ClientSession(1918226610)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:41.427--UnitOfWork(1610125506)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:41.427--UnitOfWork(1610125506)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:41.427--UnitOfWork(1610125506)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="Timezone.findById" referenceClass=Timezone sql="SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE ((activeStatus = ?) AND (timeZoneId = ?))")
-[EL Fine]: sql: 2016-09-21 06:35:41.427--ClientSession(1918226610)--Connection(1579626491)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE ((activeStatus = ?) AND (timeZoneId = ?))
-	bind => [1, 676F3C2D-C1EC-4E11-9980-8A38D4DF2D17]
-[EL Finer]: transaction: 2016-09-21 06:35:41.428--UnitOfWork(1610125506)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:41.429--ClientSession(1918226610)--Connection(1579626491)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:41.429--ServerSession(993367760)--Connection(937943495)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:41.429--UnitOfWork(1610125506)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:41.429--UnitOfWork(1610125506)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:41.429--UnitOfWork(1610125506)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:41.429--ClientSession(1918226610)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:41.52--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1216202219
-[EL Finer]: transaction: 2016-09-21 06:35:41.521--ClientSession(1216202219)--Thread(Thread[Test worker,5,main])--acquire unit of work: 961342587
-[EL Finest]: connection: 2016-09-21 06:35:41.521--ServerSession(993367760)--Connection(1765383328)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:41.521--ClientSession(1216202219)--Connection(1765383328)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:41.521--ClientSession(1216202219)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: query: 2016-09-21 06:35:41.522--UnitOfWork(961342587)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name="readTimezone" referenceClass=Timezone sql="SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE (timeZoneId = ?)")
-[EL Fine]: sql: 2016-09-21 06:35:41.523--ClientSession(1216202219)--Connection(407896826)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE (timeZoneId = ?)
-	bind => [676F3C2D-C1EC-4E11-9980-8A38D4DF2D17]
-[EL Finest]: transaction: 2016-09-21 06:35:41.524--UnitOfWork(961342587)--Thread(Thread[Test worker,5,main])--remove() operation called on: 9,40ckODHtfbqUlNsBioQntQhaaht1zqXv55pKNlGiZPqdMNz1CL
-[EL Finer]: transaction: 2016-09-21 06:35:41.525--UnitOfWork(961342587)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:41.526--UnitOfWork(961342587)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=Timezone )
-[EL Finest]: query: 2016-09-21 06:35:41.526--UnitOfWork(961342587)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(9,40ckODHtfbqUlNsBioQntQhaaht1zqXv55pKNlGiZPqdMNz1CL)
-[EL Fine]: sql: 2016-09-21 06:35:41.526--ClientSession(1216202219)--Connection(407896826)--Thread(Thread[Test worker,5,main])--DELETE FROM Timezone WHERE ((timeZoneId = ?) AND (versionId = ?))
-	bind => [676F3C2D-C1EC-4E11-9980-8A38D4DF2D17, 2]
-[EL Finer]: transaction: 2016-09-21 06:35:41.528--ClientSession(1216202219)--Connection(407896826)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:41.579--ServerSession(993367760)--Connection(1765383328)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:41.579--UnitOfWork(961342587)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:41.579--UnitOfWork(961342587)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:41.579--UnitOfWork(961342587)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:41.579--ClientSession(1216202219)--Thread(Thread[Test worker,5,main])--client released
+  <testcase name="test1Save" classname="com.app.server.service.organization.locationmanagement.TimezoneTestCase" time="0.123"/>
+  <testcase name="test2Update" classname="com.app.server.service.organization.locationmanagement.TimezoneTestCase" time="0.074"/>
+  <testcase name="test3FindById" classname="com.app.server.service.organization.locationmanagement.TimezoneTestCase" time="0.029"/>
+  <testcase name="test5NegativeTesting" classname="com.app.server.service.organization.locationmanagement.TimezoneTestCase" time="0.023"/>
+  <testcase name="test6Delete" classname="com.app.server.service.organization.locationmanagement.TimezoneTestCase" time="0.082"/>
+  <system-out><![CDATA[Wed Sep 21 09:18:19 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Sep 21 09:18:19 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
+Wed Sep 21 09:18:19 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
+Wed Sep 21 09:18:19 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Sep 21 09:18:19 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Sep 21 09:18:19 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Sep 21 09:18:19 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:18:19 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Sep 21 09:18:19 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Sep 21 09:18:19 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:18:19 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
+Wed Sep 21 09:18:19 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Sep 21 09:18:19 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:18:19 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Sep 21 09:18:19 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Sep 21 09:18:19 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Sep 21 09:18:19 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Sep 21 09:18:19 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Sep 21 09:18:19 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Sep 21 09:18:19 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Sep 21 09:18:19 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Sep 21 09:18:19 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Sep 21 09:18:19 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Sep 21 09:18:19 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@12cf2835] ....
+Wed Sep 21 09:18:19 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Sep 21 09:18:19 UTC 2016|Scheduler|Adding [LMID=[950cd733-ec55-4a91-aacb-ab957b93fa8b]] Delay=5 Time Unit=MINUTES
+Wed Sep 21 09:18:19 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Sep 21 09:18:19 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Sep 21 09:18:19 UTC 2016|Scheduler|Startup Completed..
+Wed Sep 21 09:18:19 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Sep 21 09:18:19 UTC 2016|Log Manager Factory|Log Manager READY! ID = 950cd733-ec55-4a91-aacb-ab957b93fa8b
+[EL Finer]: connection: 2016-09-21 09:18:19.079--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 798759252
+[EL Finer]: transaction: 2016-09-21 09:18:19.079--ClientSession(798759252)--Thread(Thread[Test worker,5,main])--acquire unit of work: 826470967
+[EL Finest]: connection: 2016-09-21 09:18:19.079--ServerSession(1151842404)--Connection(573313573)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:19.079--ClientSession(798759252)--Connection(573313573)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:19.079--ClientSession(798759252)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+Wed Sep 21 09:18:19 UTC 2016|Unknown Alarm = ORGLM312100100 Alarm Split = ORG-LM-3-1-2-100-100
+[EL Finest]: transaction: 2016-09-21 09:18:19.08--UnitOfWork(826470967)--Thread(Thread[Test worker,5,main])--persist() operation called on: 4,nJryqFRwsARv4vxN0HhyWau7UeUwWewioDXy5gAvFnpVmsSLn5.
+[EL Finest]: sequencing: 2016-09-21 09:18:19.08--UnitOfWork(826470967)--Thread(Thread[Test worker,5,main])--assign sequence to the object (70614432-6D4D-4C09-8CD8-C68170B8119A -> 4,nJryqFRwsARv4vxN0HhyWau7UeUwWewioDXy5gAvFnpVmsSLn5)
+[EL Finer]: transaction: 2016-09-21 09:18:19.08--UnitOfWork(826470967)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:18:19.08--UnitOfWork(826470967)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(4,nJryqFRwsARv4vxN0HhyWau7UeUwWewioDXy5gAvFnpVmsSLn5)
+[EL Fine]: sql: 2016-09-21 09:18:19.081--ClientSession(798759252)--Connection(976955225)--Thread(Thread[Test worker,5,main])--INSERT INTO Timezone (timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [70614432-6D4D-4C09-8CD8-C68170B8119A, siMOUIs82luGlQYYBIGpdpBlu8mxcaxJnm3s9QGtZIFJ2lqrt1, gwYDH2VI76hWg9yidTu69lwjUVBHp31lw1bvIADa4wMad7nHDl, ZfxUnVS8tp0BFWyIxPmPCJFytXw8G6K5e6U0HQcKYnIFTfmLXZ, nJryqFRwsARv4vxN0HhyWau7UeUwWewioDXy5gAvFnpVmsSLn5, 4, 1, AAAAA, 2016-09-21 09:18:19.06, AAAAA, 2016-09-21 09:18:19.06, 1, 51000]
+[EL Finer]: transaction: 2016-09-21 09:18:19.082--ClientSession(798759252)--Connection(976955225)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:19.157--ServerSession(1151842404)--Connection(573313573)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:19.157--UnitOfWork(826470967)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:19.158--UnitOfWork(826470967)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:19.158--UnitOfWork(826470967)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:19.158--ClientSession(798759252)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:19.183--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 118177960
+[EL Finer]: transaction: 2016-09-21 09:18:19.184--ClientSession(118177960)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1942083892
+[EL Finest]: connection: 2016-09-21 09:18:19.184--ServerSession(1151842404)--Connection(1000022091)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:19.184--ClientSession(118177960)--Connection(1000022091)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:19.184--ClientSession(118177960)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:18:19.185--UnitOfWork(1942083892)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:18:19.185--UnitOfWork(1942083892)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:18:19.185--UnitOfWork(1942083892)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="Timezone.findById" referenceClass=Timezone sql="SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE ((activeStatus = ?) AND (timeZoneId = ?))")
+[EL Fine]: sql: 2016-09-21 09:18:19.185--ClientSession(118177960)--Connection(1063068653)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE ((activeStatus = ?) AND (timeZoneId = ?))
+	bind => [1, 70614432-6D4D-4C09-8CD8-C68170B8119A]
+[EL Finer]: transaction: 2016-09-21 09:18:19.186--UnitOfWork(1942083892)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:19.187--ClientSession(118177960)--Connection(1063068653)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:19.187--ServerSession(1151842404)--Connection(1000022091)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:19.187--UnitOfWork(1942083892)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:19.187--UnitOfWork(1942083892)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:19.187--UnitOfWork(1942083892)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:19.187--ClientSession(118177960)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:19.188--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1839287078
+[EL Finer]: transaction: 2016-09-21 09:18:19.188--ClientSession(1839287078)--Thread(Thread[Test worker,5,main])--acquire unit of work: 2018305028
+[EL Finest]: connection: 2016-09-21 09:18:19.188--ServerSession(1151842404)--Connection(917584)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:19.188--ClientSession(1839287078)--Connection(917584)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:19.188--ClientSession(1839287078)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-09-21 09:18:19.19--UnitOfWork(2018305028)--Thread(Thread[Test worker,5,main])--Merge clone with references 9,40ckODHtfbqUlNsBioQntQhaaht1zqXv55pKNlGiZPqdMNz1CL
+[EL Finest]: query: 2016-09-21 09:18:19.19--UnitOfWork(2018305028)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=Timezone )
+[EL Fine]: sql: 2016-09-21 09:18:19.191--ClientSession(1839287078)--Connection(528772683)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE (timeZoneId = ?)
+	bind => [70614432-6D4D-4C09-8CD8-C68170B8119A]
+[EL Finer]: transaction: 2016-09-21 09:18:19.192--UnitOfWork(2018305028)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:18:19.192--UnitOfWork(2018305028)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(9,40ckODHtfbqUlNsBioQntQhaaht1zqXv55pKNlGiZPqdMNz1CL)
+[EL Fine]: sql: 2016-09-21 09:18:19.193--ClientSession(1839287078)--Connection(528772683)--Thread(Thread[Test worker,5,main])--UPDATE Timezone SET cities = ?, country = ?, gmtLabel = ?, timeZoneLabel = ?, utcdifference = ?, versionId = ? WHERE ((timeZoneId = ?) AND (versionId = ?))
+	bind => [I50199dwXL43vzVuJASqCEFWX68EG4M4Mec2LMcmECRdUnt1sY, MexBii8j5bvISzeZPreZqLMWvVyUjdopZJNCboQaYUATGsmx8j, iR4j7ejJJWb4AvpAH2vy6Rq1ongcooy33rQtuiCSRelqVxGqbi, 40ckODHtfbqUlNsBioQntQhaaht1zqXv55pKNlGiZPqdMNz1CL, 9, 2, 70614432-6D4D-4C09-8CD8-C68170B8119A, 1]
+[EL Finer]: transaction: 2016-09-21 09:18:19.194--ClientSession(1839287078)--Connection(528772683)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:19.232--ServerSession(1151842404)--Connection(917584)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:19.232--UnitOfWork(2018305028)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:19.232--UnitOfWork(2018305028)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:19.232--UnitOfWork(2018305028)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:19.232--ClientSession(1839287078)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:19.257--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1239317177
+[EL Finer]: transaction: 2016-09-21 09:18:19.257--ClientSession(1239317177)--Thread(Thread[Test worker,5,main])--acquire unit of work: 759901586
+[EL Finest]: connection: 2016-09-21 09:18:19.257--ServerSession(1151842404)--Connection(580707193)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:19.257--ClientSession(1239317177)--Connection(580707193)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:19.257--ClientSession(1239317177)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:18:19.258--UnitOfWork(759901586)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:18:19.258--UnitOfWork(759901586)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:18:19.258--UnitOfWork(759901586)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="Timezone.findById" referenceClass=Timezone sql="SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE ((activeStatus = ?) AND (timeZoneId = ?))")
+[EL Fine]: sql: 2016-09-21 09:18:19.258--ClientSession(1239317177)--Connection(1559173524)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE ((activeStatus = ?) AND (timeZoneId = ?))
+	bind => [1, 70614432-6D4D-4C09-8CD8-C68170B8119A]
+[EL Finer]: transaction: 2016-09-21 09:18:19.26--UnitOfWork(759901586)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:19.26--ClientSession(1239317177)--Connection(1559173524)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:19.261--ServerSession(1151842404)--Connection(580707193)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:19.261--UnitOfWork(759901586)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:19.261--UnitOfWork(759901586)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:19.261--UnitOfWork(759901586)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:19.261--ClientSession(1239317177)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:19.309--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1337961602
+[EL Finer]: transaction: 2016-09-21 09:18:19.309--ClientSession(1337961602)--Thread(Thread[Test worker,5,main])--acquire unit of work: 819377077
+[EL Finest]: connection: 2016-09-21 09:18:19.31--ServerSession(1151842404)--Connection(1605388575)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:19.31--ClientSession(1337961602)--Connection(1605388575)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:19.31--ClientSession(1337961602)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: query: 2016-09-21 09:18:19.311--UnitOfWork(819377077)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name="readTimezone" referenceClass=Timezone sql="SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE (timeZoneId = ?)")
+[EL Fine]: sql: 2016-09-21 09:18:19.311--ClientSession(1337961602)--Connection(570821661)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM Timezone WHERE (timeZoneId = ?)
+	bind => [70614432-6D4D-4C09-8CD8-C68170B8119A]
+[EL Finest]: transaction: 2016-09-21 09:18:19.312--UnitOfWork(819377077)--Thread(Thread[Test worker,5,main])--remove() operation called on: 9,40ckODHtfbqUlNsBioQntQhaaht1zqXv55pKNlGiZPqdMNz1CL
+[EL Finer]: transaction: 2016-09-21 09:18:19.312--UnitOfWork(819377077)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:18:19.313--UnitOfWork(819377077)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=Timezone )
+[EL Finest]: query: 2016-09-21 09:18:19.313--UnitOfWork(819377077)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(9,40ckODHtfbqUlNsBioQntQhaaht1zqXv55pKNlGiZPqdMNz1CL)
+[EL Fine]: sql: 2016-09-21 09:18:19.313--ClientSession(1337961602)--Connection(570821661)--Thread(Thread[Test worker,5,main])--DELETE FROM Timezone WHERE ((timeZoneId = ?) AND (versionId = ?))
+	bind => [70614432-6D4D-4C09-8CD8-C68170B8119A, 2]
+[EL Finer]: transaction: 2016-09-21 09:18:19.314--ClientSession(1337961602)--Connection(570821661)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:19.365--ServerSession(1151842404)--Connection(1605388575)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:19.365--UnitOfWork(819377077)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:19.365--UnitOfWork(819377077)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:19.365--UnitOfWork(819377077)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:19.365--ClientSession(1337961602)--Thread(Thread[Test worker,5,main])--client released
 ]]></system-out>
   <system-err><![CDATA[Timezone.utcdifference may not be null
 java.lang.SecurityException: Timezone.utcdifference may not be null

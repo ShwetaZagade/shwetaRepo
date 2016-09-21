@@ -25,6 +25,9 @@ Ext.define('Testpro.testpro.shared.com.model.appinsight.health.BEntityModel', {
           "type": "int",
           "defaultValue": ""
      }, {
+          "name": "CEntity",
+          "reference": "CEntityModel"
+     }, {
           "name": "entityAudit",
           "reference": "EntityAudit"
      }, {

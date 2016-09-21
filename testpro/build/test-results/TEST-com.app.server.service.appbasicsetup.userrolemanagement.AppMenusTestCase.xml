@@ -1,132 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-09-21T06:35:33" hostname="ab5a12c16337" time="0.494">
+<testsuite name="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-09-21T09:18:05" hostname="c76164883ac0" time="0.483">
   <properties/>
-  <testcase name="test1Save" classname="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" time="0.143"/>
-  <testcase name="test2Update" classname="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" time="0.122"/>
-  <testcase name="test3FindById" classname="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" time="0.04"/>
-  <testcase name="test5NegativeTesting" classname="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" time="0.081"/>
-  <testcase name="test6Delete" classname="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" time="0.107"/>
-  <system-out><![CDATA[Wed Sep 21 06:35:33 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed Sep 21 06:35:33 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
-Wed Sep 21 06:35:33 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
-Wed Sep 21 06:35:33 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed Sep 21 06:35:33 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed Sep 21 06:35:33 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed Sep 21 06:35:33 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:33 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed Sep 21 06:35:33 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed Sep 21 06:35:33 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:33 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
-Wed Sep 21 06:35:33 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed Sep 21 06:35:33 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:33 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed Sep 21 06:35:33 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed Sep 21 06:35:33 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed Sep 21 06:35:33 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed Sep 21 06:35:33 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed Sep 21 06:35:33 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed Sep 21 06:35:33 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed Sep 21 06:35:33 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed Sep 21 06:35:33 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed Sep 21 06:35:33 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed Sep 21 06:35:33 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@23f4e092] ....
-Wed Sep 21 06:35:33 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed Sep 21 06:35:33 UTC 2016|Scheduler|Adding [LMID=[b53b3b4c-eae5-4dab-b5a8-91035a9d6d6b]] Delay=5 Time Unit=MINUTES
-Wed Sep 21 06:35:33 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed Sep 21 06:35:33 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed Sep 21 06:35:33 UTC 2016|Scheduler|Startup Completed..
-Wed Sep 21 06:35:33 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed Sep 21 06:35:33 UTC 2016|Log Manager Factory|Log Manager READY! ID = b53b3b4c-eae5-4dab-b5a8-91035a9d6d6b
-[EL Finer]: connection: 2016-09-21 06:35:33.517--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 748598423
-[EL Finer]: transaction: 2016-09-21 06:35:33.517--ClientSession(748598423)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1734491235
-[EL Finest]: connection: 2016-09-21 06:35:33.517--ServerSession(993367760)--Connection(1651162267)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:33.517--ClientSession(748598423)--Connection(1651162267)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:33.517--ClientSession(748598423)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: transaction: 2016-09-21 06:35:33.518--UnitOfWork(1734491235)--Thread(Thread[Test worker,5,main])--persist() operation called on: 2Y4ztU8M2z6FFNfcoccIwgEOKjJvMam8dFuiqtsQzK0RinGrC2.
-[EL Finest]: sequencing: 2016-09-21 06:35:33.519--UnitOfWork(1734491235)--Thread(Thread[Test worker,5,main])--assign sequence to the object (284AFD5C-846A-4002-B9D8-65A2EC546C5A -> 2Y4ztU8M2z6FFNfcoccIwgEOKjJvMam8dFuiqtsQzK0RinGrC2)
-[EL Finer]: transaction: 2016-09-21 06:35:33.519--UnitOfWork(1734491235)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:33.52--UnitOfWork(1734491235)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(2Y4ztU8M2z6FFNfcoccIwgEOKjJvMam8dFuiqtsQzK0RinGrC2)
-[EL Fine]: sql: 2016-09-21 06:35:33.521--ClientSession(748598423)--Connection(1026422162)--Thread(Thread[Test worker,5,main])--INSERT INTO AppMenus (menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [284AFD5C-846A-4002-B9D8-65A2EC546C5A, qQNjPlTDYqFYWC7dcOhu4LOA8i8aLhl3NQOIi9Bjp34V9dGJI1, 2, true, 2016-09-21 05:42:42.476, 2016-09-21 05:42:42.477, 11, KXM5K0iroSWbPskh0l7lQA4V8IktOqxg5MttLlSoMYeD73Ny2q, J1xOmpZcrD4oGYElHWabptUvuJPwOAfe7l9MUooiXgTQ2R1qM9, true, true, HQCvKbWXwYcrkqV57G0zxKOgXVy2bWMQx1kzQr6c49V7IEw0p7, 2Y4ztU8M2z6FFNfcoccIwgEOKjJvMam8dFuiqtsQzK0RinGrC2, TJgBaUV0TxGjWt85h55lLkqPgV3zHj4gKCiZxSpvRsigLfP1gd, wNR7Cx926N4hOTHHC4ExdA1k3hlqomAmAhck68bfTvOIn1tvxe, 2016-09-21 05:42:42.476, BwB, 1, AAAAA, 2016-09-21 06:35:33.487, AAAAA, 2016-09-21 06:35:33.487, 1, 51000]
-[EL Finer]: transaction: 2016-09-21 06:35:33.523--ClientSession(748598423)--Connection(1026422162)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:33.601--ServerSession(993367760)--Connection(1651162267)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:33.602--UnitOfWork(1734491235)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:33.602--UnitOfWork(1734491235)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:33.602--UnitOfWork(1734491235)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:33.603--ClientSession(748598423)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:33.64--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1121486648
-[EL Finer]: transaction: 2016-09-21 06:35:33.64--ClientSession(1121486648)--Thread(Thread[Test worker,5,main])--acquire unit of work: 362123217
-[EL Finest]: connection: 2016-09-21 06:35:33.64--ServerSession(993367760)--Connection(236252521)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:33.64--ClientSession(1121486648)--Connection(236252521)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:33.641--ClientSession(1121486648)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:33.642--UnitOfWork(362123217)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:33.643--UnitOfWork(362123217)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:33.643--UnitOfWork(362123217)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="AppMenus.findById" referenceClass=AppMenus sql="SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE ((activeStatus = ?) AND (menuId = ?))")
-[EL Fine]: sql: 2016-09-21 06:35:33.643--ClientSession(1121486648)--Connection(751035696)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE ((activeStatus = ?) AND (menuId = ?))
-	bind => [1, 284AFD5C-846A-4002-B9D8-65A2EC546C5A]
-[EL Finer]: transaction: 2016-09-21 06:35:33.649--UnitOfWork(362123217)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:33.649--ClientSession(1121486648)--Connection(751035696)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:33.65--ServerSession(993367760)--Connection(236252521)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:33.65--UnitOfWork(362123217)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:33.651--UnitOfWork(362123217)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:33.651--UnitOfWork(362123217)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:33.651--ClientSession(1121486648)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:33.652--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1394092801
-[EL Finer]: transaction: 2016-09-21 06:35:33.652--ClientSession(1394092801)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1471117637
-[EL Finest]: connection: 2016-09-21 06:35:33.652--ServerSession(993367760)--Connection(1094897148)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:33.652--ClientSession(1394092801)--Connection(1094897148)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:33.653--ClientSession(1394092801)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: transaction: 2016-09-21 06:35:33.66--UnitOfWork(1471117637)--Thread(Thread[Test worker,5,main])--Merge clone with references LvlaiWx17dfoIaMgK14sRbrMskkN55fJ7ob1Ixo1EJkSRmvsY9
-[EL Finest]: query: 2016-09-21 06:35:33.66--UnitOfWork(1471117637)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=AppMenus )
-[EL Fine]: sql: 2016-09-21 06:35:33.661--ClientSession(1394092801)--Connection(483207951)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE (menuId = ?)
-	bind => [284AFD5C-846A-4002-B9D8-65A2EC546C5A]
-[EL Finer]: transaction: 2016-09-21 06:35:33.663--UnitOfWork(1471117637)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:33.664--UnitOfWork(1471117637)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(LvlaiWx17dfoIaMgK14sRbrMskkN55fJ7ob1Ixo1EJkSRmvsY9)
-[EL Fine]: sql: 2016-09-21 06:35:33.665--ClientSession(1394092801)--Connection(483207951)--Thread(Thread[Test worker,5,main])--UPDATE AppMenus SET appId = ?, appType = ?, expiryDate = ?, goLiveDate = ?, menuAccessRights = ?, menuAction = ?, menuCommands = ?, menuIcon = ?, menuLabel = ?, menuTreeId = ?, RefObjectId = ?, startDate = ?, uiType = ?, versionId = ? WHERE ((menuId = ?) AND (versionId = ?))
-	bind => [Vj0w9stEnNJy6DcE5BmJzpcteg8CTbzFm1v0of8UD1dLgxeyso, 1, 2016-09-21 05:42:42.5, 2016-09-21 05:42:42.518, 1, l9qDJSjRcdc1wXffGqAYsVUTEcSTilT39EuQIPaDvFXSWELezn, TkP1kaZNcd5yWCZ3DZ6Iot8mgjaV8lGYxLJ7scqRbHXgSLnKHs, 60AD6H2i3g8QUtPzIbYfUMVXyvTjNeFvENDqDqxJMJzrNmJPyC, LvlaiWx17dfoIaMgK14sRbrMskkN55fJ7ob1Ixo1EJkSRmvsY9, XQZ88Xv9lCZvcmrFQaqycbBckxIGZqNxquNEDJjnqyXctA5psr, nTthY35QAQ7I0hp34NRLHwuEl0e8BRLt3N7NU7AOuGIhVnSfak, 2016-09-21 05:42:42.512, egu, 2, 284AFD5C-846A-4002-B9D8-65A2EC546C5A, 1]
-[EL Finer]: transaction: 2016-09-21 06:35:33.667--ClientSession(1394092801)--Connection(483207951)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:33.725--ServerSession(993367760)--Connection(1094897148)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:33.726--UnitOfWork(1471117637)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:33.726--UnitOfWork(1471117637)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:33.726--UnitOfWork(1471117637)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:33.726--ClientSession(1394092801)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:33.761--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1686859151
-[EL Finer]: transaction: 2016-09-21 06:35:33.761--ClientSession(1686859151)--Thread(Thread[Test worker,5,main])--acquire unit of work: 2110126810
-[EL Finest]: connection: 2016-09-21 06:35:33.761--ServerSession(993367760)--Connection(1356349112)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:33.761--ClientSession(1686859151)--Connection(1356349112)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:33.761--ClientSession(1686859151)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:33.762--UnitOfWork(2110126810)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:33.762--UnitOfWork(2110126810)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:33.762--UnitOfWork(2110126810)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="AppMenus.findById" referenceClass=AppMenus sql="SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE ((activeStatus = ?) AND (menuId = ?))")
-[EL Fine]: sql: 2016-09-21 06:35:33.763--ClientSession(1686859151)--Connection(305861074)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE ((activeStatus = ?) AND (menuId = ?))
-	bind => [1, 284AFD5C-846A-4002-B9D8-65A2EC546C5A]
-[EL Finer]: transaction: 2016-09-21 06:35:33.764--UnitOfWork(2110126810)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:33.765--ClientSession(1686859151)--Connection(305861074)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:33.765--ServerSession(993367760)--Connection(1356349112)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:33.765--UnitOfWork(2110126810)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:33.765--UnitOfWork(2110126810)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:33.765--UnitOfWork(2110126810)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:33.765--ClientSession(1686859151)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:33.868--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1549626259
-[EL Finer]: transaction: 2016-09-21 06:35:33.868--ClientSession(1549626259)--Thread(Thread[Test worker,5,main])--acquire unit of work: 2034347844
-[EL Finest]: connection: 2016-09-21 06:35:33.868--ServerSession(993367760)--Connection(1197070221)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:33.868--ClientSession(1549626259)--Connection(1197070221)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:33.868--ClientSession(1549626259)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: query: 2016-09-21 06:35:33.869--UnitOfWork(2034347844)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name="readAppMenus" referenceClass=AppMenus sql="SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE (menuId = ?)")
-[EL Fine]: sql: 2016-09-21 06:35:33.869--ClientSession(1549626259)--Connection(262833086)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE (menuId = ?)
-	bind => [284AFD5C-846A-4002-B9D8-65A2EC546C5A]
-[EL Finest]: transaction: 2016-09-21 06:35:33.871--UnitOfWork(2034347844)--Thread(Thread[Test worker,5,main])--remove() operation called on: LvlaiWx17dfoIaMgK14sRbrMskkN55fJ7ob1Ixo1EJkSRmvsY9
-[EL Finer]: transaction: 2016-09-21 06:35:33.871--UnitOfWork(2034347844)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:33.871--UnitOfWork(2034347844)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=AppMenus )
-[EL Finest]: query: 2016-09-21 06:35:33.872--UnitOfWork(2034347844)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(LvlaiWx17dfoIaMgK14sRbrMskkN55fJ7ob1Ixo1EJkSRmvsY9)
-[EL Fine]: sql: 2016-09-21 06:35:33.872--ClientSession(1549626259)--Connection(262833086)--Thread(Thread[Test worker,5,main])--DELETE FROM AppMenus WHERE ((menuId = ?) AND (versionId = ?))
-	bind => [284AFD5C-846A-4002-B9D8-65A2EC546C5A, 2]
-[EL Finer]: transaction: 2016-09-21 06:35:33.873--ClientSession(1549626259)--Connection(262833086)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:33.953--ServerSession(993367760)--Connection(1197070221)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:33.953--UnitOfWork(2034347844)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:33.953--UnitOfWork(2034347844)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:33.954--UnitOfWork(2034347844)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:33.954--ClientSession(1549626259)--Thread(Thread[Test worker,5,main])--client released
+  <testcase name="test1Save" classname="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" time="0.144"/>
+  <testcase name="test2Update" classname="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" time="0.098"/>
+  <testcase name="test3FindById" classname="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" time="0.03"/>
+  <testcase name="test5NegativeTesting" classname="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" time="0.092"/>
+  <testcase name="test6Delete" classname="com.app.server.service.appbasicsetup.userrolemanagement.AppMenusTestCase" time="0.118"/>
+  <system-out><![CDATA[Wed Sep 21 09:18:05 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Sep 21 09:18:05 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
+Wed Sep 21 09:18:05 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
+Wed Sep 21 09:18:05 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Sep 21 09:18:05 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Sep 21 09:18:05 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Sep 21 09:18:05 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:18:05 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Sep 21 09:18:05 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Sep 21 09:18:05 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:18:05 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
+Wed Sep 21 09:18:05 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Sep 21 09:18:05 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:18:05 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Sep 21 09:18:05 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Sep 21 09:18:05 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Sep 21 09:18:05 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Sep 21 09:18:05 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Sep 21 09:18:05 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Sep 21 09:18:05 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Sep 21 09:18:05 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Sep 21 09:18:05 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Sep 21 09:18:05 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Sep 21 09:18:05 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@6cbc6861] ....
+Wed Sep 21 09:18:05 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Sep 21 09:18:05 UTC 2016|Scheduler|Adding [LMID=[950cd733-ec55-4a91-aacb-ab957b93fa8b]] Delay=5 Time Unit=MINUTES
+Wed Sep 21 09:18:05 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Sep 21 09:18:05 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Sep 21 09:18:05 UTC 2016|Scheduler|Startup Completed..
+Wed Sep 21 09:18:05 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Sep 21 09:18:05 UTC 2016|Log Manager Factory|Log Manager READY! ID = 950cd733-ec55-4a91-aacb-ab957b93fa8b
+[EL Finer]: connection: 2016-09-21 09:18:05.898--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1253933304
+[EL Finer]: transaction: 2016-09-21 09:18:05.898--ClientSession(1253933304)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1600012317
+[EL Finest]: connection: 2016-09-21 09:18:05.899--ServerSession(1151842404)--Connection(616784085)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:05.899--ClientSession(1253933304)--Connection(616784085)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:05.899--ClientSession(1253933304)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-09-21 09:18:05.9--UnitOfWork(1600012317)--Thread(Thread[Test worker,5,main])--persist() operation called on: 2Y4ztU8M2z6FFNfcoccIwgEOKjJvMam8dFuiqtsQzK0RinGrC2.
+[EL Finest]: sequencing: 2016-09-21 09:18:05.9--UnitOfWork(1600012317)--Thread(Thread[Test worker,5,main])--assign sequence to the object (82BB27CE-8B47-430E-85EF-2039F95D01A3 -> 2Y4ztU8M2z6FFNfcoccIwgEOKjJvMam8dFuiqtsQzK0RinGrC2)
+[EL Finer]: transaction: 2016-09-21 09:18:05.9--UnitOfWork(1600012317)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:18:05.901--UnitOfWork(1600012317)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(2Y4ztU8M2z6FFNfcoccIwgEOKjJvMam8dFuiqtsQzK0RinGrC2)
+[EL Fine]: sql: 2016-09-21 09:18:05.902--ClientSession(1253933304)--Connection(252809291)--Thread(Thread[Test worker,5,main])--INSERT INTO AppMenus (menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [82BB27CE-8B47-430E-85EF-2039F95D01A3, qQNjPlTDYqFYWC7dcOhu4LOA8i8aLhl3NQOIi9Bjp34V9dGJI1, 2, true, 2016-09-21 05:42:42.476, 2016-09-21 05:42:42.477, 11, KXM5K0iroSWbPskh0l7lQA4V8IktOqxg5MttLlSoMYeD73Ny2q, J1xOmpZcrD4oGYElHWabptUvuJPwOAfe7l9MUooiXgTQ2R1qM9, true, true, HQCvKbWXwYcrkqV57G0zxKOgXVy2bWMQx1kzQr6c49V7IEw0p7, 2Y4ztU8M2z6FFNfcoccIwgEOKjJvMam8dFuiqtsQzK0RinGrC2, TJgBaUV0TxGjWt85h55lLkqPgV3zHj4gKCiZxSpvRsigLfP1gd, wNR7Cx926N4hOTHHC4ExdA1k3hlqomAmAhck68bfTvOIn1tvxe, 2016-09-21 05:42:42.476, BwB, 1, AAAAA, 2016-09-21 09:18:05.877, AAAAA, 2016-09-21 09:18:05.877, 1, 51000]
+[EL Finer]: transaction: 2016-09-21 09:18:05.905--ClientSession(1253933304)--Connection(252809291)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:05.996--ServerSession(1151842404)--Connection(616784085)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:05.996--UnitOfWork(1600012317)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:05.996--UnitOfWork(1600012317)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:05.996--UnitOfWork(1600012317)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:05.997--ClientSession(1253933304)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:06.023--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1052275445
+[EL Finer]: transaction: 2016-09-21 09:18:06.023--ClientSession(1052275445)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1065571070
+[EL Finest]: connection: 2016-09-21 09:18:06.023--ServerSession(1151842404)--Connection(1186841157)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:06.023--ClientSession(1052275445)--Connection(1186841157)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:06.023--ClientSession(1052275445)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:18:06.024--UnitOfWork(1065571070)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:18:06.024--UnitOfWork(1065571070)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:18:06.025--UnitOfWork(1065571070)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="AppMenus.findById" referenceClass=AppMenus sql="SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE ((activeStatus = ?) AND (menuId = ?))")
+[EL Fine]: sql: 2016-09-21 09:18:06.025--ClientSession(1052275445)--Connection(2125737536)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE ((activeStatus = ?) AND (menuId = ?))
+	bind => [1, 82BB27CE-8B47-430E-85EF-2039F95D01A3]
+[EL Finer]: transaction: 2016-09-21 09:18:06.026--UnitOfWork(1065571070)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:06.027--ClientSession(1052275445)--Connection(2125737536)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:06.027--ServerSession(1151842404)--Connection(1186841157)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:06.027--UnitOfWork(1065571070)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:06.027--UnitOfWork(1065571070)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:06.027--UnitOfWork(1065571070)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:06.027--ClientSession(1052275445)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:06.028--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1146668893
+[EL Finer]: transaction: 2016-09-21 09:18:06.028--ClientSession(1146668893)--Thread(Thread[Test worker,5,main])--acquire unit of work: 545836473
+[EL Finest]: connection: 2016-09-21 09:18:06.028--ServerSession(1151842404)--Connection(1970945374)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:06.028--ClientSession(1146668893)--Connection(1970945374)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:06.028--ClientSession(1146668893)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-09-21 09:18:06.032--UnitOfWork(545836473)--Thread(Thread[Test worker,5,main])--Merge clone with references LvlaiWx17dfoIaMgK14sRbrMskkN55fJ7ob1Ixo1EJkSRmvsY9
+[EL Finest]: query: 2016-09-21 09:18:06.033--UnitOfWork(545836473)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=AppMenus )
+[EL Fine]: sql: 2016-09-21 09:18:06.033--ClientSession(1146668893)--Connection(1771711382)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE (menuId = ?)
+	bind => [82BB27CE-8B47-430E-85EF-2039F95D01A3]
+[EL Finer]: transaction: 2016-09-21 09:18:06.035--UnitOfWork(545836473)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:18:06.035--UnitOfWork(545836473)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(LvlaiWx17dfoIaMgK14sRbrMskkN55fJ7ob1Ixo1EJkSRmvsY9)
+[EL Fine]: sql: 2016-09-21 09:18:06.036--ClientSession(1146668893)--Connection(1771711382)--Thread(Thread[Test worker,5,main])--UPDATE AppMenus SET appId = ?, appType = ?, expiryDate = ?, goLiveDate = ?, menuAccessRights = ?, menuAction = ?, menuCommands = ?, menuIcon = ?, menuLabel = ?, menuTreeId = ?, RefObjectId = ?, startDate = ?, uiType = ?, versionId = ? WHERE ((menuId = ?) AND (versionId = ?))
+	bind => [Vj0w9stEnNJy6DcE5BmJzpcteg8CTbzFm1v0of8UD1dLgxeyso, 1, 2016-09-21 05:42:42.5, 2016-09-21 05:42:42.518, 1, l9qDJSjRcdc1wXffGqAYsVUTEcSTilT39EuQIPaDvFXSWELezn, TkP1kaZNcd5yWCZ3DZ6Iot8mgjaV8lGYxLJ7scqRbHXgSLnKHs, 60AD6H2i3g8QUtPzIbYfUMVXyvTjNeFvENDqDqxJMJzrNmJPyC, LvlaiWx17dfoIaMgK14sRbrMskkN55fJ7ob1Ixo1EJkSRmvsY9, XQZ88Xv9lCZvcmrFQaqycbBckxIGZqNxquNEDJjnqyXctA5psr, nTthY35QAQ7I0hp34NRLHwuEl0e8BRLt3N7NU7AOuGIhVnSfak, 2016-09-21 05:42:42.512, egu, 2, 82BB27CE-8B47-430E-85EF-2039F95D01A3, 1]
+[EL Finer]: transaction: 2016-09-21 09:18:06.037--ClientSession(1146668893)--Connection(1771711382)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:06.094--ServerSession(1151842404)--Connection(1970945374)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:06.094--UnitOfWork(545836473)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:06.094--UnitOfWork(545836473)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:06.095--UnitOfWork(545836473)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:06.095--ClientSession(1146668893)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:06.121--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 281417770
+[EL Finer]: transaction: 2016-09-21 09:18:06.121--ClientSession(281417770)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1029469696
+[EL Finest]: connection: 2016-09-21 09:18:06.121--ServerSession(1151842404)--Connection(21436793)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:06.121--ClientSession(281417770)--Connection(21436793)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:06.121--ClientSession(281417770)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:18:06.122--UnitOfWork(1029469696)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:18:06.122--UnitOfWork(1029469696)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:18:06.122--UnitOfWork(1029469696)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="AppMenus.findById" referenceClass=AppMenus sql="SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE ((activeStatus = ?) AND (menuId = ?))")
+[EL Fine]: sql: 2016-09-21 09:18:06.123--ClientSession(281417770)--Connection(721775501)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE ((activeStatus = ?) AND (menuId = ?))
+	bind => [1, 82BB27CE-8B47-430E-85EF-2039F95D01A3]
+[EL Finer]: transaction: 2016-09-21 09:18:06.124--UnitOfWork(1029469696)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:06.124--ClientSession(281417770)--Connection(721775501)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:06.125--ServerSession(1151842404)--Connection(21436793)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:06.125--UnitOfWork(1029469696)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:06.125--UnitOfWork(1029469696)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:06.125--UnitOfWork(1029469696)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:06.125--ClientSession(281417770)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:06.26--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1891986541
+[EL Finer]: transaction: 2016-09-21 09:18:06.26--ClientSession(1891986541)--Thread(Thread[Test worker,5,main])--acquire unit of work: 827433458
+[EL Finest]: connection: 2016-09-21 09:18:06.26--ServerSession(1151842404)--Connection(1717514281)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:06.26--ClientSession(1891986541)--Connection(1717514281)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:06.26--ClientSession(1891986541)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: query: 2016-09-21 09:18:06.263--UnitOfWork(827433458)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name="readAppMenus" referenceClass=AppMenus sql="SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE (menuId = ?)")
+[EL Fine]: sql: 2016-09-21 09:18:06.263--ClientSession(1891986541)--Connection(1346559206)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, autoSave, expiryDate, goLiveDate, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, startDate, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AppMenus WHERE (menuId = ?)
+	bind => [82BB27CE-8B47-430E-85EF-2039F95D01A3]
+[EL Finest]: transaction: 2016-09-21 09:18:06.266--UnitOfWork(827433458)--Thread(Thread[Test worker,5,main])--remove() operation called on: LvlaiWx17dfoIaMgK14sRbrMskkN55fJ7ob1Ixo1EJkSRmvsY9
+[EL Finer]: transaction: 2016-09-21 09:18:06.266--UnitOfWork(827433458)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:18:06.267--UnitOfWork(827433458)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=AppMenus )
+[EL Finest]: query: 2016-09-21 09:18:06.267--UnitOfWork(827433458)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(LvlaiWx17dfoIaMgK14sRbrMskkN55fJ7ob1Ixo1EJkSRmvsY9)
+[EL Fine]: sql: 2016-09-21 09:18:06.268--ClientSession(1891986541)--Connection(1346559206)--Thread(Thread[Test worker,5,main])--DELETE FROM AppMenus WHERE ((menuId = ?) AND (versionId = ?))
+	bind => [82BB27CE-8B47-430E-85EF-2039F95D01A3, 2]
+[EL Finer]: transaction: 2016-09-21 09:18:06.269--ClientSession(1891986541)--Connection(1346559206)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:06.335--ServerSession(1151842404)--Connection(1717514281)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:06.335--UnitOfWork(827433458)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:06.335--UnitOfWork(827433458)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:06.336--UnitOfWork(827433458)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:06.336--ClientSession(1891986541)--Thread(Thread[Test worker,5,main])--client released
 ]]></system-out>
   <system-err><![CDATA[AppMenus.menuTreeId may not be null
 java.lang.SecurityException: AppMenus.menuTreeId may not be null

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.343s</div>
+<div class="counter">0.381s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,27 +82,27 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.095s</td>
+<td>0.093s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.108s</td>
+<td>0.074s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.039s</td>
+<td>0.032s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test5NegativeTesting</td>
-<td>0.012s</td>
+<td>0.015s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test6Delete</td>
-<td>0.089s</td>
+<td>0.167s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -110,132 +110,132 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Wed Sep 21 06:35:37 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed Sep 21 06:35:37 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
-Wed Sep 21 06:35:37 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
-Wed Sep 21 06:35:37 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed Sep 21 06:35:37 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed Sep 21 06:35:37 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed Sep 21 06:35:37 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:37 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed Sep 21 06:35:37 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed Sep 21 06:35:37 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:37 UTC 2016|ApplicationAlarmContext| &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; Create App Alarms ....  &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; 
-Wed Sep 21 06:35:37 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed Sep 21 06:35:37 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:37 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed Sep 21 06:35:37 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed Sep 21 06:35:37 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed Sep 21 06:35:37 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed Sep 21 06:35:37 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed Sep 21 06:35:37 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed Sep 21 06:35:37 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed Sep 21 06:35:37 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed Sep 21 06:35:37 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed Sep 21 06:35:37 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed Sep 21 06:35:37 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@2c532293] ....
-Wed Sep 21 06:35:37 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed Sep 21 06:35:37 UTC 2016|Scheduler|Adding [LMID=[b53b3b4c-eae5-4dab-b5a8-91035a9d6d6b]] Delay=5 Time Unit=MINUTES
-Wed Sep 21 06:35:37 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed Sep 21 06:35:37 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed Sep 21 06:35:37 UTC 2016|Scheduler|Startup Completed..
-Wed Sep 21 06:35:37 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed Sep 21 06:35:37 UTC 2016|Log Manager Factory|Log Manager READY! ID = b53b3b4c-eae5-4dab-b5a8-91035a9d6d6b
-[EL Finer]: connection: 2016-09-21 06:35:37.157--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1030440894
-[EL Finer]: transaction: 2016-09-21 06:35:37.157--ClientSession(1030440894)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1311976050
-[EL Finest]: connection: 2016-09-21 06:35:37.157--ServerSession(993367760)--Connection(19384954)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:37.157--ClientSession(1030440894)--Connection(19384954)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:37.157--ClientSession(1030440894)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: transaction: 2016-09-21 06:35:37.158--UnitOfWork(1311976050)--Thread(Thread[Test worker,5,main])--persist() operation called on: WQ3Uglv1c31PaKETLAknB4lfjwVoiEAfIYIMB6TxSzDmMBmokq.
-[EL Finest]: sequencing: 2016-09-21 06:35:37.159--UnitOfWork(1311976050)--Thread(Thread[Test worker,5,main])--assign sequence to the object (479E8052-2BAF-4CE2-97E4-0BB50A957456 -&gt; WQ3Uglv1c31PaKETLAknB4lfjwVoiEAfIYIMB6TxSzDmMBmokq)
-Wed Sep 21 06:35:37 UTC 2016|Unknown Alarm = ORGCM322100200 Alarm Split = ORG-CM-3-2-2-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:37.161--UnitOfWork(1311976050)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:37.161--UnitOfWork(1311976050)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(WQ3Uglv1c31PaKETLAknB4lfjwVoiEAfIYIMB6TxSzDmMBmokq)
-[EL Fine]: sql: 2016-09-21 06:35:37.162--ClientSession(1030440894)--Connection(662961245)--Thread(Thread[Test worker,5,main])--INSERT INTO PhoneCategory (phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [479E8052-2BAF-4CE2-97E4-0BB50A957456, WQ3Uglv1c31PaKETLAknB4lfjwVoiEAfIYIMB6TxSzDmMBmokq, 1, AAAAA, 2016-09-21 06:35:37.14, AAAAA, 2016-09-21 06:35:37.14, 1, 51000]
-[EL Finer]: transaction: 2016-09-21 06:35:37.163--ClientSession(1030440894)--Connection(662961245)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:37.205--ServerSession(993367760)--Connection(19384954)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:37.205--UnitOfWork(1311976050)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:37.205--UnitOfWork(1311976050)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:37.206--UnitOfWork(1311976050)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:37.206--ClientSession(1030440894)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:37.231--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 898810681
-[EL Finer]: transaction: 2016-09-21 06:35:37.231--ClientSession(898810681)--Thread(Thread[Test worker,5,main])--acquire unit of work: 911142569
-[EL Finest]: connection: 2016-09-21 06:35:37.231--ServerSession(993367760)--Connection(2014754073)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:37.231--ClientSession(898810681)--Connection(2014754073)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:37.231--ClientSession(898810681)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:37.233--UnitOfWork(911142569)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:37.233--UnitOfWork(911142569)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:37.233--UnitOfWork(911142569)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name=&quot;PhoneCategory.findById&quot; referenceClass=PhoneCategory sql=&quot;SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE ((activeStatus = ?) AND (phoneCatId = ?))&quot;)
-[EL Fine]: sql: 2016-09-21 06:35:37.233--ClientSession(898810681)--Connection(444088648)--Thread(Thread[Test worker,5,main])--SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE ((activeStatus = ?) AND (phoneCatId = ?))
-	bind =&gt; [1, 479E8052-2BAF-4CE2-97E4-0BB50A957456]
-Wed Sep 21 06:35:37 UTC 2016|Unknown Alarm = ORGCM324100200 Alarm Split = ORG-CM-3-2-4-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:37.235--UnitOfWork(911142569)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:37.235--ClientSession(898810681)--Connection(444088648)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:37.236--ServerSession(993367760)--Connection(2014754073)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:37.236--UnitOfWork(911142569)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:37.236--UnitOfWork(911142569)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:37.236--UnitOfWork(911142569)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:37.236--ClientSession(898810681)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:37.237--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 974027344
-[EL Finer]: transaction: 2016-09-21 06:35:37.237--ClientSession(974027344)--Thread(Thread[Test worker,5,main])--acquire unit of work: 209729527
-[EL Finest]: connection: 2016-09-21 06:35:37.237--ServerSession(993367760)--Connection(903495562)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:37.237--ClientSession(974027344)--Connection(903495562)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:37.237--ClientSession(974027344)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: transaction: 2016-09-21 06:35:37.239--UnitOfWork(209729527)--Thread(Thread[Test worker,5,main])--Merge clone with references OPrscFnHOZLbNuikbVWodxl3I7s9jErOOngMJ8ZUZGbsmqeyBx
-[EL Finest]: query: 2016-09-21 06:35:37.24--UnitOfWork(209729527)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=PhoneCategory )
-[EL Fine]: sql: 2016-09-21 06:35:37.24--ClientSession(974027344)--Connection(1247463062)--Thread(Thread[Test worker,5,main])--SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE (phoneCatId = ?)
-	bind =&gt; [479E8052-2BAF-4CE2-97E4-0BB50A957456]
-Wed Sep 21 06:35:37 UTC 2016|Unknown Alarm = ORGCM321100200 Alarm Split = ORG-CM-3-2-1-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:37.242--UnitOfWork(209729527)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:37.243--UnitOfWork(209729527)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(OPrscFnHOZLbNuikbVWodxl3I7s9jErOOngMJ8ZUZGbsmqeyBx)
-[EL Fine]: sql: 2016-09-21 06:35:37.243--ClientSession(974027344)--Connection(1247463062)--Thread(Thread[Test worker,5,main])--UPDATE PhoneCategory SET phoneCatName = ?, versionId = ? WHERE ((phoneCatId = ?) AND (versionId = ?))
-	bind =&gt; [OPrscFnHOZLbNuikbVWodxl3I7s9jErOOngMJ8ZUZGbsmqeyBx, 2, 479E8052-2BAF-4CE2-97E4-0BB50A957456, 1]
-[EL Finer]: transaction: 2016-09-21 06:35:37.245--ClientSession(974027344)--Connection(1247463062)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:37.313--ServerSession(993367760)--Connection(903495562)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:37.313--UnitOfWork(209729527)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:37.313--UnitOfWork(209729527)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:37.314--UnitOfWork(209729527)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:37.314--ClientSession(974027344)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:37.346--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 2024656504
-[EL Finer]: transaction: 2016-09-21 06:35:37.347--ClientSession(2024656504)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1523476013
-[EL Finest]: connection: 2016-09-21 06:35:37.347--ServerSession(993367760)--Connection(613827310)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:37.347--ClientSession(2024656504)--Connection(613827310)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:37.347--ClientSession(2024656504)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:37.348--UnitOfWork(1523476013)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:37.349--UnitOfWork(1523476013)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:37.349--UnitOfWork(1523476013)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name=&quot;PhoneCategory.findById&quot; referenceClass=PhoneCategory sql=&quot;SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE ((activeStatus = ?) AND (phoneCatId = ?))&quot;)
-[EL Fine]: sql: 2016-09-21 06:35:37.349--ClientSession(2024656504)--Connection(1524103508)--Thread(Thread[Test worker,5,main])--SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE ((activeStatus = ?) AND (phoneCatId = ?))
-	bind =&gt; [1, 479E8052-2BAF-4CE2-97E4-0BB50A957456]
-Wed Sep 21 06:35:37 UTC 2016|Unknown Alarm = ORGCM324100200 Alarm Split = ORG-CM-3-2-4-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:37.351--UnitOfWork(1523476013)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:37.351--ClientSession(2024656504)--Connection(1524103508)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:37.352--ServerSession(993367760)--Connection(613827310)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:37.352--UnitOfWork(1523476013)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:37.352--UnitOfWork(1523476013)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:37.352--UnitOfWork(1523476013)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:37.352--ClientSession(2024656504)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:37.394--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1323779528
-[EL Finer]: transaction: 2016-09-21 06:35:37.394--ClientSession(1323779528)--Thread(Thread[Test worker,5,main])--acquire unit of work: 831944176
-[EL Finest]: connection: 2016-09-21 06:35:37.394--ServerSession(993367760)--Connection(219740415)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:37.394--ClientSession(1323779528)--Connection(219740415)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:37.394--ClientSession(1323779528)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: query: 2016-09-21 06:35:37.395--UnitOfWork(831944176)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name=&quot;readPhoneCategory&quot; referenceClass=PhoneCategory sql=&quot;SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE (phoneCatId = ?)&quot;)
-[EL Fine]: sql: 2016-09-21 06:35:37.396--ClientSession(1323779528)--Connection(332347639)--Thread(Thread[Test worker,5,main])--SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE (phoneCatId = ?)
-	bind =&gt; [479E8052-2BAF-4CE2-97E4-0BB50A957456]
-[EL Finest]: transaction: 2016-09-21 06:35:37.397--UnitOfWork(831944176)--Thread(Thread[Test worker,5,main])--remove() operation called on: OPrscFnHOZLbNuikbVWodxl3I7s9jErOOngMJ8ZUZGbsmqeyBx
-Wed Sep 21 06:35:37 UTC 2016|Unknown Alarm = ORGCM328100200 Alarm Split = ORG-CM-3-2-8-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:37.398--UnitOfWork(831944176)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:37.398--UnitOfWork(831944176)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=PhoneCategory )
-[EL Finest]: query: 2016-09-21 06:35:37.398--UnitOfWork(831944176)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(OPrscFnHOZLbNuikbVWodxl3I7s9jErOOngMJ8ZUZGbsmqeyBx)
-[EL Fine]: sql: 2016-09-21 06:35:37.398--ClientSession(1323779528)--Connection(332347639)--Thread(Thread[Test worker,5,main])--DELETE FROM PhoneCategory WHERE ((phoneCatId = ?) AND (versionId = ?))
-	bind =&gt; [479E8052-2BAF-4CE2-97E4-0BB50A957456, 2]
-[EL Finer]: transaction: 2016-09-21 06:35:37.399--ClientSession(1323779528)--Connection(332347639)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:37.453--ServerSession(993367760)--Connection(219740415)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:37.453--UnitOfWork(831944176)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:37.453--UnitOfWork(831944176)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:37.453--UnitOfWork(831944176)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:37.453--ClientSession(1323779528)--Thread(Thread[Test worker,5,main])--client released
+<pre>Wed Sep 21 09:18:14 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Sep 21 09:18:14 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
+Wed Sep 21 09:18:14 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
+Wed Sep 21 09:18:14 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Sep 21 09:18:14 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Sep 21 09:18:14 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Sep 21 09:18:14 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:18:14 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Sep 21 09:18:14 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Sep 21 09:18:14 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:18:14 UTC 2016|ApplicationAlarmContext| &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; Create App Alarms ....  &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; 
+Wed Sep 21 09:18:14 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Sep 21 09:18:14 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:18:14 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Sep 21 09:18:14 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Sep 21 09:18:14 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Sep 21 09:18:14 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Sep 21 09:18:14 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Sep 21 09:18:14 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Sep 21 09:18:14 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Sep 21 09:18:14 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Sep 21 09:18:14 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Sep 21 09:18:14 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Sep 21 09:18:14 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@1c10ecf1] ....
+Wed Sep 21 09:18:14 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Sep 21 09:18:14 UTC 2016|Scheduler|Adding [LMID=[950cd733-ec55-4a91-aacb-ab957b93fa8b]] Delay=5 Time Unit=MINUTES
+Wed Sep 21 09:18:14 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Sep 21 09:18:14 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Sep 21 09:18:14 UTC 2016|Scheduler|Startup Completed..
+Wed Sep 21 09:18:14 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Sep 21 09:18:14 UTC 2016|Log Manager Factory|Log Manager READY! ID = 950cd733-ec55-4a91-aacb-ab957b93fa8b
+[EL Finer]: connection: 2016-09-21 09:18:14.41--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1870916295
+[EL Finer]: transaction: 2016-09-21 09:18:14.41--ClientSession(1870916295)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1034610691
+[EL Finest]: connection: 2016-09-21 09:18:14.41--ServerSession(1151842404)--Connection(526793878)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:14.41--ClientSession(1870916295)--Connection(526793878)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:14.41--ClientSession(1870916295)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-09-21 09:18:14.411--UnitOfWork(1034610691)--Thread(Thread[Test worker,5,main])--persist() operation called on: WQ3Uglv1c31PaKETLAknB4lfjwVoiEAfIYIMB6TxSzDmMBmokq.
+[EL Finest]: sequencing: 2016-09-21 09:18:14.411--UnitOfWork(1034610691)--Thread(Thread[Test worker,5,main])--assign sequence to the object (9DDACFB5-8FED-4648-A771-1C845B919133 -&gt; WQ3Uglv1c31PaKETLAknB4lfjwVoiEAfIYIMB6TxSzDmMBmokq)
+Wed Sep 21 09:18:14 UTC 2016|Unknown Alarm = ORGCM322100200 Alarm Split = ORG-CM-3-2-2-100-200
+[EL Finer]: transaction: 2016-09-21 09:18:14.412--UnitOfWork(1034610691)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:18:14.412--UnitOfWork(1034610691)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(WQ3Uglv1c31PaKETLAknB4lfjwVoiEAfIYIMB6TxSzDmMBmokq)
+[EL Fine]: sql: 2016-09-21 09:18:14.412--ClientSession(1870916295)--Connection(1910185190)--Thread(Thread[Test worker,5,main])--INSERT INTO PhoneCategory (phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [9DDACFB5-8FED-4648-A771-1C845B919133, WQ3Uglv1c31PaKETLAknB4lfjwVoiEAfIYIMB6TxSzDmMBmokq, 1, AAAAA, 2016-09-21 09:18:14.388, AAAAA, 2016-09-21 09:18:14.388, 1, 51000]
+[EL Finer]: transaction: 2016-09-21 09:18:14.414--ClientSession(1870916295)--Connection(1910185190)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:14.455--ServerSession(1151842404)--Connection(526793878)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:14.455--UnitOfWork(1034610691)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:14.455--UnitOfWork(1034610691)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:14.455--UnitOfWork(1034610691)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:14.455--ClientSession(1870916295)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:14.484--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1082638746
+[EL Finer]: transaction: 2016-09-21 09:18:14.484--ClientSession(1082638746)--Thread(Thread[Test worker,5,main])--acquire unit of work: 280462991
+[EL Finest]: connection: 2016-09-21 09:18:14.484--ServerSession(1151842404)--Connection(14884572)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:14.484--ClientSession(1082638746)--Connection(14884572)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:14.484--ClientSession(1082638746)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:18:14.485--UnitOfWork(280462991)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:18:14.485--UnitOfWork(280462991)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:18:14.486--UnitOfWork(280462991)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name=&quot;PhoneCategory.findById&quot; referenceClass=PhoneCategory sql=&quot;SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE ((activeStatus = ?) AND (phoneCatId = ?))&quot;)
+[EL Fine]: sql: 2016-09-21 09:18:14.486--ClientSession(1082638746)--Connection(833275750)--Thread(Thread[Test worker,5,main])--SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE ((activeStatus = ?) AND (phoneCatId = ?))
+	bind =&gt; [1, 9DDACFB5-8FED-4648-A771-1C845B919133]
+Wed Sep 21 09:18:14 UTC 2016|Unknown Alarm = ORGCM324100200 Alarm Split = ORG-CM-3-2-4-100-200
+[EL Finer]: transaction: 2016-09-21 09:18:14.487--UnitOfWork(280462991)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:14.488--ClientSession(1082638746)--Connection(833275750)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:14.488--ServerSession(1151842404)--Connection(14884572)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:14.488--UnitOfWork(280462991)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:14.488--UnitOfWork(280462991)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:14.488--UnitOfWork(280462991)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:14.488--ClientSession(1082638746)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:14.489--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1900018569
+[EL Finer]: transaction: 2016-09-21 09:18:14.489--ClientSession(1900018569)--Thread(Thread[Test worker,5,main])--acquire unit of work: 530258293
+[EL Finest]: connection: 2016-09-21 09:18:14.489--ServerSession(1151842404)--Connection(2141479048)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:14.489--ClientSession(1900018569)--Connection(2141479048)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:14.489--ClientSession(1900018569)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-09-21 09:18:14.491--UnitOfWork(530258293)--Thread(Thread[Test worker,5,main])--Merge clone with references OPrscFnHOZLbNuikbVWodxl3I7s9jErOOngMJ8ZUZGbsmqeyBx
+[EL Finest]: query: 2016-09-21 09:18:14.491--UnitOfWork(530258293)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=PhoneCategory )
+[EL Fine]: sql: 2016-09-21 09:18:14.491--ClientSession(1900018569)--Connection(813900868)--Thread(Thread[Test worker,5,main])--SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE (phoneCatId = ?)
+	bind =&gt; [9DDACFB5-8FED-4648-A771-1C845B919133]
+Wed Sep 21 09:18:14 UTC 2016|Unknown Alarm = ORGCM321100200 Alarm Split = ORG-CM-3-2-1-100-200
+[EL Finer]: transaction: 2016-09-21 09:18:14.493--UnitOfWork(530258293)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:18:14.493--UnitOfWork(530258293)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(OPrscFnHOZLbNuikbVWodxl3I7s9jErOOngMJ8ZUZGbsmqeyBx)
+[EL Fine]: sql: 2016-09-21 09:18:14.493--ClientSession(1900018569)--Connection(813900868)--Thread(Thread[Test worker,5,main])--UPDATE PhoneCategory SET phoneCatName = ?, versionId = ? WHERE ((phoneCatId = ?) AND (versionId = ?))
+	bind =&gt; [OPrscFnHOZLbNuikbVWodxl3I7s9jErOOngMJ8ZUZGbsmqeyBx, 2, 9DDACFB5-8FED-4648-A771-1C845B919133, 1]
+[EL Finer]: transaction: 2016-09-21 09:18:14.494--ClientSession(1900018569)--Connection(813900868)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:14.529--ServerSession(1151842404)--Connection(2141479048)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:14.529--UnitOfWork(530258293)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:14.529--UnitOfWork(530258293)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:14.529--UnitOfWork(530258293)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:14.53--ClientSession(1900018569)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:14.555--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 943343452
+[EL Finer]: transaction: 2016-09-21 09:18:14.555--ClientSession(943343452)--Thread(Thread[Test worker,5,main])--acquire unit of work: 2049115610
+[EL Finest]: connection: 2016-09-21 09:18:14.555--ServerSession(1151842404)--Connection(290810331)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:14.557--ClientSession(943343452)--Connection(290810331)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:14.557--ClientSession(943343452)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:18:14.559--UnitOfWork(2049115610)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:18:14.559--UnitOfWork(2049115610)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:18:14.559--UnitOfWork(2049115610)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name=&quot;PhoneCategory.findById&quot; referenceClass=PhoneCategory sql=&quot;SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE ((activeStatus = ?) AND (phoneCatId = ?))&quot;)
+[EL Fine]: sql: 2016-09-21 09:18:14.559--ClientSession(943343452)--Connection(1455675986)--Thread(Thread[Test worker,5,main])--SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE ((activeStatus = ?) AND (phoneCatId = ?))
+	bind =&gt; [1, 9DDACFB5-8FED-4648-A771-1C845B919133]
+Wed Sep 21 09:18:14 UTC 2016|Unknown Alarm = ORGCM324100200 Alarm Split = ORG-CM-3-2-4-100-200
+[EL Finer]: transaction: 2016-09-21 09:18:14.561--UnitOfWork(2049115610)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:14.561--ClientSession(943343452)--Connection(1455675986)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:14.562--ServerSession(1151842404)--Connection(290810331)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:14.562--UnitOfWork(2049115610)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:14.562--UnitOfWork(2049115610)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:14.562--UnitOfWork(2049115610)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:14.562--ClientSession(943343452)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:18:14.621--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 66340913
+[EL Finer]: transaction: 2016-09-21 09:18:14.621--ClientSession(66340913)--Thread(Thread[Test worker,5,main])--acquire unit of work: 447711998
+[EL Finest]: connection: 2016-09-21 09:18:14.621--ServerSession(1151842404)--Connection(2060334945)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:14.621--ClientSession(66340913)--Connection(2060334945)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:18:14.621--ClientSession(66340913)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: query: 2016-09-21 09:18:14.622--UnitOfWork(447711998)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name=&quot;readPhoneCategory&quot; referenceClass=PhoneCategory sql=&quot;SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE (phoneCatId = ?)&quot;)
+[EL Fine]: sql: 2016-09-21 09:18:14.623--ClientSession(66340913)--Connection(1072393358)--Thread(Thread[Test worker,5,main])--SELECT phoneCatId, phoneCatName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM PhoneCategory WHERE (phoneCatId = ?)
+	bind =&gt; [9DDACFB5-8FED-4648-A771-1C845B919133]
+[EL Finest]: transaction: 2016-09-21 09:18:14.624--UnitOfWork(447711998)--Thread(Thread[Test worker,5,main])--remove() operation called on: OPrscFnHOZLbNuikbVWodxl3I7s9jErOOngMJ8ZUZGbsmqeyBx
+Wed Sep 21 09:18:14 UTC 2016|Unknown Alarm = ORGCM328100200 Alarm Split = ORG-CM-3-2-8-100-200
+[EL Finer]: transaction: 2016-09-21 09:18:14.625--UnitOfWork(447711998)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:18:14.625--UnitOfWork(447711998)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=PhoneCategory )
+[EL Finest]: query: 2016-09-21 09:18:14.625--UnitOfWork(447711998)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(OPrscFnHOZLbNuikbVWodxl3I7s9jErOOngMJ8ZUZGbsmqeyBx)
+[EL Fine]: sql: 2016-09-21 09:18:14.625--ClientSession(66340913)--Connection(1072393358)--Thread(Thread[Test worker,5,main])--DELETE FROM PhoneCategory WHERE ((phoneCatId = ?) AND (versionId = ?))
+	bind =&gt; [9DDACFB5-8FED-4648-A771-1C845B919133, 2]
+[EL Finer]: transaction: 2016-09-21 09:18:14.626--ClientSession(66340913)--Connection(1072393358)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:18:14.744--ServerSession(1151842404)--Connection(2060334945)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:18:14.744--UnitOfWork(447711998)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:18:14.744--UnitOfWork(447711998)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:18:14.744--UnitOfWork(447711998)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:18:14.744--ClientSession(66340913)--Thread(Thread[Test worker,5,main])--client released
 </pre>
 </span>
 </div>
@@ -361,7 +361,7 @@ java.lang.SecurityException: PhoneCategory.phoneCatName size must be between 1 a
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Sep 21, 2016 6:35:44 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Sep 21, 2016 9:18:32 AM</p>
 </div>
 </div>
 </body>

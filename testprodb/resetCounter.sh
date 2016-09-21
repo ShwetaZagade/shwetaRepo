@@ -29,7 +29,7 @@ HOST=localhost
 
 echo 'resetCounter Starts...'
 
-$MYSQL/mysql --local-infile=1 -h$HOST -p$PORT -u$USER -p$PASSWORD $DB_NAME -e "ALTER TABLE AddressMap AUTO_INCREMENT = 1; ALTER TABLE EmailContactMap AUTO_INCREMENT = 1; ALTER TABLE PhoneContactMap AUTO_INCREMENT = 1; ALTER TABLE SocialContactMap AUTO_INCREMENT = 1; ";
+$MYSQL/mysql --local-infile=1 -h$HOST -p$PORT -u$USER -p$PASSWORD $DB_NAME -e "ALTER TABLE AddressMap AUTO_INCREMENT = 1; ALTER TABLE EmailContactMap AUTO_INCREMENT = 1; ALTER TABLE PhoneContactMap AUTO_INCREMENT = 1; ALTER TABLE SocialContactMap AUTO_INCREMENT = 1; ALTER TABLE ATestEntity AUTO_INCREMENT = 1; ";
 
 echo 'resetCounter ends...'
 

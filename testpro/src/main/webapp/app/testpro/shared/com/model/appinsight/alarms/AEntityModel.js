@@ -21,6 +21,9 @@ Ext.define('Testpro.testpro.shared.com.model.appinsight.alarms.AEntityModel', {
           "type": "int",
           "defaultValue": ""
      }, {
+          "name": "TestA",
+          "reference": "TestAModel"
+     }, {
           "name": "entityAudit",
           "reference": "EntityAudit"
      }, {

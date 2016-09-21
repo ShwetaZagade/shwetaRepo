@@ -1,169 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.app.server.service.appinsight.alarms.AEntityTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-09-21T06:35:21" hostname="ab5a12c16337" time="0.486">
+<testsuite name="com.app.server.service.appinsight.alarms.AEntityTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-09-21T09:17:54" hostname="c76164883ac0" time="0.844">
   <properties/>
-  <testcase name="test1Save" classname="com.app.server.service.appinsight.alarms.AEntityTestCase" time="0.19"/>
-  <testcase name="test2Update" classname="com.app.server.service.appinsight.alarms.AEntityTestCase" time="0.082"/>
-  <testcase name="test3FindById" classname="com.app.server.service.appinsight.alarms.AEntityTestCase" time="0.039"/>
-  <testcase name="test5NegativeTesting" classname="com.app.server.service.appinsight.alarms.AEntityTestCase" time="0.079"/>
-  <testcase name="test6Delete" classname="com.app.server.service.appinsight.alarms.AEntityTestCase" time="0.094"/>
-  <system-out><![CDATA[Wed Sep 21 06:35:21 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed Sep 21 06:35:21 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
-Wed Sep 21 06:35:21 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
-Wed Sep 21 06:35:21 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed Sep 21 06:35:21 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed Sep 21 06:35:21 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed Sep 21 06:35:21 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:21 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed Sep 21 06:35:21 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed Sep 21 06:35:21 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:21 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
-Wed Sep 21 06:35:21 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed Sep 21 06:35:21 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:21 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed Sep 21 06:35:21 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed Sep 21 06:35:21 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed Sep 21 06:35:21 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed Sep 21 06:35:21 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed Sep 21 06:35:21 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed Sep 21 06:35:21 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed Sep 21 06:35:21 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed Sep 21 06:35:21 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed Sep 21 06:35:21 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed Sep 21 06:35:21 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@3158623d] ....
-Wed Sep 21 06:35:21 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed Sep 21 06:35:21 UTC 2016|Scheduler|Adding [LMID=[b53b3b4c-eae5-4dab-b5a8-91035a9d6d6b]] Delay=5 Time Unit=MINUTES
-Wed Sep 21 06:35:21 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed Sep 21 06:35:21 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed Sep 21 06:35:21 UTC 2016|Scheduler|Startup Completed..
-Wed Sep 21 06:35:21 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed Sep 21 06:35:21 UTC 2016|Log Manager Factory|Log Manager READY! ID = b53b3b4c-eae5-4dab-b5a8-91035a9d6d6b
-[EL Finer]: connection: 2016-09-21 06:35:22.037--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1244844571
-[EL Finer]: transaction: 2016-09-21 06:35:22.037--ClientSession(1244844571)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1317015723
-[EL Finest]: connection: 2016-09-21 06:35:22.037--ServerSession(993367760)--Connection(969306832)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.037--ClientSession(1244844571)--Connection(969306832)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.038--ClientSession(1244844571)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-Wed Sep 21 06:35:22 UTC 2016|Unknown Alarm = AISAL312100100 Alarm Split = AIS-AL-3-1-2-100-100
-[EL Finest]: transaction: 2016-09-21 06:35:22.044--UnitOfWork(1317015723)--Thread(Thread[Test worker,5,main])--persist() operation called on: "0Ie89Du3drTvNnGcdVM57S9fQwh1CC4BKiRtB5GVp72U8q3fWB".
-[EL Finest]: sequencing: 2016-09-21 06:35:22.045--UnitOfWork(1317015723)--Thread(Thread[Test worker,5,main])--assign sequence to the object (9B890925-7751-42B1-BD31-7103987EF5A5 -> "0Ie89Du3drTvNnGcdVM57S9fQwh1CC4BKiRtB5GVp72U8q3fWB")
-Wed Sep 21 06:35:22 UTC 2016|Unknown Alarm = AISAL322100200 Alarm Split = AIS-AL-3-2-2-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:22.045--UnitOfWork(1317015723)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:22.046--UnitOfWork(1317015723)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery("0Ie89Du3drTvNnGcdVM57S9fQwh1CC4BKiRtB5GVp72U8q3fWB")
-[EL Fine]: sql: 2016-09-21 06:35:22.046--ClientSession(1244844571)--Connection(280188327)--Thread(Thread[Test worker,5,main])--INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [9B890925-7751-42B1-BD31-7103987EF5A5, 2016-09-21 06:10:39.948, "0Ie89Du3drTvNnGcdVM57S9fQwh1CC4BKiRtB5GVp72U8q3fWB", 1, AAAAA, 2016-09-21 06:35:21.942, AAAAA, 2016-09-21 06:35:21.942, 1, 51000, appCreateValue]
-[EL Finer]: transaction: 2016-09-21 06:35:22.049--ClientSession(1244844571)--Connection(280188327)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.097--ServerSession(993367760)--Connection(969306832)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.097--UnitOfWork(1317015723)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.097--UnitOfWork(1317015723)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.097--UnitOfWork(1317015723)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.097--ClientSession(1244844571)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:22.119--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 438368983
-[EL Finer]: transaction: 2016-09-21 06:35:22.119--ClientSession(438368983)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1798588071
-[EL Finest]: connection: 2016-09-21 06:35:22.119--ServerSession(993367760)--Connection(889894125)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.119--ClientSession(438368983)--Connection(889894125)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.119--ClientSession(438368983)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:22.121--UnitOfWork(1798588071)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:22.121--UnitOfWork(1798588071)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:22.121--UnitOfWork(1798588071)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="AEntity.findById" referenceClass=AEntity sql="SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))")
-[EL Fine]: sql: 2016-09-21 06:35:22.121--ClientSession(438368983)--Connection(129547645)--Thread(Thread[Test worker,5,main])--SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))
-	bind => [1, 9B890925-7751-42B1-BD31-7103987EF5A5, appCreateValue]
-Wed Sep 21 06:35:22 UTC 2016|Unknown Alarm = AISAL324100200 Alarm Split = AIS-AL-3-2-4-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:22.123--UnitOfWork(1798588071)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.123--ClientSession(438368983)--Connection(129547645)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.124--ServerSession(993367760)--Connection(889894125)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.124--UnitOfWork(1798588071)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.124--UnitOfWork(1798588071)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.124--UnitOfWork(1798588071)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.125--ClientSession(438368983)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:22.125--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1003657144
-[EL Finer]: transaction: 2016-09-21 06:35:22.125--ClientSession(1003657144)--Thread(Thread[Test worker,5,main])--acquire unit of work: 2129055670
-[EL Finest]: connection: 2016-09-21 06:35:22.125--ServerSession(993367760)--Connection(1666119376)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.126--ClientSession(1003657144)--Connection(1666119376)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.126--ClientSession(1003657144)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: transaction: 2016-09-21 06:35:22.131--UnitOfWork(2129055670)--Thread(Thread[Test worker,5,main])--Merge clone with references j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ
-[EL Finest]: query: 2016-09-21 06:35:22.131--UnitOfWork(2129055670)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=AEntity )
-[EL Fine]: sql: 2016-09-21 06:35:22.132--ClientSession(1003657144)--Connection(1533398433)--Thread(Thread[Test worker,5,main])--SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE ((aid = ?) AND (multiTenantId = ?))
-	bind => [9B890925-7751-42B1-BD31-7103987EF5A5, appCreateValue]
-Wed Sep 21 06:35:22 UTC 2016|Unknown Alarm = AISAL321100200 Alarm Split = AIS-AL-3-2-1-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:22.134--UnitOfWork(2129055670)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:22.134--UnitOfWork(2129055670)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ)
-[EL Fine]: sql: 2016-09-21 06:35:22.135--ClientSession(1003657144)--Connection(1533398433)--Thread(Thread[Test worker,5,main])--UPDATE AEntity SET aDate = ?, aNm = ?, versionId = ? WHERE ((aid = ?) AND (versionId = ?))
-	bind => [2016-09-21 06:10:39.962, j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ, 2, 9B890925-7751-42B1-BD31-7103987EF5A5, 1]
-[EL Finer]: transaction: 2016-09-21 06:35:22.136--ClientSession(1003657144)--Connection(1533398433)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.179--ServerSession(993367760)--Connection(1666119376)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.179--UnitOfWork(2129055670)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.179--UnitOfWork(2129055670)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.18--UnitOfWork(2129055670)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.18--ClientSession(1003657144)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:22.212--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 71036866
-[EL Finer]: transaction: 2016-09-21 06:35:22.212--ClientSession(71036866)--Thread(Thread[Test worker,5,main])--acquire unit of work: 2063182777
-[EL Finest]: connection: 2016-09-21 06:35:22.213--ServerSession(993367760)--Connection(494484930)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.213--ClientSession(71036866)--Connection(494484930)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.213--ClientSession(71036866)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:22.214--UnitOfWork(2063182777)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:22.214--UnitOfWork(2063182777)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:22.214--UnitOfWork(2063182777)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="AEntity.findById" referenceClass=AEntity sql="SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))")
-[EL Fine]: sql: 2016-09-21 06:35:22.215--ClientSession(71036866)--Connection(2066584479)--Thread(Thread[Test worker,5,main])--SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))
-	bind => [1, 9B890925-7751-42B1-BD31-7103987EF5A5, appCreateValue]
-Wed Sep 21 06:35:22 UTC 2016|Unknown Alarm = AISAL324100200 Alarm Split = AIS-AL-3-2-4-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:22.217--UnitOfWork(2063182777)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.217--ClientSession(71036866)--Connection(2066584479)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.218--ServerSession(993367760)--Connection(494484930)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.218--UnitOfWork(2063182777)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.218--UnitOfWork(2063182777)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.219--UnitOfWork(2063182777)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.219--ClientSession(71036866)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:22.246--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 47941129
-[EL Finer]: transaction: 2016-09-21 06:35:22.246--ClientSession(47941129)--Thread(Thread[Test worker,5,main])--acquire unit of work: 440187478
-[EL Finest]: connection: 2016-09-21 06:35:22.246--ServerSession(993367760)--Connection(149778831)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.246--ClientSession(47941129)--Connection(149778831)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.246--ClientSession(47941129)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:22.247--UnitOfWork(440187478)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:22.247--UnitOfWork(440187478)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:22.248--UnitOfWork(440187478)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="AEntity.findById" referenceClass=AEntity sql="SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))")
-[EL Fine]: sql: 2016-09-21 06:35:22.248--ClientSession(47941129)--Connection(301526247)--Thread(Thread[Test worker,5,main])--SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))
-	bind => [1, 9B890925-7751-42B1-BD31-7103987EF5A5, appCreateValue]
-Wed Sep 21 06:35:22 UTC 2016|Unknown Alarm = AISAL324100200 Alarm Split = AIS-AL-3-2-4-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:22.25--UnitOfWork(440187478)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.25--ClientSession(47941129)--Connection(301526247)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.251--ServerSession(993367760)--Connection(149778831)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.251--UnitOfWork(440187478)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.251--UnitOfWork(440187478)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.251--UnitOfWork(440187478)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.251--ClientSession(47941129)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:22.261--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1168463356
-[EL Finer]: transaction: 2016-09-21 06:35:22.261--ClientSession(1168463356)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1773156124
-[EL Finest]: connection: 2016-09-21 06:35:22.261--ServerSession(993367760)--Connection(804406649)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.261--ClientSession(1168463356)--Connection(804406649)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.261--ClientSession(1168463356)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-Wed Sep 21 06:35:22 UTC 2016|Unknown Alarm = AISAL312100100 Alarm Split = AIS-AL-3-1-2-100-100
-[EL Finest]: transaction: 2016-09-21 06:35:22.264--UnitOfWork(1773156124)--Thread(Thread[Test worker,5,main])--persist() operation called on: j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ.
-[EL Finest]: sequencing: 2016-09-21 06:35:22.264--UnitOfWork(1773156124)--Thread(Thread[Test worker,5,main])--assign sequence to the object (2862A01B-7A4B-4D61-9144-6468C8802CE9 -> j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ)
-Wed Sep 21 06:35:22 UTC 2016|Unknown Alarm = AISAL322100200 Alarm Split = AIS-AL-3-2-2-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:22.264--UnitOfWork(1773156124)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:22.265--UnitOfWork(1773156124)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ)
-[EL Fine]: sql: 2016-09-21 06:35:22.265--ClientSession(1168463356)--Connection(575239681)--Thread(Thread[Test worker,5,main])--INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [2862A01B-7A4B-4D61-9144-6468C8802CE9, 2016-09-21 06:10:39.948, j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ, 1, AAAAA, 2016-09-21 06:35:22.26, AAAAA, 2016-09-21 06:35:22.26, 1, 51000, appCreateValue]
-[EL Fine]: sql: 2016-09-21 06:35:22.267--ClientSession(1168463356)--Thread(Thread[Test worker,5,main])--SELECT 1
-[EL Warning]: 2016-09-21 06:35:22.268--ClientSession(1168463356)--Thread(Thread[Test worker,5,main])--Local Exception Stack: 
+  <testcase name="test1Save" classname="com.app.server.service.appinsight.alarms.AEntityTestCase" time="0.284"/>
+  <testcase name="test2Update" classname="com.app.server.service.appinsight.alarms.AEntityTestCase" time="0.115"/>
+  <testcase name="test3FindById" classname="com.app.server.service.appinsight.alarms.AEntityTestCase" time="0.038"/>
+  <testcase name="test5NegativeTesting" classname="com.app.server.service.appinsight.alarms.AEntityTestCase" time="0.132"/>
+  <testcase name="test6Delete" classname="com.app.server.service.appinsight.alarms.AEntityTestCase" time="0.275"/>
+  <system-out><![CDATA[Wed Sep 21 09:17:54 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Sep 21 09:17:54 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
+Wed Sep 21 09:17:54 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
+Wed Sep 21 09:17:54 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Sep 21 09:17:54 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Sep 21 09:17:54 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Sep 21 09:17:54 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:17:54 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Sep 21 09:17:54 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Sep 21 09:17:54 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:17:54 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
+Wed Sep 21 09:17:54 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Sep 21 09:17:54 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:17:54 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Sep 21 09:17:54 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Sep 21 09:17:54 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Sep 21 09:17:54 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Sep 21 09:17:54 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Sep 21 09:17:54 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Sep 21 09:17:54 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Sep 21 09:17:54 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Sep 21 09:17:54 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Sep 21 09:17:54 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Sep 21 09:17:54 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@67a475c3] ....
+Wed Sep 21 09:17:54 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Sep 21 09:17:54 UTC 2016|Scheduler|Adding [LMID=[950cd733-ec55-4a91-aacb-ab957b93fa8b]] Delay=5 Time Unit=MINUTES
+Wed Sep 21 09:17:54 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Sep 21 09:17:54 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Sep 21 09:17:54 UTC 2016|Scheduler|Startup Completed..
+Wed Sep 21 09:17:54 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Sep 21 09:17:54 UTC 2016|Log Manager Factory|Log Manager READY! ID = 950cd733-ec55-4a91-aacb-ab957b93fa8b
+[EL Finer]: connection: 2016-09-21 09:17:54.665--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 331400329
+[EL Finer]: transaction: 2016-09-21 09:17:54.665--ClientSession(331400329)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1420232832
+[EL Finest]: connection: 2016-09-21 09:17:54.665--ServerSession(1151842404)--Connection(572471019)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.665--ClientSession(331400329)--Connection(572471019)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.665--ClientSession(331400329)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+Wed Sep 21 09:17:54 UTC 2016|Unknown Alarm = AISAL312100100 Alarm Split = AIS-AL-3-1-2-100-100
+[EL Finest]: transaction: 2016-09-21 09:17:54.674--UnitOfWork(1420232832)--Thread(Thread[Test worker,5,main])--persist() operation called on: "tGmL4Bz0Iua2hLHy6spMXdSX6AG43Yz92KtO3lI6xo3ioTfOKg".
+[EL Finest]: sequencing: 2016-09-21 09:17:54.674--UnitOfWork(1420232832)--Thread(Thread[Test worker,5,main])--assign sequence to the object (3ADC7CD0-25C9-4DDD-9746-7CE851D93A77 -> "tGmL4Bz0Iua2hLHy6spMXdSX6AG43Yz92KtO3lI6xo3ioTfOKg")
+[EL Finest]: transaction: 2016-09-21 09:17:54.675--UnitOfWork(1420232832)--Thread(Thread[Test worker,5,main])--persist() operation called on: Hello World.
+[EL Finest]: sequencing: 2016-09-21 09:17:54.675--UnitOfWork(1420232832)--Thread(Thread[Test worker,5,main])--assign sequence to the object (E109A78B-13E3-453C-98F5-9DD26825449E -> Hello World)
+Wed Sep 21 09:17:54 UTC 2016|Unknown Alarm = AISAL322100200 Alarm Split = AIS-AL-3-2-2-100-200
+[EL Finer]: transaction: 2016-09-21 09:17:54.675--UnitOfWork(1420232832)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:17:54.676--UnitOfWork(1420232832)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery("tGmL4Bz0Iua2hLHy6spMXdSX6AG43Yz92KtO3lI6xo3ioTfOKg")
+[EL Finest]: query: 2016-09-21 09:17:54.676--UnitOfWork(1420232832)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(Hello World)
+[EL Fine]: sql: 2016-09-21 09:17:54.677--ClientSession(331400329)--Connection(735806241)--Thread(Thread[Test worker,5,main])--INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, 2016-09-21 08:51:29.429, "tGmL4Bz0Iua2hLHy6spMXdSX6AG43Yz92KtO3lI6xo3ioTfOKg", 1, AAAAA, 2016-09-21 09:17:54.546, AAAAA, 2016-09-21 09:17:54.546, 1, 51000, appCreateValue]
+[EL Finest]: query: 2016-09-21 09:17:54.679--ClientSession(331400329)--Thread(Thread[Test worker,5,main])--Execute query DataModifyQuery(name="testA" )
+[EL Fine]: sql: 2016-09-21 09:17:54.679--ClientSession(331400329)--Connection(735806241)--Thread(Thread[Test worker,5,main])--INSERT INTO TestA (tid, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [E109A78B-13E3-453C-98F5-9DD26825449E, 1970-01-02, 2016-09-21 08:51:29.44, Hello World, 1, AAAAA, 2016-09-21 09:17:54.546, AAAAA, 2016-09-21 09:17:54.546, 1, 51000, appCreateValue]
+[EL Fine]: sql: 2016-09-21 09:17:54.681--ClientSession(331400329)--Connection(735806241)--Thread(Thread[Test worker,5,main])--INSERT INTO ATestEntity (tid, aid) VALUES (?, ?)
+	bind => [E109A78B-13E3-453C-98F5-9DD26825449E, 3ADC7CD0-25C9-4DDD-9746-7CE851D93A77]
+[EL Finer]: transaction: 2016-09-21 09:17:54.685--ClientSession(331400329)--Connection(735806241)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.79--ServerSession(1151842404)--Connection(572471019)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.79--UnitOfWork(1420232832)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:54.791--UnitOfWork(1420232832)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:54.791--UnitOfWork(1420232832)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:54.791--ClientSession(331400329)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:17:54.822--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 49259475
+[EL Finer]: transaction: 2016-09-21 09:17:54.823--ClientSession(49259475)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1122792230
+[EL Finest]: connection: 2016-09-21 09:17:54.823--ServerSession(1151842404)--Connection(830203421)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.823--ClientSession(49259475)--Connection(830203421)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.823--ClientSession(49259475)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:17:54.825--UnitOfWork(1122792230)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:17:54.829--UnitOfWork(1122792230)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:17:54.829--UnitOfWork(1122792230)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="AEntity.findById" referenceClass=AEntity sql="SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))")
+[EL Fine]: sql: 2016-09-21 09:17:54.829--ClientSession(49259475)--Connection(1312570699)--Thread(Thread[Test worker,5,main])--SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))
+	bind => [1, 3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, appCreateValue]
+Wed Sep 21 09:17:54 UTC 2016|Unknown Alarm = AISAL324100200 Alarm Split = AIS-AL-3-2-4-100-200
+[EL Finer]: transaction: 2016-09-21 09:17:54.832--UnitOfWork(1122792230)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:54.833--ClientSession(49259475)--Connection(1312570699)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.833--ServerSession(1151842404)--Connection(830203421)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.834--UnitOfWork(1122792230)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:54.834--UnitOfWork(1122792230)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:54.834--UnitOfWork(1122792230)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:54.834--ClientSession(49259475)--Thread(Thread[Test worker,5,main])--client released
+[EL Finest]: query: 2016-09-21 09:17:54.834--UnitOfWork(1122792230)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="testA" referenceClass=TestA )
+[EL Finest]: connection: 2016-09-21 09:17:54.835--ServerSession(1151842404)--Connection(907229974)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [read].
+[EL Finest]: connection: 2016-09-21 09:17:54.835--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Fine]: sql: 2016-09-21 09:17:54.835--ServerSession(1151842404)--Connection(680279318)--Thread(Thread[Test worker,5,main])--SELECT t1.tid, t1.multiTenantId, t1.tDate, t1.tDateTime, t1.tnm, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ATestEntity t0, TestA t1 WHERE (((t0.aid = ?) AND (t1.tid = t0.tid)) AND (t1.multiTenantId = ?))
+	bind => [3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, appCreateValue]
+[EL Finest]: connection: 2016-09-21 09:17:54.837--ServerSession(1151842404)--Connection(907229974)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [read].
+[EL Finest]: transaction: 2016-09-21 09:17:54.838--UnitOfWork(1122792230)--Thread(Thread[Test worker,5,main])--Register the existing object Hello World
+[EL Finer]: connection: 2016-09-21 09:17:54.838--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1974599536
+[EL Finer]: transaction: 2016-09-21 09:17:54.838--ClientSession(1974599536)--Thread(Thread[Test worker,5,main])--acquire unit of work: 2029604461
+[EL Finest]: connection: 2016-09-21 09:17:54.839--ServerSession(1151842404)--Connection(931927079)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.839--ClientSession(1974599536)--Connection(931927079)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.839--ClientSession(1974599536)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-09-21 09:17:54.842--UnitOfWork(2029604461)--Thread(Thread[Test worker,5,main])--Merge clone with references pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv
+[EL Finest]: query: 2016-09-21 09:17:54.842--UnitOfWork(2029604461)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=AEntity )
+[EL Fine]: sql: 2016-09-21 09:17:54.843--ClientSession(1974599536)--Connection(872020281)--Thread(Thread[Test worker,5,main])--SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE ((aid = ?) AND (multiTenantId = ?))
+	bind => [3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, appCreateValue]
+[EL Finest]: query: 2016-09-21 09:17:54.844--UnitOfWork(2029604461)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="testA" referenceClass=TestA sql="SELECT t1.tid, t1.multiTenantId, t1.tDate, t1.tDateTime, t1.tnm, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ATestEntity t0, TestA t1 WHERE (((t0.aid = ?) AND (t1.tid = t0.tid)) AND (t1.multiTenantId = ?))")
+[EL Fine]: sql: 2016-09-21 09:17:54.844--ClientSession(1974599536)--Connection(872020281)--Thread(Thread[Test worker,5,main])--SELECT t1.tid, t1.multiTenantId, t1.tDate, t1.tDateTime, t1.tnm, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ATestEntity t0, TestA t1 WHERE (((t0.aid = ?) AND (t1.tid = t0.tid)) AND (t1.multiTenantId = ?))
+	bind => [3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, appCreateValue]
+Wed Sep 21 09:17:54 UTC 2016|Unknown Alarm = AISAL321100200 Alarm Split = AIS-AL-3-2-1-100-200
+[EL Finer]: transaction: 2016-09-21 09:17:54.846--UnitOfWork(2029604461)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:17:54.847--UnitOfWork(2029604461)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv)
+[EL Fine]: sql: 2016-09-21 09:17:54.847--ClientSession(1974599536)--Connection(872020281)--Thread(Thread[Test worker,5,main])--UPDATE AEntity SET aDate = ?, aNm = ?, versionId = ? WHERE ((aid = ?) AND (versionId = ?))
+	bind => [2016-09-21 08:51:29.525, pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv, 2, 3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, 1]
+[EL Finer]: transaction: 2016-09-21 09:17:54.849--ClientSession(1974599536)--Connection(872020281)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.906--ServerSession(1151842404)--Connection(931927079)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.907--UnitOfWork(2029604461)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:54.907--UnitOfWork(2029604461)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:54.907--UnitOfWork(2029604461)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:54.907--ClientSession(1974599536)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:17:54.94--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 122432524
+[EL Finer]: transaction: 2016-09-21 09:17:54.94--ClientSession(122432524)--Thread(Thread[Test worker,5,main])--acquire unit of work: 434097042
+[EL Finest]: connection: 2016-09-21 09:17:54.94--ServerSession(1151842404)--Connection(867036035)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.94--ClientSession(122432524)--Connection(867036035)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.94--ClientSession(122432524)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:17:54.942--UnitOfWork(434097042)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:17:54.942--UnitOfWork(434097042)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:17:54.942--UnitOfWork(434097042)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="AEntity.findById" referenceClass=AEntity sql="SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))")
+[EL Fine]: sql: 2016-09-21 09:17:54.942--ClientSession(122432524)--Connection(610574421)--Thread(Thread[Test worker,5,main])--SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))
+	bind => [1, 3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, appCreateValue]
+Wed Sep 21 09:17:54 UTC 2016|Unknown Alarm = AISAL324100200 Alarm Split = AIS-AL-3-2-4-100-200
+[EL Finer]: transaction: 2016-09-21 09:17:54.944--UnitOfWork(434097042)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:54.944--ClientSession(122432524)--Connection(610574421)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.944--ServerSession(1151842404)--Connection(867036035)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.944--UnitOfWork(434097042)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:54.945--UnitOfWork(434097042)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:54.945--UnitOfWork(434097042)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:54.945--ClientSession(122432524)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:17:54.973--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 790387320
+[EL Finer]: transaction: 2016-09-21 09:17:54.974--ClientSession(790387320)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1853330545
+[EL Finest]: connection: 2016-09-21 09:17:54.974--ServerSession(1151842404)--Connection(1823653727)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.974--ClientSession(790387320)--Connection(1823653727)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.974--ClientSession(790387320)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:17:54.975--UnitOfWork(1853330545)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:17:54.975--UnitOfWork(1853330545)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:17:54.975--UnitOfWork(1853330545)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="AEntity.findById" referenceClass=AEntity sql="SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))")
+[EL Fine]: sql: 2016-09-21 09:17:54.975--ClientSession(790387320)--Connection(1264055104)--Thread(Thread[Test worker,5,main])--SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE (((activeStatus = ?) AND (aid = ?)) AND (multiTenantId = ?))
+	bind => [1, 3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, appCreateValue]
+Wed Sep 21 09:17:54 UTC 2016|Unknown Alarm = AISAL324100200 Alarm Split = AIS-AL-3-2-4-100-200
+[EL Finer]: transaction: 2016-09-21 09:17:54.977--UnitOfWork(1853330545)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:54.977--ClientSession(790387320)--Connection(1264055104)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.978--ServerSession(1151842404)--Connection(1823653727)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.978--UnitOfWork(1853330545)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:54.978--UnitOfWork(1853330545)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:54.978--UnitOfWork(1853330545)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:54.978--ClientSession(790387320)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:17:54.988--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1924684065
+[EL Finer]: transaction: 2016-09-21 09:17:54.988--ClientSession(1924684065)--Thread(Thread[Test worker,5,main])--acquire unit of work: 618905694
+[EL Finest]: connection: 2016-09-21 09:17:54.988--ServerSession(1151842404)--Connection(1684696637)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:54.988--ClientSession(1924684065)--Connection(1684696637)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:54.988--ClientSession(1924684065)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+Wed Sep 21 09:17:54 UTC 2016|Unknown Alarm = AISAL312100100 Alarm Split = AIS-AL-3-1-2-100-100
+[EL Finest]: transaction: 2016-09-21 09:17:54.991--UnitOfWork(618905694)--Thread(Thread[Test worker,5,main])--persist() operation called on: pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv.
+[EL Finest]: sequencing: 2016-09-21 09:17:54.991--UnitOfWork(618905694)--Thread(Thread[Test worker,5,main])--assign sequence to the object (1CA6B88D-CE14-4F14-953F-8A92385F4021 -> pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv)
+[EL Finest]: transaction: 2016-09-21 09:17:54.991--UnitOfWork(618905694)--Thread(Thread[Test worker,5,main])--persist() operation called on: Hello World.
+[EL Finest]: sequencing: 2016-09-21 09:17:54.991--UnitOfWork(618905694)--Thread(Thread[Test worker,5,main])--assign sequence to the object (F9BE4341-7AC9-4717-BFBE-16DAF7BE75D2 -> Hello World)
+Wed Sep 21 09:17:54 UTC 2016|Unknown Alarm = AISAL322100200 Alarm Split = AIS-AL-3-2-2-100-200
+[EL Finer]: transaction: 2016-09-21 09:17:54.992--UnitOfWork(618905694)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:17:54.992--UnitOfWork(618905694)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv)
+[EL Finest]: query: 2016-09-21 09:17:54.993--UnitOfWork(618905694)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(Hello World)
+[EL Fine]: sql: 2016-09-21 09:17:54.993--ClientSession(1924684065)--Connection(729299608)--Thread(Thread[Test worker,5,main])--INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [1CA6B88D-CE14-4F14-953F-8A92385F4021, 2016-09-21 08:51:29.429, pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv, 1, AAAAA, 2016-09-21 09:17:54.988, AAAAA, 2016-09-21 09:17:54.988, 1, 51000, appCreateValue]
+[EL Fine]: sql: 2016-09-21 09:17:54.996--ClientSession(1924684065)--Thread(Thread[Test worker,5,main])--SELECT 1
+[EL Warning]: 2016-09-21 09:17:54.997--UnitOfWork(618905694)--Thread(Thread[Test worker,5,main])--Local Exception Stack: 
 Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5): org.eclipse.persistence.exceptions.DatabaseException
-Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ' for key 'aNm'
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv' for key 'aNm'
 Error Code: 1062
 Call: INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [2862A01B-7A4B-4D61-9144-6468C8802CE9, 2016-09-21 06:10:39.948, j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ, 1, AAAAA, 2016-09-21 06:35:22.26, AAAAA, 2016-09-21 06:35:22.26, 1, 51000, appCreateValue]
+	bind => [1CA6B88D-CE14-4F14-953F-8A92385F4021, 2016-09-21 08:51:29.429, pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv, 1, AAAAA, 2016-09-21 09:17:54.988, AAAAA, 2016-09-21 09:17:54.988, 1, 51000, appCreateValue]
+Query: InsertObjectQuery(Hello World)
 	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:331)
 	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:900)
 	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:962)
 	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:631)
 	at org.eclipse.persistence.internal.databaseaccess.ParameterizedSQLBatchWritingMechanism.executeBatchedStatements(ParameterizedSQLBatchWritingMechanism.java:130)
-	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.writesCompleted(DatabaseAccessor.java:1836)
-	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.commitTransaction(DatabaseAccessor.java:426)
-	at org.eclipse.persistence.internal.sessions.AbstractSession.basicCommitTransaction(AbstractSession.java:758)
-	at org.eclipse.persistence.sessions.server.ClientSession.basicCommitTransaction(ClientSession.java:174)
-	at org.eclipse.persistence.internal.sessions.AbstractSession.commitTransaction(AbstractSession.java:962)
-	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitTransaction(UnitOfWorkImpl.java:1600)
-	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitTransaction(RepeatableWriteUnitOfWork.java:647)
-	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitTransactionAfterWriteChanges(UnitOfWorkImpl.java:1615)
-	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:284)
+	at org.eclipse.persistence.internal.databaseaccess.ParameterizedSQLBatchWritingMechanism.appendCall(ParameterizedSQLBatchWritingMechanism.java:82)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:603)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:558)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:1991)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:298)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:242)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:228)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:377)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:165)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:180)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:489)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:80)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:90)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:301)
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:58)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:899)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:798)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:108)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:85)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:2896)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1793)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1775)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1726)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:226)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsForClassWithChangeSet(CommitManager.java:193)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:138)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4196)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1441)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1531)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:277)
 	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1169)
 	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:132)
 	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:515)
@@ -176,7 +219,7 @@ Call: INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, u
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:634)
-	at com.app.server.repository.appinsight.alarms.AEntityRepositoryImpl$$EnhancerByCGLIB$$c74cc0e7.save(<generated>)
+	at com.app.server.repository.appinsight.alarms.AEntityRepositoryImpl$$EnhancerByCGLIB$$8c7c0a4a.save(<generated>)
 	at com.app.server.repository.appinsight.alarms.AEntityRepositoryImpl$$FastClassByCGLIB$$60fd1d66.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:701)
@@ -185,9 +228,9 @@ Call: INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, u
 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:120)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:634)
-	at com.app.server.repository.appinsight.alarms.AEntityRepositoryImpl$$EnhancerByCGLIB$$b3340931.save(<generated>)
-	at com.app.server.service.appinsight.alarms.AEntityTestCase.validateAEntity(AEntityTestCase.java:213)
-	at com.app.server.service.appinsight.alarms.AEntityTestCase.test5NegativeTesting(AEntityTestCase.java:259)
+	at com.app.server.repository.appinsight.alarms.AEntityRepositoryImpl$$EnhancerByCGLIB$$9c7243d7.save(<generated>)
+	at com.app.server.service.appinsight.alarms.AEntityTestCase.validateAEntity(AEntityTestCase.java:225)
+	at com.app.server.service.appinsight.alarms.AEntityTestCase.test5NegativeTesting(AEntityTestCase.java:271)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -238,7 +281,7 @@ Call: INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, u
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ' for key 'aNm'
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv' for key 'aNm'
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -258,40 +301,51 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:890)
-	... 86 more
+	... 107 more
 
-[EL Finer]: transaction: 2016-09-21 06:35:22.27--ClientSession(1168463356)--Connection(575239681)--Thread(Thread[Test worker,5,main])--rollback transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.294--ServerSession(993367760)--Connection(804406649)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.294--UnitOfWork(1773156124)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.294--ClientSession(1168463356)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:22.329--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1993698746
-[EL Finer]: transaction: 2016-09-21 06:35:22.329--ClientSession(1993698746)--Thread(Thread[Test worker,5,main])--acquire unit of work: 907479881
-[EL Finest]: connection: 2016-09-21 06:35:22.329--ServerSession(993367760)--Connection(585498973)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.329--ClientSession(1993698746)--Connection(585498973)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.329--ClientSession(1993698746)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: query: 2016-09-21 06:35:22.33--UnitOfWork(907479881)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name="readAEntity" referenceClass=AEntity sql="SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE ((aid = ?) AND (multiTenantId = ?))")
-[EL Fine]: sql: 2016-09-21 06:35:22.331--ClientSession(1993698746)--Connection(1865122644)--Thread(Thread[Test worker,5,main])--SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE ((aid = ?) AND (multiTenantId = ?))
-	bind => [9B890925-7751-42B1-BD31-7103987EF5A5, appCreateValue]
-[EL Finest]: transaction: 2016-09-21 06:35:22.332--UnitOfWork(907479881)--Thread(Thread[Test worker,5,main])--remove() operation called on: j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ
-Wed Sep 21 06:35:22 UTC 2016|Unknown Alarm = AISAL328100200 Alarm Split = AIS-AL-3-2-8-100-200
-[EL Finer]: transaction: 2016-09-21 06:35:22.332--UnitOfWork(907479881)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:22.333--UnitOfWork(907479881)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=AEntity )
-[EL Finest]: query: 2016-09-21 06:35:22.333--UnitOfWork(907479881)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ)
-[EL Fine]: sql: 2016-09-21 06:35:22.333--ClientSession(1993698746)--Connection(1865122644)--Thread(Thread[Test worker,5,main])--DELETE FROM AEntity WHERE ((aid = ?) AND (versionId = ?))
-	bind => [9B890925-7751-42B1-BD31-7103987EF5A5, 2]
-[EL Finer]: transaction: 2016-09-21 06:35:22.334--ClientSession(1993698746)--Connection(1865122644)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.392--ServerSession(993367760)--Connection(585498973)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.393--UnitOfWork(907479881)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.393--UnitOfWork(907479881)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.393--UnitOfWork(907479881)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.393--ClientSession(1993698746)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: transaction: 2016-09-21 09:17:55.008--ClientSession(1924684065)--Connection(729299608)--Thread(Thread[Test worker,5,main])--rollback transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.073--ServerSession(1151842404)--Connection(1684696637)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.073--UnitOfWork(618905694)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:55.073--ClientSession(1924684065)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:17:55.108--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 2013293614
+[EL Finer]: transaction: 2016-09-21 09:17:55.108--ClientSession(2013293614)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1673428366
+[EL Finest]: connection: 2016-09-21 09:17:55.108--ServerSession(1151842404)--Connection(1864706250)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.108--ClientSession(2013293614)--Connection(1864706250)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.108--ClientSession(2013293614)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: query: 2016-09-21 09:17:55.11--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name="readAEntity" referenceClass=AEntity sql="SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE ((aid = ?) AND (multiTenantId = ?))")
+[EL Fine]: sql: 2016-09-21 09:17:55.11--ClientSession(2013293614)--Connection(1421071505)--Thread(Thread[Test worker,5,main])--SELECT aid, multiTenantId, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM AEntity WHERE ((aid = ?) AND (multiTenantId = ?))
+	bind => [3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, appCreateValue]
+[EL Finest]: transaction: 2016-09-21 09:17:55.112--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--remove() operation called on: pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv
+[EL Finest]: query: 2016-09-21 09:17:55.112--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name="testA" referenceClass=TestA sql="SELECT t1.tid, t1.multiTenantId, t1.tDate, t1.tDateTime, t1.tnm, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ATestEntity t0, TestA t1 WHERE (((t0.aid = ?) AND (t1.tid = t0.tid)) AND (t1.multiTenantId = ?))")
+[EL Fine]: sql: 2016-09-21 09:17:55.112--ClientSession(2013293614)--Connection(1421071505)--Thread(Thread[Test worker,5,main])--SELECT t1.tid, t1.multiTenantId, t1.tDate, t1.tDateTime, t1.tnm, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ATestEntity t0, TestA t1 WHERE (((t0.aid = ?) AND (t1.tid = t0.tid)) AND (t1.multiTenantId = ?))
+	bind => [3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, appCreateValue]
+[EL Finest]: transaction: 2016-09-21 09:17:55.114--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--remove() operation called on: Hello World
+Wed Sep 21 09:17:55 UTC 2016|Unknown Alarm = AISAL328100200 Alarm Split = AIS-AL-3-2-8-100-200
+[EL Finer]: transaction: 2016-09-21 09:17:55.115--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:17:55.115--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=TestA )
+[EL Finest]: query: 2016-09-21 09:17:55.116--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=AEntity )
+[EL Finest]: query: 2016-09-21 09:17:55.116--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--Execute query DataModifyQuery(name="testA" )
+[EL Finest]: query: 2016-09-21 09:17:55.116--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(Hello World)
+[EL Fine]: sql: 2016-09-21 09:17:55.116--ClientSession(2013293614)--Connection(1421071505)--Thread(Thread[Test worker,5,main])--DELETE FROM ATestEntity WHERE (aid = ?)
+	bind => [3ADC7CD0-25C9-4DDD-9746-7CE851D93A77]
+[EL Finest]: query: 2016-09-21 09:17:55.118--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv)
+[EL Fine]: sql: 2016-09-21 09:17:55.118--ClientSession(2013293614)--Connection(1421071505)--Thread(Thread[Test worker,5,main])--DELETE FROM TestA WHERE ((tid = ?) AND (versionId = ?))
+	bind => [E109A78B-13E3-453C-98F5-9DD26825449E, 1]
+[EL Fine]: sql: 2016-09-21 09:17:55.254--ClientSession(2013293614)--Connection(1421071505)--Thread(Thread[Test worker,5,main])--DELETE FROM AEntity WHERE ((aid = ?) AND (versionId = ?))
+	bind => [3ADC7CD0-25C9-4DDD-9746-7CE851D93A77, 2]
+[EL Finer]: transaction: 2016-09-21 09:17:55.328--ClientSession(2013293614)--Connection(1421071505)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.351--ServerSession(1151842404)--Connection(1864706250)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.351--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:55.351--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:55.352--UnitOfWork(1673428366)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:55.352--ClientSession(2013293614)--Thread(Thread[Test worker,5,main])--client released
 ]]></system-out>
   <system-err><![CDATA[AEntity.aNm may not be null
 java.lang.SecurityException: AEntity.aNm may not be null
 	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
-	at com.app.shared.appinsight.alarms.AEntity.isValid(AEntity.java:186)
-	at com.app.server.service.appinsight.alarms.AEntityTestCase.validateAEntity(AEntityTestCase.java:209)
-	at com.app.server.service.appinsight.alarms.AEntityTestCase.test5NegativeTesting(AEntityTestCase.java:243)
+	at com.app.shared.appinsight.alarms.AEntity.isValid(AEntity.java:250)
+	at com.app.server.service.appinsight.alarms.AEntityTestCase.validateAEntity(AEntityTestCase.java:221)
+	at com.app.server.service.appinsight.alarms.AEntityTestCase.test5NegativeTesting(AEntityTestCase.java:255)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -345,9 +399,9 @@ java.lang.SecurityException: AEntity.aNm may not be null
 AEntity.aNm size must be between 1 and 256
 java.lang.SecurityException: AEntity.aNm size must be between 1 and 256
 	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
-	at com.app.shared.appinsight.alarms.AEntity.isValid(AEntity.java:186)
-	at com.app.server.service.appinsight.alarms.AEntityTestCase.validateAEntity(AEntityTestCase.java:207)
-	at com.app.server.service.appinsight.alarms.AEntityTestCase.test5NegativeTesting(AEntityTestCase.java:248)
+	at com.app.shared.appinsight.alarms.AEntity.isValid(AEntity.java:250)
+	at com.app.server.service.appinsight.alarms.AEntityTestCase.validateAEntity(AEntityTestCase.java:219)
+	at com.app.server.service.appinsight.alarms.AEntityTestCase.test5NegativeTesting(AEntityTestCase.java:260)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -401,9 +455,9 @@ java.lang.SecurityException: AEntity.aNm size must be between 1 and 256
 AEntity.aDate may not be null
 java.lang.SecurityException: AEntity.aDate may not be null
 	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
-	at com.app.shared.appinsight.alarms.AEntity.isValid(AEntity.java:186)
-	at com.app.server.service.appinsight.alarms.AEntityTestCase.validateAEntity(AEntityTestCase.java:209)
-	at com.app.server.service.appinsight.alarms.AEntityTestCase.test5NegativeTesting(AEntityTestCase.java:254)
+	at com.app.shared.appinsight.alarms.AEntity.isValid(AEntity.java:250)
+	at com.app.server.service.appinsight.alarms.AEntityTestCase.validateAEntity(AEntityTestCase.java:221)
+	at com.app.server.service.appinsight.alarms.AEntityTestCase.test5NegativeTesting(AEntityTestCase.java:266)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -455,10 +509,11 @@ java.lang.SecurityException: AEntity.aDate may not be null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5): org.eclipse.persistence.exceptions.DatabaseException
-Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ' for key 'aNm'
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv' for key 'aNm'
 Error Code: 1062
 Call: INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [2862A01B-7A4B-4D61-9144-6468C8802CE9, 2016-09-21 06:10:39.948, j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ, 1, AAAAA, 2016-09-21 06:35:22.26, AAAAA, 2016-09-21 06:35:22.26, 1, 51000, appCreateValue]
+	bind => [1CA6B88D-CE14-4F14-953F-8A92385F4021, 2016-09-21 08:51:29.429, pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv, 1, AAAAA, 2016-09-21 09:17:54.988, AAAAA, 2016-09-21 09:17:54.988, 1, 51000, appCreateValue]
+Query: InsertObjectQuery(Hello World)
 	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:524)
 	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:757)
 	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:726)
@@ -469,7 +524,7 @@ Call: INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, u
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:634)
-	at com.app.server.repository.appinsight.alarms.AEntityRepositoryImpl$$EnhancerByCGLIB$$c74cc0e7.save(<generated>)
+	at com.app.server.repository.appinsight.alarms.AEntityRepositoryImpl$$EnhancerByCGLIB$$8c7c0a4a.save(<generated>)
 	at com.app.server.repository.appinsight.alarms.AEntityRepositoryImpl$$FastClassByCGLIB$$60fd1d66.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:701)
@@ -478,9 +533,9 @@ Call: INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, u
 	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:120)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:634)
-	at com.app.server.repository.appinsight.alarms.AEntityRepositoryImpl$$EnhancerByCGLIB$$b3340931.save(<generated>)
-	at com.app.server.service.appinsight.alarms.AEntityTestCase.validateAEntity(AEntityTestCase.java:213)
-	at com.app.server.service.appinsight.alarms.AEntityTestCase.test5NegativeTesting(AEntityTestCase.java:259)
+	at com.app.server.repository.appinsight.alarms.AEntityRepositoryImpl$$EnhancerByCGLIB$$9c7243d7.save(<generated>)
+	at com.app.server.service.appinsight.alarms.AEntityTestCase.validateAEntity(AEntityTestCase.java:225)
+	at com.app.server.service.appinsight.alarms.AEntityTestCase.test5NegativeTesting(AEntityTestCase.java:271)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -532,36 +587,59 @@ Call: INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, u
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
 Caused by: javax.persistence.RollbackException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5): org.eclipse.persistence.exceptions.DatabaseException
-Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ' for key 'aNm'
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv' for key 'aNm'
 Error Code: 1062
 Call: INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [2862A01B-7A4B-4D61-9144-6468C8802CE9, 2016-09-21 06:10:39.948, j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ, 1, AAAAA, 2016-09-21 06:35:22.26, AAAAA, 2016-09-21 06:35:22.26, 1, 51000, appCreateValue]
+	bind => [1CA6B88D-CE14-4F14-953F-8A92385F4021, 2016-09-21 08:51:29.429, pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv, 1, AAAAA, 2016-09-21 09:17:54.988, AAAAA, 2016-09-21 09:17:54.988, 1, 51000, appCreateValue]
+Query: InsertObjectQuery(Hello World)
 	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:157)
 	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:515)
 	... 71 more
 Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5): org.eclipse.persistence.exceptions.DatabaseException
-Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ' for key 'aNm'
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv' for key 'aNm'
 Error Code: 1062
 Call: INSERT INTO AEntity (aid, aDate, aNm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [2862A01B-7A4B-4D61-9144-6468C8802CE9, 2016-09-21 06:10:39.948, j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ, 1, AAAAA, 2016-09-21 06:35:22.26, AAAAA, 2016-09-21 06:35:22.26, 1, 51000, appCreateValue]
+	bind => [1CA6B88D-CE14-4F14-953F-8A92385F4021, 2016-09-21 08:51:29.429, pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv, 1, AAAAA, 2016-09-21 09:17:54.988, AAAAA, 2016-09-21 09:17:54.988, 1, 51000, appCreateValue]
+Query: InsertObjectQuery(Hello World)
 	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:331)
 	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:900)
 	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:962)
 	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:631)
 	at org.eclipse.persistence.internal.databaseaccess.ParameterizedSQLBatchWritingMechanism.executeBatchedStatements(ParameterizedSQLBatchWritingMechanism.java:130)
-	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.writesCompleted(DatabaseAccessor.java:1836)
-	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.commitTransaction(DatabaseAccessor.java:426)
-	at org.eclipse.persistence.internal.sessions.AbstractSession.basicCommitTransaction(AbstractSession.java:758)
-	at org.eclipse.persistence.sessions.server.ClientSession.basicCommitTransaction(ClientSession.java:174)
-	at org.eclipse.persistence.internal.sessions.AbstractSession.commitTransaction(AbstractSession.java:962)
-	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitTransaction(UnitOfWorkImpl.java:1600)
-	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitTransaction(RepeatableWriteUnitOfWork.java:647)
-	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitTransactionAfterWriteChanges(UnitOfWorkImpl.java:1615)
-	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:284)
+	at org.eclipse.persistence.internal.databaseaccess.ParameterizedSQLBatchWritingMechanism.appendCall(ParameterizedSQLBatchWritingMechanism.java:82)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:603)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:558)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:1991)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:298)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:242)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:228)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:377)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:165)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:180)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:489)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:80)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:90)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:301)
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:58)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:899)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:798)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:108)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:85)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:2896)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1793)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1775)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1726)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:226)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsForClassWithChangeSet(CommitManager.java:193)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:138)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4196)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1441)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1531)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:277)
 	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1169)
 	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:132)
 	... 72 more
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ' for key 'aNm'
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv' for key 'aNm'
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -581,6 +659,6 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:105)
 	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:890)
-	... 86 more
+	... 107 more
 ]]></system-err>
 </testsuite>

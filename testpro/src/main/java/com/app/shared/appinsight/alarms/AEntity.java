@@ -23,6 +23,11 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import javax.persistence.Transient;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import com.app.shared.appinsight.health.TestA;
+import java.util.List;
+import javax.persistence.JoinTable;
+import javax.persistence.CascadeType;
+import javax.persistence.OneToMany;
 import com.athena.server.pluggable.utils.helper.EntityValidatorHelper;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.Version;
@@ -37,11 +42,11 @@ import javax.persistence.NamedQueries;
 @Multitenant(MultitenantType.SINGLE_TABLE)
 @TenantDiscriminatorColumn(name = "multiTenantId", contextProperty = "tenant.id")
 @Cache(type = CacheType.CACHE)
-@SourceCodeAuthorClass(createdBy = "deepali.arvind@algorhythm.co.in", updatedBy = "deepali.arvind@algorhythm.co.in", versionNumber = "5", comments = "AEntity", complexity = Complexity.LOW)
+@SourceCodeAuthorClass(createdBy = "deepali.arvind@algorhythm.co.in", updatedBy = "aparna.sawant@algorhythm.co.in", versionNumber = "10", comments = "AEntity", complexity = Complexity.LOW)
 @NamedQueries({ @javax.persistence.NamedQuery(name = "AEntity.findAll", query = " select u from AEntity u where u.systemInfo.activeStatus=1"), @javax.persistence.NamedQuery(name = "AEntity.findById", query = "select e from AEntity e where e.systemInfo.activeStatus=1 and e.aid =:aid") })
 public class AEntity implements Serializable, CommonEntityInterface, Comparator<AEntity> {
 
-    private static final long serialVersionUID = 1474438239687L;
+    private static final long serialVersionUID = 1474447888798L;
 
     @Column(name = "aNm")
     @JsonProperty("aNm")
@@ -65,6 +70,10 @@ public class AEntity implements Serializable, CommonEntityInterface, Comparator<
     @GeneratedValue(generator = "UUIDGenerator")
     @Size(min = 1, max = 256)
     private String aid;
+
+    @JoinTable(name = "ATestEntity", joinColumns = { @javax.persistence.JoinColumn(name = "aid", referencedColumnName = "aid") }, inverseJoinColumns = { @javax.persistence.JoinColumn(name = "tid", referencedColumnName = "tid") })
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<TestA> testA;
 
     @Transient
     @JsonIgnore
@@ -157,6 +166,61 @@ public class AEntity implements Serializable, CommonEntityInterface, Comparator<
         this.systemInfo = _systemInfo;
     }
 
+    public AEntity addTestA(TestA _testA) {
+        if (this.testA == null) {
+            this.testA = new java.util.ArrayList<com.app.shared.appinsight.health.TestA>();
+        }
+        if (_testA != null) {
+            this.testA.add(_testA);
+        }
+        return this;
+    }
+
+    public AEntity removeTestA(TestA _testA) {
+        if (this.testA != null) {
+            this.testA.remove(_testA);
+        }
+        return this;
+    }
+
+    public AEntity addAllTestA(List<TestA> _testA) {
+        if (this.testA == null) {
+            this.testA = new java.util.ArrayList<com.app.shared.appinsight.health.TestA>();
+        }
+        if (_testA != null) {
+            this.testA.addAll(_testA);
+        }
+        return this;
+    }
+
+    @JsonIgnore
+    public Integer sizeOfTestA() {
+        if (this.testA != null) {
+            return this.testA.size();
+        }
+        return 0;
+    }
+
+    public List<TestA> getTestA() {
+        return testA;
+    }
+
+    public void setTestA(List<TestA> _testA) {
+        this.testA = _testA;
+    }
+
+    @JsonIgnore
+    public List<TestA> getDeletedTestAList() {
+        List<TestA> testaToRemove = new java.util.ArrayList<TestA>();
+        for (TestA _testa : testA) {
+            if (_testa.isHardDelete()) {
+                testaToRemove.add(_testa);
+            }
+        }
+        testA.removeAll(testaToRemove);
+        return testaToRemove;
+    }
+
     /**
      * Returns boolean value if System information's active status =-1
      * @return boolean
@@ -198,6 +262,15 @@ public class AEntity implements Serializable, CommonEntityInterface, Comparator<
     @Override
     public void setEntityValidator(EntityValidatorHelper<Object> _validateFactory) {
         this.entityValidator = _validateFactory;
+        setValidatortestA(_validateFactory);
+    }
+
+    private void setValidatortestA(EntityValidatorHelper<Object> _validateFactory) {
+        if (testA != null) {
+            for (int i = 0; i < testA.size(); i++) {
+                testA.get(i).setEntityValidator(_validateFactory);
+            }
+        }
     }
 
     /**
@@ -217,6 +290,13 @@ public class AEntity implements Serializable, CommonEntityInterface, Comparator<
             this.entityAudit.setUpdatedBy(userId);
         }
         setSystemInformation(recordType);
+        if (this.testA == null) {
+            this.testA = new java.util.ArrayList<TestA>();
+        }
+        for (TestA _testA : testA) {
+            _testA.setEntityAudit(customerId, userId, recordType);
+            _testA.setSystemInformation(recordType);
+        }
     }
 
     /**
@@ -236,6 +316,12 @@ public class AEntity implements Serializable, CommonEntityInterface, Comparator<
             this.systemInfo.setActiveStatus(1);
         } else {
             this.entityAudit.setUpdatedBy(userId);
+        }
+        if (this.testA == null) {
+            this.testA = new java.util.ArrayList<TestA>();
+        }
+        for (TestA _testA : testA) {
+            _testA.setEntityAudit(customerId, userId);
         }
     }
 
@@ -263,7 +349,7 @@ public class AEntity implements Serializable, CommonEntityInterface, Comparator<
             systemInfo = new SystemInfo();
         }
         if (recordType == RECORD_TYPE.DELETE) {
-            this.systemInfo.setActiveStatus(0);
+            this.systemInfo.setActiveStatus(-1);
         } else {
             this.systemInfo.setActiveStatus(1);
         }

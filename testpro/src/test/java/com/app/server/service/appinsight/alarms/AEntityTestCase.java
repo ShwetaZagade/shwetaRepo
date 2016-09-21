@@ -32,6 +32,8 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import org.junit.Assert;
 import com.athena.server.pluggable.interfaces.CommonEntityInterface.RECORD_TYPE;
 import org.junit.Test;
+import com.app.shared.appinsight.health.TestA;
+import com.app.server.repository.appinsight.health.TestARepository;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
@@ -149,7 +151,14 @@ public class AEntityTestCase extends EntityTestCriteria {
     private AEntity createAEntity(Boolean isSave) throws Exception {
         AEntity aentity = new AEntity();
         aentity.setaNm(valueGenerator.randomValueGenerate("String", 256, 1));
-        aentity.setaDate(new java.sql.Timestamp(1474438239948l));
+        aentity.setaDate(new java.sql.Timestamp(1474447889429l));
+        java.util.List<TestA> listOfTestA = new java.util.ArrayList<TestA>();
+        TestA testa = new TestA();
+        testa.settDateTime(new java.sql.Timestamp(1474447889440l));
+        testa.setTnm("Hello World");
+        testa.settDate(new java.sql.Date(123456789));
+        listOfTestA.add(testa);
+        aentity.addAllTestA(listOfTestA);
         aentity.setEntityValidator(entityValidator);
         return aentity;
     }
@@ -167,14 +176,17 @@ public class AEntityTestCase extends EntityTestCriteria {
         }
     }
 
+    @Autowired
+    private TestARepository<TestA> testaRepository;
+
     @Test
     public void test2Update() {
         try {
             Assert.assertNotNull(map.get("AEntityPrimaryKey"));
             AEntity aentity = aentityRepository.findById((java.lang.String) map.get("AEntityPrimaryKey"));
-            aentity.setaNm("j6IoEG6tdqD7qo8hFfukWERzthgshz1U9n9aFaKg5F3GtLbnWJ");
+            aentity.setaNm("pvCTGwsPriiPBmpC85Te1eV7jLei1boTnLxCmHq00L0nWTk6Yv");
             aentity.setVersionId(1);
-            aentity.setaDate(new java.sql.Timestamp(1474438239962l));
+            aentity.setaDate(new java.sql.Timestamp(1474447889525l));
             aentity.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             aentityRepository.update(aentity);
         } catch (java.lang.Exception e) {
@@ -217,7 +229,7 @@ public class AEntityTestCase extends EntityTestCriteria {
     private List<EntityTestCriteria> addingListOfFieldForNegativeTesting() {
         List<EntityTestCriteria> entityConstraints = new java.util.ArrayList<EntityTestCriteria>();
         entityConstraints.add(new EntityTestCriteria(NOT_NULL, 1, "aNm", null));
-        entityConstraints.add(new EntityTestCriteria(MIN_MAX, 2, "aNm", "gwlteVjWbGsLHhxAOMqISw7YpAiQPAwzIY2EVBRnOpDhFhOVBvMqdGs4seQTaSwJWgZ6HwnvwcO7cyP0MBurtJo5xztmGVwCxNATtuktl0NLlo3oCordH2pYoGXljhwTAWKjYusIADOhBj85mSLTx4TfaDN6s7W7XTh6IcPdVr6Tl7jZgGO7RXTXdalDuy575EfMGdZhMvKnjHJ1hdE1fNWwPsno3zPIyS0jFgYNbrfmUF0VpRMvruF5pjqSVgkXG"));
+        entityConstraints.add(new EntityTestCriteria(MIN_MAX, 2, "aNm", "cUGaX8duNupfq4ULCVGknlls9A2TxMOD6rlwqAGtfL6XP154Kt8aTCjS8n4C9ZvldVTyIRauRQqGYpsXpXEVMt6K6IIt6lSz58pfbJmBzAqmue4qmHZvWQnxgr3rMM5sndzd9ff0hC75GEWPkCpuwdWreH2QyR7bKMCBViWyWBZL3Qw3xooZowJM0hycegLQzR2LySMA54e6xcXVmGYM60vNVYyM0M6eqh1HyMl1haj1UTLRqsXT3hpami2yPq98A"));
         entityConstraints.add(new EntityTestCriteria(NOT_NULL, 3, "aDate", null));
         entityConstraints.add(new EntityTestCriteria(UNIQUE, 4, "CombineUniqueKey", ""));
         return entityConstraints;

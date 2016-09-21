@@ -151,6 +151,94 @@ task createRepositoryAppbasicsetupUsermanagementJar(type:Jar){
 	}
 	version '1.0'
 }
+task createSharedAirlineboundedcontextReservedomainJar(type:Jar){
+	from sourceSets.main.output.classesDir
+	include 'com/app/shared/airlineboundedcontext/reservedomain/**/*.*'
+	baseName 'app-shared-airlineboundedcontext-reservedomain'
+	manifest {
+		attributes 	'Copyright': System.properties['_testpro_copyright'],
+		'Build-Date': new Date(),
+		'version' : 1.0
+	}
+	version '1.0'
+}
+task createServiceAirlineboundedcontextReservedomainJar(type:Jar){
+	from sourceSets.main.output.classesDir
+	include 'com/app/server/service/airlineboundedcontext/reservedomain/**/*.*'
+	baseName 'app-service-airlineboundedcontext-reservedomain'
+	manifest {
+		attributes 	'Copyright': System.properties['_testpro_copyright'],
+		'Build-Date': new Date(),
+		'version' : 1.0
+	}
+	version '1.0'
+}
+task createBizServiceAirlineboundedcontextReservedomainJar(type:Jar){
+	from sourceSets.main.output.classesDir
+	include 'com/app/server/businessservice/airlineboundedcontext/reservedomain/**/*.*'
+	baseName 'app-bizService-airlineboundedcontext-reservedomain'
+	manifest {
+		attributes 	'Copyright': System.properties['_testpro_copyright'],
+		'Build-Date': new Date(),
+		'version' : 1.0
+	}
+	version '1.0'
+}
+task createRepositoryAirlineboundedcontextReservedomainJar(type:Jar){
+	from sourceSets.main.output.classesDir
+	include 'com/app/server/repository/airlineboundedcontext/reservedomain/**/*.*'
+	baseName 'app-repository-airlineboundedcontext-reservedomain'
+	manifest {
+		attributes 	'Copyright': System.properties['_testpro_copyright'],
+		'Build-Date': new Date(),
+		'version' : 1.0
+	}
+	version '1.0'
+}
+task createSharedAirlineboundedcontextCheckindomainJar(type:Jar){
+	from sourceSets.main.output.classesDir
+	include 'com/app/shared/airlineboundedcontext/checkindomain/**/*.*'
+	baseName 'app-shared-airlineboundedcontext-checkindomain'
+	manifest {
+		attributes 	'Copyright': System.properties['_testpro_copyright'],
+		'Build-Date': new Date(),
+		'version' : 1.0
+	}
+	version '1.0'
+}
+task createServiceAirlineboundedcontextCheckindomainJar(type:Jar){
+	from sourceSets.main.output.classesDir
+	include 'com/app/server/service/airlineboundedcontext/checkindomain/**/*.*'
+	baseName 'app-service-airlineboundedcontext-checkindomain'
+	manifest {
+		attributes 	'Copyright': System.properties['_testpro_copyright'],
+		'Build-Date': new Date(),
+		'version' : 1.0
+	}
+	version '1.0'
+}
+task createBizServiceAirlineboundedcontextCheckindomainJar(type:Jar){
+	from sourceSets.main.output.classesDir
+	include 'com/app/server/businessservice/airlineboundedcontext/checkindomain/**/*.*'
+	baseName 'app-bizService-airlineboundedcontext-checkindomain'
+	manifest {
+		attributes 	'Copyright': System.properties['_testpro_copyright'],
+		'Build-Date': new Date(),
+		'version' : 1.0
+	}
+	version '1.0'
+}
+task createRepositoryAirlineboundedcontextCheckindomainJar(type:Jar){
+	from sourceSets.main.output.classesDir
+	include 'com/app/server/repository/airlineboundedcontext/checkindomain/**/*.*'
+	baseName 'app-repository-airlineboundedcontext-checkindomain'
+	manifest {
+		attributes 	'Copyright': System.properties['_testpro_copyright'],
+		'Build-Date': new Date(),
+		'version' : 1.0
+	}
+	version '1.0'
+}
 task createSharedAppinsightAlarmsJar(type:Jar){
 	from sourceSets.main.output.classesDir
 	include 'com/app/shared/appinsight/alarms/**/*.*'
@@ -459,7 +547,7 @@ task createRepositoryOrganizationextendedbcLocationextendedJar(type:Jar){
 	}
 	version '1.0'
 }
-task creatCustomJars(dependsOn:[compileClasses, createSharedAppbasicsetupAaaJar,createServiceAppbasicsetupAaaJar,createBizServiceAppbasicsetupAaaJar,createRepositoryAppbasicsetupAaaJar,createSharedAppbasicsetupUserrolemanagementJar,createServiceAppbasicsetupUserrolemanagementJar,createBizServiceAppbasicsetupUserrolemanagementJar,createRepositoryAppbasicsetupUserrolemanagementJar,createSharedAppbasicsetupUsermanagementJar,createServiceAppbasicsetupUsermanagementJar,createBizServiceAppbasicsetupUsermanagementJar,createRepositoryAppbasicsetupUsermanagementJar,createSharedAppinsightAlarmsJar,createServiceAppinsightAlarmsJar,createBizServiceAppinsightAlarmsJar,createRepositoryAppinsightAlarmsJar,createSharedAppinsightHealthJar,createServiceAppinsightHealthJar,createBizServiceAppinsightHealthJar,createRepositoryAppinsightHealthJar,createSharedOrganizationContactmanagementJar,createServiceOrganizationContactmanagementJar,createBizServiceOrganizationContactmanagementJar,createRepositoryOrganizationContactmanagementJar,createSharedOrganizationLocationmanagementJar,createServiceOrganizationLocationmanagementJar,createBizServiceOrganizationLocationmanagementJar,createRepositoryOrganizationLocationmanagementJar,createSharedSampleboundedcontextSampledomainJar,createServiceSampleboundedcontextSampledomainJar,createBizServiceSampleboundedcontextSampledomainJar,createRepositorySampleboundedcontextSampledomainJar,createSharedMultitenantCustomersJar,createServiceMultitenantCustomersJar,createBizServiceMultitenantCustomersJar,createRepositoryMultitenantCustomersJar,createSharedOrganizationextendedbcLocationextendedJar,createServiceOrganizationextendedbcLocationextendedJar,createBizServiceOrganizationextendedbcLocationextendedJar,createRepositoryOrganizationextendedbcLocationextendedJar])
+task creatCustomJars(dependsOn:[compileClasses, createSharedAppbasicsetupAaaJar,createServiceAppbasicsetupAaaJar,createBizServiceAppbasicsetupAaaJar,createRepositoryAppbasicsetupAaaJar,createSharedAppbasicsetupUserrolemanagementJar,createServiceAppbasicsetupUserrolemanagementJar,createBizServiceAppbasicsetupUserrolemanagementJar,createRepositoryAppbasicsetupUserrolemanagementJar,createSharedAppbasicsetupUsermanagementJar,createServiceAppbasicsetupUsermanagementJar,createBizServiceAppbasicsetupUsermanagementJar,createRepositoryAppbasicsetupUsermanagementJar,createSharedAirlineboundedcontextReservedomainJar,createServiceAirlineboundedcontextReservedomainJar,createBizServiceAirlineboundedcontextReservedomainJar,createRepositoryAirlineboundedcontextReservedomainJar,createSharedAirlineboundedcontextCheckindomainJar,createServiceAirlineboundedcontextCheckindomainJar,createBizServiceAirlineboundedcontextCheckindomainJar,createRepositoryAirlineboundedcontextCheckindomainJar,createSharedAppinsightAlarmsJar,createServiceAppinsightAlarmsJar,createBizServiceAppinsightAlarmsJar,createRepositoryAppinsightAlarmsJar,createSharedAppinsightHealthJar,createServiceAppinsightHealthJar,createBizServiceAppinsightHealthJar,createRepositoryAppinsightHealthJar,createSharedOrganizationContactmanagementJar,createServiceOrganizationContactmanagementJar,createBizServiceOrganizationContactmanagementJar,createRepositoryOrganizationContactmanagementJar,createSharedOrganizationLocationmanagementJar,createServiceOrganizationLocationmanagementJar,createBizServiceOrganizationLocationmanagementJar,createRepositoryOrganizationLocationmanagementJar,createSharedSampleboundedcontextSampledomainJar,createServiceSampleboundedcontextSampledomainJar,createBizServiceSampleboundedcontextSampledomainJar,createRepositorySampleboundedcontextSampledomainJar,createSharedMultitenantCustomersJar,createServiceMultitenantCustomersJar,createBizServiceMultitenantCustomersJar,createRepositoryMultitenantCustomersJar,createSharedOrganizationextendedbcLocationextendedJar,createServiceOrganizationextendedbcLocationextendedJar,createBizServiceOrganizationextendedbcLocationextendedJar,createRepositoryOrganizationextendedbcLocationextendedJar])
 war{
 	dependsOn creatCustomJars
 	classpath = configurations.runtime
@@ -469,8 +557,8 @@ war{
 	webInf {
 		into('classes') {
 			from (sourceSets.main.output.classesDir){
-				include ('com/app/server/service/appbasicsetup/','com/app/server/service/appbasicsetup/','com/app/server/service/appbasicsetup/','com/app/server/service/appinsight/','com/app/server/service/appinsight/','com/app/server/service/organization/','com/app/server/service/organization/','com/app/server/service/sampleboundedcontext/','com/app/server/service/multitenant/','com/app/server/service/organizationextendedbc/','com/app/server/repository/appbasicsetup/','com/app/server/repository/appbasicsetup/','com/app/server/repository/appbasicsetup/','com/app/server/repository/appinsight/','com/app/server/repository/appinsight/','com/app/server/repository/organization/','com/app/server/repository/organization/','com/app/server/repository/sampleboundedcontext/','com/app/server/repository/multitenant/','com/app/server/repository/organizationextendedbc/','com/app/server/businessservice/appbasicsetup/','com/app/server/businessservice/appbasicsetup/','com/app/server/businessservice/appbasicsetup/','com/app/server/businessservice/appinsight/','com/app/server/businessservice/appinsight/','com/app/server/businessservice/organization/','com/app/server/businessservice/organization/','com/app/server/businessservice/sampleboundedcontext/','com/app/server/businessservice/multitenant/','com/app/server/businessservice/organizationextendedbc/','com/app/shared/','com/app/config/','com/app/server/bean','com/app/server/service/aspect/','com/app/server/businessservice/aspect/','com/app/server/repository/aspect/','com/app/server/repository/core/','com/app/server/repository/datavisualizer/','com/app/server/service/sessionmgt/','com/app/server/service/datavisualizer/','com/app/util/','com/app/customexceptions/','com/app/bean/',)
-              exclude ('com/app/shared/appbasicsetup/aaa/','com/app/shared/appbasicsetup/userrolemanagement/','com/app/shared/appbasicsetup/usermanagement/','com/app/shared/appinsight/alarms/','com/app/shared/appinsight/health/','com/app/shared/organization/contactmanagement/','com/app/shared/organization/locationmanagement/','com/app/shared/sampleboundedcontext/sampledomain/','com/app/shared/multitenant/customers/','com/app/shared/organizationextendedbc/locationextended/','com/app/server/service/appbasicsetup/aaa/','com/app/server/service/appbasicsetup/userrolemanagement/','com/app/server/service/appbasicsetup/usermanagement/','com/app/server/service/appinsight/alarms/','com/app/server/service/appinsight/health/','com/app/server/service/organization/contactmanagement/','com/app/server/service/organization/locationmanagement/','com/app/server/service/sampleboundedcontext/sampledomain/','com/app/server/service/multitenant/customers/','com/app/server/service/organizationextendedbc/locationextended/','com/app/server/businessservice/appbasicsetup/aaa/','com/app/server/businessservice/appbasicsetup/userrolemanagement/','com/app/server/businessservice/appbasicsetup/usermanagement/','com/app/server/businessservice/appinsight/alarms/','com/app/server/businessservice/appinsight/health/','com/app/server/businessservice/organization/contactmanagement/','com/app/server/businessservice/organization/locationmanagement/','com/app/server/businessservice/sampleboundedcontext/sampledomain/','com/app/server/businessservice/multitenant/customers/','com/app/server/businessservice/organizationextendedbc/locationextended/','com/app/server/repository/appbasicsetup/aaa/','com/app/server/repository/appbasicsetup/userrolemanagement/','com/app/server/repository/appbasicsetup/usermanagement/','com/app/server/repository/appinsight/alarms/','com/app/server/repository/appinsight/health/','com/app/server/repository/organization/contactmanagement/','com/app/server/repository/organization/locationmanagement/','com/app/server/repository/sampleboundedcontext/sampledomain/','com/app/server/repository/multitenant/customers/','com/app/server/repository/organizationextendedbc/locationextended/',)			}
+				include ('com/app/server/service/appbasicsetup/','com/app/server/service/appbasicsetup/','com/app/server/service/appbasicsetup/','com/app/server/service/airlineboundedcontext/','com/app/server/service/airlineboundedcontext/','com/app/server/service/appinsight/','com/app/server/service/appinsight/','com/app/server/service/organization/','com/app/server/service/organization/','com/app/server/service/sampleboundedcontext/','com/app/server/service/multitenant/','com/app/server/service/organizationextendedbc/','com/app/server/repository/appbasicsetup/','com/app/server/repository/appbasicsetup/','com/app/server/repository/appbasicsetup/','com/app/server/repository/airlineboundedcontext/','com/app/server/repository/airlineboundedcontext/','com/app/server/repository/appinsight/','com/app/server/repository/appinsight/','com/app/server/repository/organization/','com/app/server/repository/organization/','com/app/server/repository/sampleboundedcontext/','com/app/server/repository/multitenant/','com/app/server/repository/organizationextendedbc/','com/app/server/businessservice/appbasicsetup/','com/app/server/businessservice/appbasicsetup/','com/app/server/businessservice/appbasicsetup/','com/app/server/businessservice/airlineboundedcontext/','com/app/server/businessservice/airlineboundedcontext/','com/app/server/businessservice/appinsight/','com/app/server/businessservice/appinsight/','com/app/server/businessservice/organization/','com/app/server/businessservice/organization/','com/app/server/businessservice/sampleboundedcontext/','com/app/server/businessservice/multitenant/','com/app/server/businessservice/organizationextendedbc/','com/app/shared/','com/app/config/','com/app/server/bean','com/app/server/service/aspect/','com/app/server/businessservice/aspect/','com/app/server/repository/aspect/','com/app/server/repository/core/','com/app/server/repository/datavisualizer/','com/app/server/service/sessionmgt/','com/app/server/service/datavisualizer/','com/app/util/','com/app/customexceptions/','com/app/bean/',)
+              exclude ('com/app/shared/appbasicsetup/aaa/','com/app/shared/appbasicsetup/userrolemanagement/','com/app/shared/appbasicsetup/usermanagement/','com/app/shared/airlineboundedcontext/reservedomain/','com/app/shared/airlineboundedcontext/checkindomain/','com/app/shared/appinsight/alarms/','com/app/shared/appinsight/health/','com/app/shared/organization/contactmanagement/','com/app/shared/organization/locationmanagement/','com/app/shared/sampleboundedcontext/sampledomain/','com/app/shared/multitenant/customers/','com/app/shared/organizationextendedbc/locationextended/','com/app/server/service/appbasicsetup/aaa/','com/app/server/service/appbasicsetup/userrolemanagement/','com/app/server/service/appbasicsetup/usermanagement/','com/app/server/service/airlineboundedcontext/reservedomain/','com/app/server/service/airlineboundedcontext/checkindomain/','com/app/server/service/appinsight/alarms/','com/app/server/service/appinsight/health/','com/app/server/service/organization/contactmanagement/','com/app/server/service/organization/locationmanagement/','com/app/server/service/sampleboundedcontext/sampledomain/','com/app/server/service/multitenant/customers/','com/app/server/service/organizationextendedbc/locationextended/','com/app/server/businessservice/appbasicsetup/aaa/','com/app/server/businessservice/appbasicsetup/userrolemanagement/','com/app/server/businessservice/appbasicsetup/usermanagement/','com/app/server/businessservice/airlineboundedcontext/reservedomain/','com/app/server/businessservice/airlineboundedcontext/checkindomain/','com/app/server/businessservice/appinsight/alarms/','com/app/server/businessservice/appinsight/health/','com/app/server/businessservice/organization/contactmanagement/','com/app/server/businessservice/organization/locationmanagement/','com/app/server/businessservice/sampleboundedcontext/sampledomain/','com/app/server/businessservice/multitenant/customers/','com/app/server/businessservice/organizationextendedbc/locationextended/','com/app/server/repository/appbasicsetup/aaa/','com/app/server/repository/appbasicsetup/userrolemanagement/','com/app/server/repository/appbasicsetup/usermanagement/','com/app/server/repository/airlineboundedcontext/reservedomain/','com/app/server/repository/airlineboundedcontext/checkindomain/','com/app/server/repository/appinsight/alarms/','com/app/server/repository/appinsight/health/','com/app/server/repository/organization/contactmanagement/','com/app/server/repository/organization/locationmanagement/','com/app/server/repository/sampleboundedcontext/sampledomain/','com/app/server/repository/multitenant/customers/','com/app/server/repository/organizationextendedbc/locationextended/',)			}
 			from "$project.buildDir/resources/main/"
 		}
 	}

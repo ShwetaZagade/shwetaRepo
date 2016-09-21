@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.500s</div>
+<div class="counter">0.445s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,27 +82,27 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.262s</td>
+<td>0.230s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.074s</td>
+<td>0.066s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.027s</td>
+<td>0.033s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test5NegativeTesting</td>
-<td>0.024s</td>
+<td>0.025s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test6Delete</td>
-<td>0.113s</td>
+<td>0.091s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -110,127 +110,127 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Wed Sep 21 06:35:22 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed Sep 21 06:35:22 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
-Wed Sep 21 06:35:22 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
-Wed Sep 21 06:35:22 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed Sep 21 06:35:22 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed Sep 21 06:35:22 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed Sep 21 06:35:22 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:22 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed Sep 21 06:35:22 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed Sep 21 06:35:22 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:22 UTC 2016|ApplicationAlarmContext| &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; Create App Alarms ....  &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; 
-Wed Sep 21 06:35:22 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed Sep 21 06:35:22 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
-Wed Sep 21 06:35:22 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed Sep 21 06:35:22 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed Sep 21 06:35:22 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed Sep 21 06:35:22 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed Sep 21 06:35:22 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed Sep 21 06:35:22 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed Sep 21 06:35:22 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed Sep 21 06:35:22 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed Sep 21 06:35:22 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed Sep 21 06:35:22 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed Sep 21 06:35:22 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@3cfbedf] ....
-Wed Sep 21 06:35:22 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed Sep 21 06:35:22 UTC 2016|Scheduler|Adding [LMID=[b53b3b4c-eae5-4dab-b5a8-91035a9d6d6b]] Delay=5 Time Unit=MINUTES
-Wed Sep 21 06:35:22 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed Sep 21 06:35:22 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed Sep 21 06:35:22 UTC 2016|Scheduler|Startup Completed..
-Wed Sep 21 06:35:22 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed Sep 21 06:35:22 UTC 2016|Log Manager Factory|Log Manager READY! ID = b53b3b4c-eae5-4dab-b5a8-91035a9d6d6b
-[EL Finer]: connection: 2016-09-21 06:35:22.539--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1245025287
-[EL Finer]: transaction: 2016-09-21 06:35:22.54--ClientSession(1245025287)--Thread(Thread[Test worker,5,main])--acquire unit of work: 59342241
-[EL Finest]: connection: 2016-09-21 06:35:22.54--ServerSession(993367760)--Connection(932632279)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.54--ClientSession(1245025287)--Connection(932632279)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.54--ClientSession(1245025287)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: transaction: 2016-09-21 06:35:22.547--UnitOfWork(59342241)--Thread(Thread[Test worker,5,main])--persist() operation called on: Hello World.
-[EL Finest]: sequencing: 2016-09-21 06:35:22.547--UnitOfWork(59342241)--Thread(Thread[Test worker,5,main])--assign sequence to the object (B73E79E5-9864-4F9D-BE8E-C98AA1936A9A -&gt; Hello World)
-[EL Finer]: transaction: 2016-09-21 06:35:22.548--UnitOfWork(59342241)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:22.548--UnitOfWork(59342241)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(Hello World)
-[EL Fine]: sql: 2016-09-21 06:35:22.549--ClientSession(1245025287)--Connection(1139459608)--Thread(Thread[Test worker,5,main])--INSERT INTO TestA (tid, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [B73E79E5-9864-4F9D-BE8E-C98AA1936A9A, 1970-01-02, 2016-09-21 06:03:42.434, Hello World, 1, AAAAA, 2016-09-21 06:35:22.445, AAAAA, 2016-09-21 06:35:22.445, 1, 51000, appCreateValue]
-[EL Finer]: transaction: 2016-09-21 06:35:22.551--ClientSession(1245025287)--Connection(1139459608)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.675--ServerSession(993367760)--Connection(932632279)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.675--UnitOfWork(59342241)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.675--UnitOfWork(59342241)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.675--UnitOfWork(59342241)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.676--ClientSession(1245025287)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:22.699--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 776267009
-[EL Finer]: transaction: 2016-09-21 06:35:22.699--ClientSession(776267009)--Thread(Thread[Test worker,5,main])--acquire unit of work: 756464738
-[EL Finest]: connection: 2016-09-21 06:35:22.699--ServerSession(993367760)--Connection(799661326)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.699--ClientSession(776267009)--Connection(799661326)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.699--ClientSession(776267009)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:22.701--UnitOfWork(756464738)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:22.701--UnitOfWork(756464738)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:22.701--UnitOfWork(756464738)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name=&quot;TestA.findById&quot; referenceClass=TestA sql=&quot;SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE (((activeStatus = ?) AND (tid = ?)) AND (multiTenantId = ?))&quot;)
-[EL Fine]: sql: 2016-09-21 06:35:22.701--ClientSession(776267009)--Connection(1143026442)--Thread(Thread[Test worker,5,main])--SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE (((activeStatus = ?) AND (tid = ?)) AND (multiTenantId = ?))
-	bind =&gt; [1, B73E79E5-9864-4F9D-BE8E-C98AA1936A9A, appCreateValue]
-[EL Finer]: transaction: 2016-09-21 06:35:22.703--UnitOfWork(756464738)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.704--ClientSession(776267009)--Connection(1143026442)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.704--ServerSession(993367760)--Connection(799661326)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.704--UnitOfWork(756464738)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.704--UnitOfWork(756464738)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.704--UnitOfWork(756464738)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.704--ClientSession(776267009)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:22.705--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 450800713
-[EL Finer]: transaction: 2016-09-21 06:35:22.705--ClientSession(450800713)--Thread(Thread[Test worker,5,main])--acquire unit of work: 285276775
-[EL Finest]: connection: 2016-09-21 06:35:22.705--ServerSession(993367760)--Connection(1463257321)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.705--ClientSession(450800713)--Connection(1463257321)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.705--ClientSession(450800713)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: transaction: 2016-09-21 06:35:22.708--UnitOfWork(285276775)--Thread(Thread[Test worker,5,main])--Merge clone with references Hello World
-[EL Finest]: query: 2016-09-21 06:35:22.709--UnitOfWork(285276775)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=TestA )
-[EL Fine]: sql: 2016-09-21 06:35:22.709--ClientSession(450800713)--Connection(1786124711)--Thread(Thread[Test worker,5,main])--SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE ((tid = ?) AND (multiTenantId = ?))
-	bind =&gt; [B73E79E5-9864-4F9D-BE8E-C98AA1936A9A, appCreateValue]
-[EL Finer]: transaction: 2016-09-21 06:35:22.711--UnitOfWork(285276775)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:22.712--UnitOfWork(285276775)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(Hello World)
-[EL Fine]: sql: 2016-09-21 06:35:22.712--ClientSession(450800713)--Connection(1786124711)--Thread(Thread[Test worker,5,main])--UPDATE TestA SET tDate = ?, tDateTime = ?, versionId = ? WHERE ((tid = ?) AND (versionId = ?))
-	bind =&gt; [1970-01-02, 2016-09-21 06:03:42.455, 2, B73E79E5-9864-4F9D-BE8E-C98AA1936A9A, 1]
-[EL Finer]: transaction: 2016-09-21 06:35:22.713--ClientSession(450800713)--Connection(1786124711)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.749--ServerSession(993367760)--Connection(1463257321)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.749--UnitOfWork(285276775)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.749--UnitOfWork(285276775)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.749--UnitOfWork(285276775)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.749--ClientSession(450800713)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:22.773--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1020062728
-[EL Finer]: transaction: 2016-09-21 06:35:22.773--ClientSession(1020062728)--Thread(Thread[Test worker,5,main])--acquire unit of work: 832315495
-[EL Finest]: connection: 2016-09-21 06:35:22.773--ServerSession(993367760)--Connection(18047907)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.773--ClientSession(1020062728)--Connection(18047907)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.773--ClientSession(1020062728)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finer]: transaction: 2016-09-21 06:35:22.774--UnitOfWork(832315495)--Thread(Thread[Test worker,5,main])--begin unit of work flush
-[EL Finer]: transaction: 2016-09-21 06:35:22.774--UnitOfWork(832315495)--Thread(Thread[Test worker,5,main])--end unit of work flush
-[EL Finest]: query: 2016-09-21 06:35:22.774--UnitOfWork(832315495)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name=&quot;TestA.findById&quot; referenceClass=TestA sql=&quot;SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE (((activeStatus = ?) AND (tid = ?)) AND (multiTenantId = ?))&quot;)
-[EL Fine]: sql: 2016-09-21 06:35:22.775--ClientSession(1020062728)--Connection(1647965136)--Thread(Thread[Test worker,5,main])--SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE (((activeStatus = ?) AND (tid = ?)) AND (multiTenantId = ?))
-	bind =&gt; [1, B73E79E5-9864-4F9D-BE8E-C98AA1936A9A, appCreateValue]
-[EL Finer]: transaction: 2016-09-21 06:35:22.776--UnitOfWork(832315495)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.776--ClientSession(1020062728)--Connection(1647965136)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.777--ServerSession(993367760)--Connection(18047907)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.777--UnitOfWork(832315495)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.777--UnitOfWork(832315495)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.777--UnitOfWork(832315495)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.777--ClientSession(1020062728)--Thread(Thread[Test worker,5,main])--client released
-[EL Finer]: connection: 2016-09-21 06:35:22.823--ServerSession(993367760)--Thread(Thread[Test worker,5,main])--client acquired: 1209016283
-[EL Finer]: transaction: 2016-09-21 06:35:22.824--ClientSession(1209016283)--Thread(Thread[Test worker,5,main])--acquire unit of work: 446400467
-[EL Finest]: connection: 2016-09-21 06:35:22.824--ServerSession(993367760)--Connection(1492269898)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.824--ClientSession(1209016283)--Connection(1492269898)--Thread(Thread[Test worker,5,main])--begin transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.824--ClientSession(1209016283)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
-[EL Finest]: query: 2016-09-21 06:35:22.825--UnitOfWork(446400467)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name=&quot;readTestA&quot; referenceClass=TestA sql=&quot;SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE ((tid = ?) AND (multiTenantId = ?))&quot;)
-[EL Fine]: sql: 2016-09-21 06:35:22.825--ClientSession(1209016283)--Connection(1493678595)--Thread(Thread[Test worker,5,main])--SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE ((tid = ?) AND (multiTenantId = ?))
-	bind =&gt; [B73E79E5-9864-4F9D-BE8E-C98AA1936A9A, appCreateValue]
-[EL Finest]: transaction: 2016-09-21 06:35:22.827--UnitOfWork(446400467)--Thread(Thread[Test worker,5,main])--remove() operation called on: Hello World
-[EL Finer]: transaction: 2016-09-21 06:35:22.827--UnitOfWork(446400467)--Thread(Thread[Test worker,5,main])--begin unit of work commit
-[EL Finest]: query: 2016-09-21 06:35:22.827--UnitOfWork(446400467)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=TestA )
-[EL Finest]: query: 2016-09-21 06:35:22.827--UnitOfWork(446400467)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(Hello World)
-[EL Fine]: sql: 2016-09-21 06:35:22.828--ClientSession(1209016283)--Connection(1493678595)--Thread(Thread[Test worker,5,main])--DELETE FROM TestA WHERE ((tid = ?) AND (versionId = ?))
-	bind =&gt; [B73E79E5-9864-4F9D-BE8E-C98AA1936A9A, 2]
-[EL Finer]: transaction: 2016-09-21 06:35:22.829--ClientSession(1209016283)--Connection(1493678595)--Thread(Thread[Test worker,5,main])--commit transaction
-[EL Finest]: connection: 2016-09-21 06:35:22.914--ServerSession(993367760)--Connection(1492269898)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
-[EL Finer]: transaction: 2016-09-21 06:35:22.914--UnitOfWork(446400467)--Thread(Thread[Test worker,5,main])--end unit of work commit
-[EL Finer]: transaction: 2016-09-21 06:35:22.914--UnitOfWork(446400467)--Thread(Thread[Test worker,5,main])--resume unit of work
-[EL Finer]: transaction: 2016-09-21 06:35:22.914--UnitOfWork(446400467)--Thread(Thread[Test worker,5,main])--release unit of work
-[EL Finer]: connection: 2016-09-21 06:35:22.914--ClientSession(1209016283)--Thread(Thread[Test worker,5,main])--client released
+<pre>Wed Sep 21 09:17:55 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Sep 21 09:17:55 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
+Wed Sep 21 09:17:55 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testpro/src/main/webapp/WEB-INF/conf]
+Wed Sep 21 09:17:55 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Sep 21 09:17:55 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Sep 21 09:17:55 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Sep 21 09:17:55 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP= A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:17:55 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Sep 21 09:17:55 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Sep 21 09:17:55 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:17:55 UTC 2016|ApplicationAlarmContext| &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; Create App Alarms ....  &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; 
+Wed Sep 21 09:17:55 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Sep 21 09:17:55 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/786 SYS=5/11 [786/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[875]  E.Map EC/RC=[391/79] )
+Wed Sep 21 09:17:55 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Sep 21 09:17:55 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Sep 21 09:17:55 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Sep 21 09:17:55 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Sep 21 09:17:55 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Sep 21 09:17:55 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Sep 21 09:17:55 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Sep 21 09:17:55 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Sep 21 09:17:55 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Sep 21 09:17:55 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Sep 21 09:17:55 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@3b32215f] ....
+Wed Sep 21 09:17:55 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Sep 21 09:17:55 UTC 2016|Scheduler|Adding [LMID=[950cd733-ec55-4a91-aacb-ab957b93fa8b]] Delay=5 Time Unit=MINUTES
+Wed Sep 21 09:17:55 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Sep 21 09:17:55 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Sep 21 09:17:55 UTC 2016|Scheduler|Startup Completed..
+Wed Sep 21 09:17:55 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Sep 21 09:17:55 UTC 2016|Log Manager Factory|Log Manager READY! ID = 950cd733-ec55-4a91-aacb-ab957b93fa8b
+[EL Finer]: connection: 2016-09-21 09:17:55.484--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 2057512646
+[EL Finer]: transaction: 2016-09-21 09:17:55.484--ClientSession(2057512646)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1833357328
+[EL Finest]: connection: 2016-09-21 09:17:55.484--ServerSession(1151842404)--Connection(1141244540)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.485--ClientSession(2057512646)--Connection(1141244540)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.485--ClientSession(2057512646)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-09-21 09:17:55.505--UnitOfWork(1833357328)--Thread(Thread[Test worker,5,main])--persist() operation called on: Hello World.
+[EL Finest]: sequencing: 2016-09-21 09:17:55.506--UnitOfWork(1833357328)--Thread(Thread[Test worker,5,main])--assign sequence to the object (8ED18597-DCBD-4F68-A922-1AF6CF61BADB -&gt; Hello World)
+[EL Finer]: transaction: 2016-09-21 09:17:55.507--UnitOfWork(1833357328)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:17:55.507--UnitOfWork(1833357328)--Thread(Thread[Test worker,5,main])--Execute query InsertObjectQuery(Hello World)
+[EL Fine]: sql: 2016-09-21 09:17:55.508--ClientSession(2057512646)--Connection(148729752)--Thread(Thread[Test worker,5,main])--INSERT INTO TestA (tid, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, multiTenantId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [8ED18597-DCBD-4F68-A922-1AF6CF61BADB, 1970-01-02, 2016-09-21 06:03:42.434, Hello World, 1, AAAAA, 2016-09-21 09:17:55.406, AAAAA, 2016-09-21 09:17:55.406, 1, 51000, appCreateValue]
+[EL Finer]: transaction: 2016-09-21 09:17:55.51--ClientSession(2057512646)--Connection(148729752)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.6--ServerSession(1151842404)--Connection(1141244540)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.601--UnitOfWork(1833357328)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:55.601--UnitOfWork(1833357328)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:55.601--UnitOfWork(1833357328)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:55.601--ClientSession(2057512646)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:17:55.628--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 848425443
+[EL Finer]: transaction: 2016-09-21 09:17:55.628--ClientSession(848425443)--Thread(Thread[Test worker,5,main])--acquire unit of work: 195004421
+[EL Finest]: connection: 2016-09-21 09:17:55.628--ServerSession(1151842404)--Connection(379258425)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.628--ClientSession(848425443)--Connection(379258425)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.628--ClientSession(848425443)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:17:55.63--UnitOfWork(195004421)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:17:55.63--UnitOfWork(195004421)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:17:55.63--UnitOfWork(195004421)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name=&quot;TestA.findById&quot; referenceClass=TestA sql=&quot;SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE (((activeStatus = ?) AND (tid = ?)) AND (multiTenantId = ?))&quot;)
+[EL Fine]: sql: 2016-09-21 09:17:55.631--ClientSession(848425443)--Connection(850737724)--Thread(Thread[Test worker,5,main])--SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE (((activeStatus = ?) AND (tid = ?)) AND (multiTenantId = ?))
+	bind =&gt; [1, 8ED18597-DCBD-4F68-A922-1AF6CF61BADB, appCreateValue]
+[EL Finer]: transaction: 2016-09-21 09:17:55.633--UnitOfWork(195004421)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:55.633--ClientSession(848425443)--Connection(850737724)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.633--ServerSession(1151842404)--Connection(379258425)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.634--UnitOfWork(195004421)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:55.634--UnitOfWork(195004421)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:55.634--UnitOfWork(195004421)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:55.634--ClientSession(848425443)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:17:55.635--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 2000742934
+[EL Finer]: transaction: 2016-09-21 09:17:55.635--ClientSession(2000742934)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1187547012
+[EL Finest]: connection: 2016-09-21 09:17:55.635--ServerSession(1151842404)--Connection(389615466)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.635--ClientSession(2000742934)--Connection(389615466)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.635--ClientSession(2000742934)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: transaction: 2016-09-21 09:17:55.638--UnitOfWork(1187547012)--Thread(Thread[Test worker,5,main])--Merge clone with references Hello World
+[EL Finest]: query: 2016-09-21 09:17:55.638--UnitOfWork(1187547012)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(referenceClass=TestA )
+[EL Fine]: sql: 2016-09-21 09:17:55.639--ClientSession(2000742934)--Connection(2048184856)--Thread(Thread[Test worker,5,main])--SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE ((tid = ?) AND (multiTenantId = ?))
+	bind =&gt; [8ED18597-DCBD-4F68-A922-1AF6CF61BADB, appCreateValue]
+[EL Finer]: transaction: 2016-09-21 09:17:55.641--UnitOfWork(1187547012)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:17:55.641--UnitOfWork(1187547012)--Thread(Thread[Test worker,5,main])--Execute query UpdateObjectQuery(Hello World)
+[EL Fine]: sql: 2016-09-21 09:17:55.642--ClientSession(2000742934)--Connection(2048184856)--Thread(Thread[Test worker,5,main])--UPDATE TestA SET tDate = ?, tDateTime = ?, versionId = ? WHERE ((tid = ?) AND (versionId = ?))
+	bind =&gt; [1970-01-02, 2016-09-21 06:03:42.455, 2, 8ED18597-DCBD-4F68-A922-1AF6CF61BADB, 1]
+[EL Finer]: transaction: 2016-09-21 09:17:55.643--ClientSession(2000742934)--Connection(2048184856)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.666--ServerSession(1151842404)--Connection(389615466)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.667--UnitOfWork(1187547012)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:55.667--UnitOfWork(1187547012)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:55.667--UnitOfWork(1187547012)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:55.667--ClientSession(2000742934)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:17:55.696--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1345767946
+[EL Finer]: transaction: 2016-09-21 09:17:55.696--ClientSession(1345767946)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1024098218
+[EL Finest]: connection: 2016-09-21 09:17:55.696--ServerSession(1151842404)--Connection(2084802868)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.696--ClientSession(1345767946)--Connection(2084802868)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.696--ClientSession(1345767946)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finer]: transaction: 2016-09-21 09:17:55.697--UnitOfWork(1024098218)--Thread(Thread[Test worker,5,main])--begin unit of work flush
+[EL Finer]: transaction: 2016-09-21 09:17:55.697--UnitOfWork(1024098218)--Thread(Thread[Test worker,5,main])--end unit of work flush
+[EL Finest]: query: 2016-09-21 09:17:55.697--UnitOfWork(1024098218)--Thread(Thread[Test worker,5,main])--Execute query ReadAllQuery(name=&quot;TestA.findById&quot; referenceClass=TestA sql=&quot;SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE (((activeStatus = ?) AND (tid = ?)) AND (multiTenantId = ?))&quot;)
+[EL Fine]: sql: 2016-09-21 09:17:55.698--ClientSession(1345767946)--Connection(2085742153)--Thread(Thread[Test worker,5,main])--SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE (((activeStatus = ?) AND (tid = ?)) AND (multiTenantId = ?))
+	bind =&gt; [1, 8ED18597-DCBD-4F68-A922-1AF6CF61BADB, appCreateValue]
+[EL Finer]: transaction: 2016-09-21 09:17:55.699--UnitOfWork(1024098218)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:55.699--ClientSession(1345767946)--Connection(2085742153)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.7--ServerSession(1151842404)--Connection(2084802868)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.7--UnitOfWork(1024098218)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:55.7--UnitOfWork(1024098218)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:55.7--UnitOfWork(1024098218)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:55.7--ClientSession(1345767946)--Thread(Thread[Test worker,5,main])--client released
+[EL Finer]: connection: 2016-09-21 09:17:55.751--ServerSession(1151842404)--Thread(Thread[Test worker,5,main])--client acquired: 1956829823
+[EL Finer]: transaction: 2016-09-21 09:17:55.751--ClientSession(1956829823)--Thread(Thread[Test worker,5,main])--acquire unit of work: 1874265003
+[EL Finest]: connection: 2016-09-21 09:17:55.751--ServerSession(1151842404)--Connection(1481771225)--Thread(Thread[Test worker,5,main])--Connection acquired from connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.752--ClientSession(1956829823)--Connection(1481771225)--Thread(Thread[Test worker,5,main])--begin transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.752--ClientSession(1956829823)--Thread(Thread[Test worker,5,main])--reconnecting to external connection pool
+[EL Finest]: query: 2016-09-21 09:17:55.753--UnitOfWork(1874265003)--Thread(Thread[Test worker,5,main])--Execute query ReadObjectQuery(name=&quot;readTestA&quot; referenceClass=TestA sql=&quot;SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE ((tid = ?) AND (multiTenantId = ?))&quot;)
+[EL Fine]: sql: 2016-09-21 09:17:55.753--ClientSession(1956829823)--Connection(1010798902)--Thread(Thread[Test worker,5,main])--SELECT tid, multiTenantId, tDate, tDateTime, tnm, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM TestA WHERE ((tid = ?) AND (multiTenantId = ?))
+	bind =&gt; [8ED18597-DCBD-4F68-A922-1AF6CF61BADB, appCreateValue]
+[EL Finest]: transaction: 2016-09-21 09:17:55.754--UnitOfWork(1874265003)--Thread(Thread[Test worker,5,main])--remove() operation called on: Hello World
+[EL Finer]: transaction: 2016-09-21 09:17:55.754--UnitOfWork(1874265003)--Thread(Thread[Test worker,5,main])--begin unit of work commit
+[EL Finest]: query: 2016-09-21 09:17:55.755--UnitOfWork(1874265003)--Thread(Thread[Test worker,5,main])--Execute query DoesExistQuery(referenceClass=TestA )
+[EL Finest]: query: 2016-09-21 09:17:55.755--UnitOfWork(1874265003)--Thread(Thread[Test worker,5,main])--Execute query DeleteObjectQuery(Hello World)
+[EL Fine]: sql: 2016-09-21 09:17:55.755--ClientSession(1956829823)--Connection(1010798902)--Thread(Thread[Test worker,5,main])--DELETE FROM TestA WHERE ((tid = ?) AND (versionId = ?))
+	bind =&gt; [8ED18597-DCBD-4F68-A922-1AF6CF61BADB, 2]
+[EL Finer]: transaction: 2016-09-21 09:17:55.756--ClientSession(1956829823)--Connection(1010798902)--Thread(Thread[Test worker,5,main])--commit transaction
+[EL Finest]: connection: 2016-09-21 09:17:55.816--ServerSession(1151842404)--Connection(1481771225)--Thread(Thread[Test worker,5,main])--Connection released to connection pool [default].
+[EL Finer]: transaction: 2016-09-21 09:17:55.816--UnitOfWork(1874265003)--Thread(Thread[Test worker,5,main])--end unit of work commit
+[EL Finer]: transaction: 2016-09-21 09:17:55.816--UnitOfWork(1874265003)--Thread(Thread[Test worker,5,main])--resume unit of work
+[EL Finer]: transaction: 2016-09-21 09:17:55.816--UnitOfWork(1874265003)--Thread(Thread[Test worker,5,main])--release unit of work
+[EL Finer]: connection: 2016-09-21 09:17:55.817--ClientSession(1956829823)--Thread(Thread[Test worker,5,main])--client released
 </pre>
 </span>
 </div>
@@ -532,7 +532,7 @@ java.lang.SecurityException: TestA.tDateTime may not be null
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Sep 21, 2016 6:35:44 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Sep 21, 2016 9:18:32 AM</p>
 </div>
 </div>
 </body>
