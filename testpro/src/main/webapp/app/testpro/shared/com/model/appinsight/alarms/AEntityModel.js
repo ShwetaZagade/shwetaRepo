@@ -1,0 +1,31 @@
+Ext.define('Testpro.testpro.shared.com.model.appinsight.alarms.AEntityModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "aid",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "aNm",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "aDate",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

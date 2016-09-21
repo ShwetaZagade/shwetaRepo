@@ -1,0 +1,31 @@
+Ext.define('Testpro.testpro.shared.com.model.multitenant.customers.AppCustomerCategoryModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "appcustCategoryId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "customerCategory",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "appcusttypeid",
+          "reference": "AppCustomerType",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

@@ -1,0 +1,43 @@
+Ext.define('Testpro.testpro.shared.com.model.multitenant.customers.AppCustomerModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "appCustomerId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "contactid",
+          "reference": "CoreContacts",
+          "defaultValue": ""
+     }, {
+          "name": "customerName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "startDate",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "endDate",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "customerStatus",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
